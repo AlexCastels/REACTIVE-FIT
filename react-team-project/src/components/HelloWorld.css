@@ -1,0 +1,13 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(90deg, rgba(2,168,221,1) 10%, rgb(190, 0, 204) 66%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+h1:hover{
+    text-shadow: 1px 1px 2px rgba(4, 239, 235, 0.828), 0 0 1em rgb(147, 5, 100), 0 0 0.2em rgb(99, 0, 110);
+    cursor: pointer;
+}
