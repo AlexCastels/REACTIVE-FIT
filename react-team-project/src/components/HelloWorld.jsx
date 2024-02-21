@@ -9,7 +9,7 @@ export function HelloWorld(){
     </div>
     <header class="absolute top-0 left-0 right-0 z-20">
         <nav class="container px-6 py-4 mx-auto md:px-12 bg-slate-700">
-            <div class="items-center justify-between md:flex">
+            <div class="items-center justify-between md:flex ">
                 <div class="flex items-center justify-between">
                     <a href="#" class="text-white">
                         <svg class="w-8 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Capa 1" viewBox="0 0 16.16 12.57">
