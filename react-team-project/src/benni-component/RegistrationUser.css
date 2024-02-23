@@ -12,7 +12,11 @@
     background-image: url(https://web-back.perfectgym.com/sites/default/files/styles/460x/public/equipment%20%286%29.jpg?itok=bC0T32-K);
     background-position: center;
 }
-
+.link{
+    color: #ff9d00;
+    text-decoration: none;
+    font-size: 24px;
+}
 .form-container-reg{
     display: flex;
     flex-direction: column;

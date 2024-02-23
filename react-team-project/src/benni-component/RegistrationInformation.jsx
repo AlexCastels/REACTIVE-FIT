@@ -1,6 +1,6 @@
-import { useState } from "react";
-import "./registrationinformation.css";
 
+import "./registrationinformation.css";
+import { Link, Route , Routes } from 'react-router-dom'
 export function RegistrationInformation() {
   return (
     <div className="general-container-reg">
@@ -16,7 +16,7 @@ export function RegistrationInformation() {
             continua con google
           </button>
         </div>
-        <button id="registrati">Login</button>
+        <button id="registrati"><Link className="registrati link" to="./scegli/reg">registrati</Link> </button>
         <div
           class="fb-login-button"
           data-width="400px"
@@ -28,7 +28,7 @@ export function RegistrationInformation() {
         ></div>
         <div className="else">
           <h5>
-            oppure <a href="">accedi</a>
+            oppure <a href=""><Link className="registrati link" to="./useraccess">accedi</Link></a>
           </h5>
         </div>
       </div>
