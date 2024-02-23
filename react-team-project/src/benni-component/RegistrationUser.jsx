@@ -12,11 +12,27 @@ export function RegistrationUser(){
         confermaPassword: ``, 
 
     })
+    async function setUser() {
+    if (input.password !== input.confermaPassword) return alert("Le password non corrispondono")
+    let url = 'http://localhost:'
+try {
+    const req = await fetch(url,{
+        method: "POST",
+        headers: {"content-type":"application/json"},
+        body: JSON.stringify(input)
+        
+    })
+    console.log(body)
+} catch (error) {
+    console.error(error.message);
+}}
+
 
     function handleForm(e){
         e.preventDefault()
         const userData = input
         console.log(userData)
+        setUser() 
     }
 
     function handleInput(e){
@@ -53,7 +69,7 @@ export function RegistrationUser(){
                     <label htmlFor="ripetipassword"> conferma la Password</label>
                     <input type="password" className="input-reg" onChange={handleInput}  name="password"/>
                 </div>
-                {input.confermaPassword!==input.password && <p>password non corrispondente</p>}
+                
                 <div className="input">
                     <select name="type" className="select-reg" id="type">
                         <option value="utente">Utente</option>
@@ -65,4 +81,4 @@ export function RegistrationUser(){
             </form>
         </div>
     )
-}
+    }
