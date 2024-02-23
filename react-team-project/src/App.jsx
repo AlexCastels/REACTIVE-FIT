@@ -11,7 +11,7 @@ export function App() {
 			<Routes>
 				<Route path='/' element={<RegistrationInformation/>}/>
 				<Route path='/scegli' element={<ChiSono/>}/>
-				<Route path='/useraccess' component={<UserAccessForm/>}/>
+				<Route path='/scegli/useraccess' element={<UserAccessForm/>}/>
 				
 				<Route path='/scegli/reg' element={<RegistrationUser/>}/>
 			</Routes> 

@@ -28,7 +28,7 @@ export function RegistrationInformation() {
         ></div>
         <div className="else">
           <h5>
-            oppure <a href=""><Link className="registrati link" to="./useraccess">accedi</Link></a>
+            oppure <a href=""><Link className="registrati link" to="./scegli/useraccess">accedi</Link></a>
           </h5>
         </div>
       </div>
