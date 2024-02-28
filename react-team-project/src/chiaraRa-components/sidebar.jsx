@@ -7,6 +7,7 @@ export function Sidebar() {
 <div className="sidebarContainer">
   <div className="sidebarDivContainer">
     <div className="sidebarH1Logo">
+      <i class='bx bx-dumbbell'></i>
       <h1 className="sideText">FITNESS REACT</h1>
     </div>
     <ul class="sidebarUl">
