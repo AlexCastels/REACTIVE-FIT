@@ -12,8 +12,8 @@
 }
 .cup {
   position: relative;
-  width: 150px;
-  height: 300px;
+  width: 75px;
+  height: 100px;
   background: transparent;
   border: 5px solid rgb(255, 255, 255);
   border-top: transparent;
@@ -38,8 +38,12 @@
   left: 0;
   width: 100%;
 
+}
+.water-color{
   background: linear-gradient(to bottom, #82b6e4, #4c93da, #0d6ecf, #004ea7);
-
+}
+.coffe{
+  background: linear-gradient(to bottom, #a15633, #a1461b, #9c3b0e, #8b2f04,);
 }
 
 
