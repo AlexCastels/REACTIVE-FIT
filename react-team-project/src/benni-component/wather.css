@@ -21,15 +21,13 @@
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   overflow: hidden;
-  box-shadow: #124a83  0px 8px 16px -4px;
+
 }
 .must-drink{
   background: linear-gradient(to bottom, #bde0ff, #7fbfff, #1e90ff, #0077ff);
   color: white;
   padding: 20px;
   border-radius: 20px;
-
-  box-shadow: #124a83  0px 8px 16px -4px;
 }
 
 .water {

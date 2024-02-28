@@ -28,10 +28,10 @@ export function Water() {
 
   return (
     <>
-      <div className="container  rounded-xl m-4 bg-opacity-30 bg-black ">
+      <div className="container  rounded-xl m-4 p-4 bg-opacity-30 bg-black ">
         <div className="flex flex-col items-center">
-          <h2>bevanda</h2>
-          <div className="flex gap-2 ">
+          <h2 className="text-white">bevanda</h2>
+          <div className="flex gap-2 text-white p-2">
             <button onClick={handleChose} id="water">
               Acqua
             </button>
@@ -52,15 +52,18 @@ export function Water() {
           className="flex flex-col text-center justify-center"
           onSubmit={addWater}
         >
-          <label htmlFor="custom_size">unita'</label>
-          <select name="cSize" id="cSize" onChange={handleChange}>
-            <option value="50">50ml</option>
-            <option value="75">75ml</option>
+          <label htmlFor="custom_size" className="text-white">unita'</label>
+          <select name="cSize" id="cSize" onChange={handleChange} className="text-white bg-transparent">
+            <option  value="50" >50ml</option>
+            <option value="75" >75ml</option>
           </select>
           <button className="m-2  px-4 py-1 bg-slate-950 rounded-lg text-white">
             bevi
           </button>
         </form>
+        <div className="flex">
+          <p className="text-white">Quantità: {quantity}</p>
+        </div>
       </div>
     </>
   );
