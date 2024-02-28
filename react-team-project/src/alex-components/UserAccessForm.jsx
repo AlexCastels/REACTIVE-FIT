@@ -27,16 +27,16 @@ export function UserAccessForm(){
     return (
         <div className="general-container">
             <form onSubmit={handleForm} className="form-container">
-                <h5>Accedi con le tue credenziali</h5>
+                <h5 className="h5">Accedi con le tue credenziali</h5>
                 <div className="input">
                     <label htmlFor="email"> E-mail</label> 
-                    <input type="email" onChange={handleInput} name="email"/>
+                    <input className="inputForm" type="email" onChange={handleInput} name="email"/>
                 </div>
                 <div className="input">
                     <label htmlFor="password"> Password</label>
-                    <input type="password" onChange={handleInput} name="password"/>
+                    <input className='inputForm' type="password" onChange={handleInput} name="password"/>
                 </div> 
-                <button disabled={!input.email || !input.password}>Login</button>    
+                <button className="buttonForm" disabled={!input.email || !input.password}>Login</button>    
             </form>
         </div>
     )
