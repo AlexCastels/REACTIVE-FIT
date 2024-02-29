@@ -4,22 +4,23 @@
     justify-content: center;
     align-items: center;
    
-  }
-  #google-button {
-    display: flex;
-    align-items: center;
-  width: 400px;
-  height: 48px;
-  font-size: 20px;
-  border-radius: 5px;
-  color: #ff9d00;
-  border: 1px solid rgb(187, 187, 187);
-  
-}
-.img-google {
-  padding-right: 10px;
-  padding-top: 5px;
-}
+
+    }
+    #google-button {
+      display: flex;
+      align-items: center;
+    width: 400px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #ff9d00;
+    border: 1px solid rgb(187, 187, 187);
+    }
+    .img-google {
+      padding-right: 10px;
+      padding-top: 5px;
+    }
+
   .general-container-reg{
     display: flex;
     justify-content: center;
@@ -47,5 +48,5 @@ padding: 10px;
     background: transparent;
     backdrop-filter: blur(50px);
     gap: 20px;
-    
 }
+

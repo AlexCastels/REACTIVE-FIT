@@ -26,7 +26,9 @@ export function RegistrationInformation() {
           data-auto-logout-link="false"
           data-use-continue-as="true"
         ></div>
-        <div className="text-yellow-600">
+
+        <div className="text-yellow-500">
+
           <h5>
             oppure <a href=""><Link className="registrati link" to="./scegli/useraccess">accedi</Link></a>
           </h5>

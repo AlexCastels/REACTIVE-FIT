@@ -1,0 +1,97 @@
+.Homepage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.homeImg{
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+}
+/* .homeHeader{
+    left: 0;
+    right: 0;
+    z-index: 20;
+    top: 0;
+    position: absolute;
+}
+.homeNav{
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.homeNavDiv{
+    align-items: center;
+    justify-content: space-between;
+display: flex;
+    
+}
+.homeSvg{
+    width: 2rem;
+    margin-right: 5rem;
+} */
+.homeDivText{
+    display: flex;
+    position: relative;
+    /* align-items: flex-start; */
+    flex-direction: column;
+
+}
+.homeSpan{
+    font-size: 20px;
+    color: orange;
+    font-weight:  700;
+    padding-top: 60px;
+}
+.homeBtnPara{
+    margin-left: 30px;
+}
+.hometwobtn{
+    background-color: orange;
+border: none;
+border-radius: 6px;
+font-size: 20px;
+line-height: 48px;
+padding: 0 16px;
+width: 20vw;
+margin: 30px;
+cursor: pointer;
+display: inline-block;
+text-decoration: none;
+white-space: nowrap;
+  }
+  .HomeBtn{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: right;
+    /* align-items: center; */
+    width: 25vw;
+    margin-left: 20vw;
+text-align: center;
+border-radius: 8px;
+box-shadow: 0 2px 4px orange, 0 8px 16px rgba(242, 206, 5, 0.1);
+  }
+  .homeH1{
+    /* color: orange; */
+    font-size: 60px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(90deg, rgb(222, 198, 90) 10%, orange 66%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.1s ease-in-out;
+ 
+  }
+  .homeContainer{
+    z-index: 3;
+    padding: 130px 40px 70px 20px  ;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
