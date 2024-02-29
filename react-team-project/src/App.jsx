@@ -4,6 +4,8 @@ import { AsideContainer } from "./components/AsideContainer";
 import { Water } from "./benni-component/Water";
 import { ComponentContainer } from "./benni-component/ComponentContainer";
 import Weight from "./benni-component/Weight";
+import { RegistrationInformation } from "./benni-component/RegistrationInformation";
+import { Element } from "./components/Element";
 
 export function App() {
   return (
@@ -11,10 +13,12 @@ export function App() {
       <GeneralContainer>
         <AsideContainer></AsideContainer>
         <CentralContainer>
-         <div className="flex flex-col">
-		 <Water />
-          <Weight />
-		 </div>
+          <Element>
+            <Water />
+          </Element>
+          <Element>
+            <Weight />
+          </Element>
         </CentralContainer>
         <AsideContainer></AsideContainer>
       </GeneralContainer>

@@ -1,3 +1,4 @@
+import "./centralcontainer.css"
 export function CentralContainer({children}) {
-    return <div className="flex bg-slate-800 w-full ">{children}</div>;
+    return <div className="flex  w-full central-bg">{children}</div>;
 }

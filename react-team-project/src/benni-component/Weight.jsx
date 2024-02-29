@@ -4,7 +4,7 @@ import {
     CardHeader,
   } from "@material-tailwind/react";
   import Chart from "react-apexcharts";
-
+import "./utils.css"
  
    
   const chartConfig = {
@@ -13,7 +13,7 @@ import {
     series: [
       {
         name: "Sales",
-        data:[]
+        data:[80, 81.5, 81, 81.4, 81.5,  80.5, 80.5, 80.3, 80.8, 80.7]
       },
     ],
     options: {
@@ -28,7 +28,7 @@ import {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#020617"],
+      colors: ["#eab308"],
       stroke: {
         lineCap: "round",
         curve: "smooth",
@@ -45,7 +45,7 @@ import {
         },
         labels: {
           style: {
-            colors: "#616161",
+            colors: "#eab308",
             fontSize: "12px",
             fontFamily: "inherit",
             fontWeight: 400,
@@ -60,7 +60,7 @@ import {
       yaxis: {
         labels: {
           style: {
-            colors: "#616161",
+            colors: "#eab308",
             fontSize: "12px",
             fontFamily: "inherit",
             fontWeight: 400,
@@ -69,7 +69,7 @@ import {
       },
       grid: {
         show: true,
-        borderColor: "#dddddd",
+        borderColor: "#eab308",
         strokeDashArray: 5,
         xaxis: {
           lines: {
@@ -92,17 +92,18 @@ import {
    
   export default function Weight() {
     return (
-      <div className="rounded-xl m-4 p-4 bg-opacity-30 bg-black">
-        <form >
-          <h2>peso</h2>
-          <input type="text" name="weight"/>
+      <>
+        <form className="yellow-500 flex justify-center flex-col items-center gap-2">
+          <h2 className="text-yellow-500">peso</h2>
+          <input className=" border border-yellow-500 yellow-500 bg-transparent text-lg p-2" type="text" name="weight"/>
+          <button className="m-2  px-4 py-1 bg-slate-950 rounded-lg text-yellow-500">inserisci</button>
         </form>
 <Card>
         <CardHeader
           floated={false}
           shadow={false}
           color="transparent"
-          className="flex flex-col gap-4 rounded-none md:flex-row md:items-center"
+          className="flex flex-col yellow-500 gap-4 rounded-none md:flex-row md:items-center"
         >
           
         </CardHeader>
@@ -110,7 +111,7 @@ import {
           <Chart {...chartConfig} />
         </CardBody>
       </Card>
-      </div>
+      </>
       
     );
   }
