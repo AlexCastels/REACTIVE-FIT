@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
    
+
     }
     #google-button {
       display: flex;
@@ -19,6 +20,7 @@
       padding-right: 10px;
       padding-top: 5px;
     }
+
   .general-container-reg{
     display: flex;
     justify-content: center;
@@ -46,5 +48,5 @@ padding: 10px;
     background: transparent;
     backdrop-filter: blur(50px);
     gap: 20px;
-    
 }
+
