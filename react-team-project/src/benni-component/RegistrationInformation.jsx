@@ -9,7 +9,7 @@ export function RegistrationInformation() {
         <div className="google">
           <button id="google-button">
             {" "}
-            <img
+            <img className="p-2 m-2 "
               src="https://589e284d7a76520f38b73caca5874fb7.cdn.bubble.io/f1667470880060x460128447972340200/Google%20Logo.svg"
               alt=""
             />
@@ -26,7 +26,9 @@ export function RegistrationInformation() {
           data-auto-logout-link="false"
           data-use-continue-as="true"
         ></div>
-        <div className="else">
+
+        <div className="text-yellow-500">
+
           <h5>
             oppure <a href=""><Link className="registrati link" to="./scegli/useraccess">accedi</Link></a>
           </h5>

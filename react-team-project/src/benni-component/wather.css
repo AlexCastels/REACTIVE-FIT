@@ -1,0 +1,77 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cup {
+  position: relative;
+  width: 75px;
+  height: 100px;
+  background: transparent;
+  border: 5px solid rgb(255, 255, 255);
+  border-top: transparent;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  overflow: hidden;
+
+}
+.must-drink{
+  background: linear-gradient(to bottom, #bde0ff, #7fbfff, #1e90ff, #0077ff);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #82b6e4, #4c93da, #0d6ecf, #004ea7);
+
+}
+
+.coffe{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #a15633, #a1461b, #9c3b0e, #8b2f04,);
+}
+.alcol{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #db5555, #c44747, #c51818, #ff0000,);
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.wave-animation {
+  animation: wave 1.5s infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(10);
+  }
+  100% {
+    transform: scale(11);
+  }
+}
