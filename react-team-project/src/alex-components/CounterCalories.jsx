@@ -1,17 +1,20 @@
 import './counterCalories.css'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import CounterCaloriesPie from "./CounterCaloriesPie"
 
 export function CounterCalories(){
 
     const [data , setData] = useState([])
     const [input , setInput] = useState('')
+    const [counter , setCounter] = useState(0)
+    const [dailyKcal , setDailyKcal] = useState(0)
+    const [overKcal , setOverKcal] = useState(0)
     const [total ,setTotal] = useState({
         protein : 0,
         fat: 0,
         carbo: 0
     })
-    const [prova , setProva] = useState(0)
+    
     let options = {
         method: 'GET',
         headers: { 'x-api-key': '2wNbvIicKrDRsrkhi0/0AA==mep1JCCjE5EuDnkN' }
@@ -41,11 +44,18 @@ export function CounterCalories(){
             let proteinV = 0
             let carboV = 0
             let fatV = 0
-            data.forEach((item) => {
+            data.forEach((item, index) => {
                 proteinV += item.protein_g
                 carboV += item.carbohydrates_total_g
                 fatV += item.fat_total_g
+                setCounter((p)=> Number(p) + Number(item.calories))
+                setDailyKcal((p) => Number(p) - Number(item.calories))
+                
+                if(dailyKcal <= 0){
+                    setOverKcal((p) => p + Number(item.calories))
+                }
             })
+
             setTotal((p) => {
                 return {
                     ...p,
@@ -54,14 +64,7 @@ export function CounterCalories(){
                     carbo: carboV
                 }
             })
-            // setTotal((p) => {
-            //     return {
-            //         ...p ,
-            //         protein: p.protein += data[0].protein_g ,
-            //         fat: p.fat += data[0].fat_total_g,
-            //         carbo: p.carbo += data[0].carbohydrates_total_g 
-            //     }
-            // })
+            
         }
         setInput('')
     }
@@ -85,6 +88,8 @@ export function CounterCalories(){
                     <p key={index}>{item.name} {item.calories}</p>
                 ))}
             </div>
+            {counter !== 0 && <p>{counter} kcal</p>}
+            {dailyKcal > 0 ? <p>{dailyKcal} kcal rimanenti!</p> : <p>Attenzione Kcal giornaliere superate di: {overKcal}</p>}
             <div className='pie-cake'>
                 <CounterCaloriesPie macro={total}/> 
             </div>
