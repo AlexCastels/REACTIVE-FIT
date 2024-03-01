@@ -2,10 +2,9 @@ import { GeneralContainer } from "./components/GeneralContainer";
 import { CentralContainer } from "./components/CentralContainer";
 import { AsideContainer } from "./components/AsideContainer";
 import { Water } from "./benni-component/Water";
-import { ComponentContainer } from "./benni-component/ComponentContainer";
 import Weight from "./benni-component/Weight";
-import { RegistrationInformation } from "./benni-component/RegistrationInformation";
 import { Element } from "./components/Element";
+import { BrowserRouter } from "react-router-dom";
 
 export function App() {
   return (
