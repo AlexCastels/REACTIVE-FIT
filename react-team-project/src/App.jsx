@@ -5,22 +5,12 @@ import { Water } from "./benni-component/Water";
 import Weight from "./benni-component/Weight";
 import { Element } from "./components/Element";
 import { BrowserRouter } from "react-router-dom";
+import { Logo } from "./components/Logo";
 
 export function App() {
   return (
     <>
-      <GeneralContainer>
-        <AsideContainer></AsideContainer>
-        <CentralContainer>
-          <Element>
-            <Water />
-          </Element>
-          <Element>
-            <Weight />
-          </Element>
-        </CentralContainer>
-        <AsideContainer></AsideContainer>
-      </GeneralContainer>
+    <Logo/>
     </>
   );
 }

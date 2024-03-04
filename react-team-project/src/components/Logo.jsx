@@ -20,6 +20,7 @@ useEffect (()=> {
  
 }, [])
 
+
     return (
         <img src="./Default_a_healtly_life_logo_for_a_app_0.png" alt="" style={{transform:`rotate(${rotate}deg)`}}/>
     )
