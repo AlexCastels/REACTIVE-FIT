@@ -6,6 +6,7 @@ import { ComponentContainer } from "./benni-component/ComponentContainer";
 import Weight from "./benni-component/Weight";
 import { RegistrationInformation } from "./benni-component/RegistrationInformation";
 import { Element } from "./components/Element";
+import { Sidebar} from "./chiaraRa-components/sidebar";
 
 export function App() {
   return (
