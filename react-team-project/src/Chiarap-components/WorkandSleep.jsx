@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import "./WorkandSleep.css"
 
 function WorkoutAndSleepCounter() {
     const [workoutCount, setWorkoutCount] = useState(0);
