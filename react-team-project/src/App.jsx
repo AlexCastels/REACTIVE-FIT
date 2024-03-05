@@ -12,7 +12,9 @@ export function App() {
   return (
     <>
       <GeneralContainer>
-        <AsideContainer></AsideContainer>
+        <AsideContainer>
+          <Sidebar/>
+        </AsideContainer>
         <CentralContainer>
           <Element>
             <Water />
