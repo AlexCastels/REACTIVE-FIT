@@ -7,8 +7,8 @@ export function CounterCalories(){
     const [data , setData] = useState([])
     const [input , setInput] = useState('')
     const [counter , setCounter] = useState(0)
-    const [dailyKcal , setDailyKcal] = useState(0)
-    const [overKcal , setOverKcal] = useState(0)
+    const [dailyKcal , setDailyKcal] = useState(2400)
+    // const [overKcal , setOverKcal] = useState(0)
     const [total ,setTotal] = useState({
         protein : 0,
         fat: 0,
@@ -27,7 +27,9 @@ export function CounterCalories(){
                 throw new Error('error')
             } else {
                 const json = await res.json()
-                setData((d) => [...d , json[0]])
+                if(json !== undefined){
+                    setData((d) => [...d , json[0]])
+                }
             }
         } catch (error) {
             console.log(error);
@@ -40,6 +42,10 @@ export function CounterCalories(){
     
     function handleBtn(){
         getData()
+        setInput('')
+    }
+
+    useEffect(()=>{
         if(data){
             let proteinV = 0
             let carboV = 0
@@ -51,9 +57,9 @@ export function CounterCalories(){
                 setCounter((p)=> Number(p) + Number(item.calories))
                 setDailyKcal((p) => Number(p) - Number(item.calories))
                 
-                if(dailyKcal <= 0){
-                    setOverKcal((p) => p + Number(item.calories))
-                }
+                // if(dailyKcal <= 0){
+                //     setOverKcal((p) => p + Number(item.calories))
+                // }
             })
 
             setTotal((p) => {
@@ -64,10 +70,8 @@ export function CounterCalories(){
                     carbo: carboV
                 }
             })
-            
         }
-        setInput('')
-    }
+    },[data])
 
     if(total){
         console.log(total);
@@ -84,12 +88,12 @@ export function CounterCalories(){
                 <button onClick={handleBtn}>Search</button>
             </div>
             <div className='pie-list'>
-                {data.length > 0 && data.map((item , index) => (
+                {data.length > 0 ? data.map((item , index) => (
                     <p key={index}>{item.name} {item.calories}</p>
-                ))}
+                )) : <p>Cerca un alimento da aggiungere alla lista!</p>}
             </div>
-            {counter !== 0 && <p>{counter} kcal</p>}
-            {dailyKcal > 0 ? <p>{dailyKcal} kcal rimanenti!</p> : <p>Attenzione Kcal giornaliere superate di: {overKcal}</p>}
+            {counter !== 0 && <p>Kcal Totali: {Math.round(counter)} </p>}
+            {dailyKcal >= 0 ? <p>{Math.round(dailyKcal)} kcal rimanenti!</p> : <p>Kcal giornaliere raggiunte!</p>}
             <div className='pie-cake'>
                 <CounterCaloriesPie macro={total}/> 
             </div>
