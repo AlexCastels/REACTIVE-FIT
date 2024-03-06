@@ -29,7 +29,7 @@ export default function CounterCaloriesPie({macro}) {
             legend: {
                 show: true,
             },
-            labels: ['PROTEIN' , 'FAT' , 'CARBO'],
+            labels: ['PROTEIN g' , 'FAT g' , 'CARBO g'],
         },
     };
     
