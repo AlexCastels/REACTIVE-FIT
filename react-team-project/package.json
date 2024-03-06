@@ -15,8 +15,9 @@
     "apexcharts": "^3.46.0",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
+    "react-collapsible": "^2.10.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.1",
+    "react-router-dom": "^6.22.2",
     "react-scroll-parallax": "^3.4.5",
     "swr": "^2.2.4"
   },
