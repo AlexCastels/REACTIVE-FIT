@@ -20,6 +20,7 @@ import { CounterCalories } from "./alex-components/CounterCalories";
 import { RegistrationUser } from "./benni-component/RegistrationUser";
 import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
+import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
 
 export function App() {
   return (
@@ -29,12 +30,12 @@ export function App() {
           <GeneralContainer>
             <Routes>
               <Route path="/" element={<Homepage />} />
-              <Route path="/" element={<Homepage />} />
               <Route path="/accedi" element={<UserAccessForm />} />
               <Route path="/iscriviti" element={<RegistrationUser />} />
-              <Route path="/iscriviti:registrazione" element={<RegistrationUser />} />
+              <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/hero" element={<Hero />} />
               <Route path="*" element={<PageNotFound />} />
+
             </Routes>
           </GeneralContainer>
         </WeightProvider>

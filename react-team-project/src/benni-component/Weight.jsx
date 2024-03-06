@@ -7,7 +7,7 @@ export default function Weight() {
   const [chartConfig, handleWeight, handleAddWeight] = useWeight();
   const weight = chartConfig.series[0].data;
   const lastWeight = weight[weight.length - 1];
-  const ibm = (lastWeight / 1.7 ** 2).toFixed(2);
+  const ibm = (lastWeight / 1.72 ** 2).toFixed(2);
   let ibmValue;
   if (ibm < 16) {
     ibmValue = "grave magrezza";
@@ -32,7 +32,7 @@ export default function Weight() {
       >
         <h2 className="text-yellow-500">peso</h2>
         <input
-          className=" border border-yellow-500 yellow-500 bg-transparent text-lg p-2"
+          className=" border border-yellow-500 text-yellow-500 yellow-500 bg-transparent text-lg p-2"
           onChange={handleAddWeight}
           type="text"
           name="weight"

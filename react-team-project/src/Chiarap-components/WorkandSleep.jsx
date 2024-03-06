@@ -1,7 +1,7 @@
 import { useState } from "react"
-import "./WorkandSleep.css"
+import "./Workandsleep.css"
 
-function WorkoutAndSleepCounter() {
+function WorkoutAndSleep() {
     const [workoutCount, setWorkoutCount] = useState(0);
     const [savedWorkoutCount, setSavedWorkoutCount] = useState(0);
     const [sleepHours, setSleepHours] = useState(0);
@@ -76,4 +76,4 @@ function WorkoutAndSleepCounter() {
     );
 }
 
-            export default WorkoutAndSleepCounter;
+            export default WorkoutAndSleep;

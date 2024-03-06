@@ -33,6 +33,24 @@ display: flex;
     width: 2rem;
     margin-right: 5rem;
 } */
+.fade-enter {
+    opacity: 0.01;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+  }
+  
 .homeDivText{
     display: flex;
     position: relative;

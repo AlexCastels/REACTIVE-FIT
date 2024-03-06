@@ -3,6 +3,7 @@ import { RegistrationUser } from "../benni-component/RegistrationUser";
 import {UserAccessForm} from "../alex-components/UserAccessForm"
 import "./Homepage.css";
 import { Link } from "react-router-dom";
+import FormAccessoPT from "../Chiarap-components/FormAccessoPT";
 export function Homepage() {
   return (
     <>
@@ -23,7 +24,7 @@ export function Homepage() {
             <Link to={"/accedi"} element={<UserAccessForm/>}><button className="HomeAccedi hometwobtn">Accedi</button></Link>
             <p className="homeBtnPara">
               Sei un personal trainer?{" "}
-              <Link to={"/accedi-pt"} element={<RegistrationUser/>}>Accedi qui</Link>
+              <Link to={"/iscriviti-pt"} element={<FormAccessoPT/>}>Accedi qui</Link>
             </p>
             
             <Link to={"/iscriviti"} element={<RegistrationUser/>}><button className="HomeIscriviti hometwobtn">Iscriviti</button></Link>
