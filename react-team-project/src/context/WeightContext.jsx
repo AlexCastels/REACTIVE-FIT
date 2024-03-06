@@ -102,7 +102,7 @@ export const  WeightProvider = ({children}) => {
         },
       };
     return(
-        <WeightContext.Provider value={[chartConfig, handleWeight, handleAddWeight]}>
+        <WeightContext.Provider value={[chartConfig, handleWeight, handleAddWeight, weight]}>
             {children}
         </WeightContext.Provider>
     )
