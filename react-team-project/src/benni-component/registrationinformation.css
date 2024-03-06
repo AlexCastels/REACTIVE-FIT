@@ -1,0 +1,52 @@
+.google {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    }
+    #google-button {
+      display: flex;
+      align-items: center;
+    width: 400px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #ff9d00;
+    border: 1px solid rgb(187, 187, 187);
+    }
+    .img-google {
+      padding-right: 10px;
+      padding-top: 5px;
+    }
+
+  .general-container-reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://web-back.perfectgym.com/sites/default/files/styles/460x/public/equipment%20%286%29.jpg?itok=bC0T32-K);
+    background-position: center;
+}
+
+.form-container-reg{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 3px solid #ff9d00;
+    border-radius: 10px;
+    width: 500px;
+padding: 10px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1rem;
+    color:#ff9d00;
+    text-shadow: 0 0 0.2em #000000;
+    background-color: #545454;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    gap: 20px;
+}
+
