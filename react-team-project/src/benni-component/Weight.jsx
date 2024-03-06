@@ -8,6 +8,22 @@ export default function Weight() {
   const weight = chartConfig.series[0].data;
   const lastWeight = weight[weight.length - 1];
   const ibm = (lastWeight / 1.7 ** 2).toFixed(2);
+  let ibmValue;
+  if (ibm < 16) {
+    ibmValue = "grave magrezza";
+  } else if (ibm >= 16 && ibm < 18.49) {
+    ibmValue = "sottopeso";
+  } else if (ibm >= 18.5 && ibm < 24.99) {
+    ibmValue = "normopeso";
+  } else if (ibm >= 25 && ibm < 29.99) {
+    ibmValue = "sovrappeso";
+  } else if (ibm >= 30 && ibm < 34.99) {
+    ibmValue = "Obeso classe 1";
+  } else if (ibm >= 35&& ibm < 39.99) {
+    ibmValue = "Obeso classe 2";
+  } else{
+    ibmValue= "Obeso classe 3"
+  }
   return (
     <>
       <form
@@ -36,7 +52,7 @@ export default function Weight() {
           <Chart {...chartConfig} />
         </CardBody>
         <div className="flex justify-center h-3 text-yellow-500 text-center ">
-          <p>IBM= {ibm}</p>
+          <p>IBM= {ibm + " " +ibmValue}</p>
         </div>
       </Card>
     </>

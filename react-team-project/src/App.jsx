@@ -7,6 +7,8 @@ import { Sidebar } from "./chiaraRa-components/sidebar";
 import { WeightProvider } from "./context/WeightContext";
 import Weight from "./benni-component/Weight";
 import { WaterProvider } from "./context/WaterContext";
+import { Story } from "./benni-component/Story";
+import { StoryContainer } from "./components/StoryContainer";
 
 export function App() {
   return (
@@ -14,10 +16,17 @@ export function App() {
       <WaterProvider>
         <WeightProvider>
           <GeneralContainer>
+            
             <AsideContainer>
               <Sidebar />
             </AsideContainer>
             <CentralContainer>
+              <StoryContainer>
+              <Story/>
+              <Story/>
+              <Story/>
+              </StoryContainer>
+            
               <Element>
                 <Water />
               </Element>
