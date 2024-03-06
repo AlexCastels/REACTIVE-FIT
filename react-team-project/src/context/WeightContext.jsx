@@ -10,6 +10,7 @@ export const  WeightProvider = ({children}) => {
         e.preventDefault();
         setWeight(prevWeight => [...prevWeight, addWeight]); 
         setAddWeight(""); 
+        console.log(weight)
     };
 
     const handleAddWeight = (e) => {

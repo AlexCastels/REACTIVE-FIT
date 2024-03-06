@@ -5,7 +5,7 @@ import {
   } from "@material-tailwind/react";
   import Chart from "react-apexcharts";
 import "./utils.css"
-import { useWeight } from "./weightContext";
+import { useWeight } from "../context/WeightContext";
  
    
 
