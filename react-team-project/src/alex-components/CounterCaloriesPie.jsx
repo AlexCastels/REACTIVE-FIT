@@ -9,7 +9,7 @@ import Chart from "react-apexcharts";
 
 
 export default function CounterCaloriesPie({macro}) {
-    
+   
     const chartConfig = {
         type: "pie",
         width: 400,

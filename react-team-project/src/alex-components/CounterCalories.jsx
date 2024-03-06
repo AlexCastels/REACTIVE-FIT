@@ -37,7 +37,7 @@ export function CounterCalories(){
     function handleInput(e){
         setInput(e.target.value)
     }
-    
+
     function handleBtn(){
         getData()
         if(data){
@@ -91,7 +91,8 @@ export function CounterCalories(){
             {counter !== 0 && <p>{counter} kcal</p>}
             {dailyKcal > 0 ? <p>{dailyKcal} kcal rimanenti!</p> : <p>Attenzione Kcal giornaliere superate di: {overKcal}</p>}
             <div className='pie-cake'>
-                <CounterCaloriesPie macro={total}/> 
+               <CounterCaloriesPie macro={total}/>
+                
             </div>
         </div>
     )
