@@ -1,7 +1,11 @@
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
+import Calendar from "react-calendar";
+import './react-calendar.css'
 
 export function FormUsersSignup() {
+	const [date, setDate] = useState(new Date());
+
 	const [userData, setUserData] = useState({
 		username: '',
 		firstName: '',
@@ -14,6 +18,7 @@ export function FormUsersSignup() {
 		city: '',
 		region: '',
 		postalCode: 0,
+		birthday: 0,
 	})
 
 	const [errorUserData, setErrorUserData] = useState('')
@@ -21,9 +26,6 @@ export function FormUsersSignup() {
 	let postUserData = {};
 
 	function handleChangeInput(identifier, e) {
-		// const checked = e.target.checked
-		// const type = e.target.type
-
 		setUserData(prev => {
 			return {
 				...prev,
@@ -34,13 +36,18 @@ export function FormUsersSignup() {
 	}
 	console.log(userData);
 
+	const month = date.getMonth() + 1;
+	const year = date.getFullYear();
+	const dateToday = date.getDate();
+	const currentDate = dateToday + "/" + month + "/" + year;
+
 
 	function handleSubmitData(e) {
 		e.preventDefault();
 		let isUserDataComplete = Object.keys(userData).every(key => userData[key] !== null && userData[key] !== undefined && userData[key] !== "");
 
 		if (isUserDataComplete) {
-			postUserData = { ...userData }
+			postUserData = { ...userData, birthday: currentDate }
 			setErrorUserData('')
 		} else {
 			setErrorUserData('Please, complete all fields.')
@@ -134,7 +141,57 @@ export function FormUsersSignup() {
 								</div>
 							</div>
 						</div>
+						<div className="border-b border-gray-900/10 pb-12 flex gap-20 justify-center">
+							<div>
+								<h2 className="text-base font-semibold leading-7 text-gray-900 p-2" >Your Birthday</h2>
 
+								<div className="sm:col-span-1">
+									<Calendar onChange={setDate} value={date} />
+									{date.getDay && <h5 className='p-4'> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 inline">
+										<path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+									</svg>
+										{currentDate}</h5>}
+								</div>
+							</div>
+							<div className='flex gap-20'>
+								<div className="sm:col-span-3">
+									<label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+										Height (cm) *
+									</label>
+									<div className="mt-2">
+										<input
+											id="height"
+											name="height"
+											type="number"
+											autoComplete="height"
+											placeholder='cm'
+											required
+											className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-3 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											onChange={(e) => handleChangeInput('height', e)}
+										/>
+									</div>
+								</div>
+
+								<div className="sm:col-span-4">
+									<label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+										Weight (kg) *
+									</label>
+									<div className="mt-2">
+										<input
+											id="weight"
+											name="weight"
+											type="number"
+											autoComplete="weight"
+											placeholder='kg'
+											required
+											className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-3 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											onChange={(e) => handleChangeInput('weight', e)}
+										/>
+									</div>
+								</div>
+							</div>
+
+						</div>
 						<div className="border-b border-gray-900/10 pb-12">
 							<h2 className="text-base font-semibold leading-7 text-gray-900">Informazioni personali</h2>
 							<p className="mt-1 text-sm leading-6 text-gray-600">Utilizza un indirizzo email permanente dove puoi ricevere la posta.</p>
@@ -191,7 +248,7 @@ export function FormUsersSignup() {
 									</div>
 								</div>
 
-								<div className="sm:col-span-3">
+								<div className="sm:col-span-1">
 									<label htmlFor="gender" className="block text-sm font-medium leading-6 text-gray-900">
 										Gender *
 									</label>
@@ -210,40 +267,6 @@ export function FormUsersSignup() {
 									</div>
 								</div>
 
-								<div className="sm:col-span-1">
-									<label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-										Height (cm) *
-									</label>
-									<div className="mt-2">
-										<input
-											id="height"
-											name="height"
-											type="number"
-											autoComplete="height"
-											placeholder='cm'
-											required
-											className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-3 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
-											onChange={(e) => handleChangeInput('height', e)}
-										/>
-									</div>
-								</div>
-								<div className="sm:col-span-1">
-									<label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-										Weight (kg) *
-									</label>
-									<div className="mt-2">
-										<input
-											id="weight"
-											name="weight"
-											type="number"
-											autoComplete="weight"
-											placeholder='kg'
-											required
-											className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-3 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
-											onChange={(e) => handleChangeInput('weight', e)}
-										/>
-									</div>
-								</div>
 
 								<div className="col-span-full">
 									<label htmlFor="streetAddress" className="block text-sm font-medium leading-6 text-gray-900">
@@ -333,7 +356,7 @@ export function FormUsersSignup() {
 												<label htmlFor="comments" className="font-medium text-gray-900">
 													Terms and Conditions
 												</label>
-												<p className="text-gray-500">By registering you agree to our Terms of Use. Please see our <span className='text-blue-600 cursor-pointer hover:underline'>Privacy Policy</span></p> 
+												<p className="text-gray-500">By registering you agree to our Terms of Use. Please see our <span className='text-blue-600 cursor-pointer hover:underline'>Privacy Policy</span></p>
 											</div>
 										</div>
 									</div>
@@ -348,7 +371,7 @@ export function FormUsersSignup() {
 						</button>
 						<button
 							type="submit"
-							className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							className="rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 						>
 							Save
 						</button>
