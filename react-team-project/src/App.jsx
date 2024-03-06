@@ -7,7 +7,7 @@ import { Water } from "./benni-component/Water";
 import { RegistrationInformation } from "./benni-component/RegistrationInformation";
 // import { Element } from "./components/Element";
 import { Sidebar} from "./chiaraRa-components/sidebar";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import { Homepage } from "./chiaraRa-components/Homepage";
 import { PageNotFound } from "./chiaraRa-components/PageNotFound";
 
@@ -15,8 +15,8 @@ import { PageNotFound } from "./chiaraRa-components/PageNotFound";
 
 export function App() {
   return (
-   <>
-     <BrowserRouter>
+   
+  
     <Routes>
       <Route path="/" element={<Homepage/>}/>
       <Route path="/dashboard" element={<Sidebar/>}/>
@@ -25,9 +25,8 @@ export function App() {
       <Route path="/logout" element={<RegistrationInformation/>}/>
       <Route path="*" element={<PageNotFound/>}/>
     </Routes>
-    </BrowserRouter>
-   
   
-    </>
+  
+    
   );
 }
