@@ -1,5 +1,7 @@
 import { useState } from "react"
 import './userAccessForm.css'
+import { Link } from "react-router-dom"
+import { Hero } from "../Hero"
 
 export function UserAccessForm(){
     
@@ -36,7 +38,7 @@ export function UserAccessForm(){
                     <label htmlFor="password"> Password</label>
                     <input className='inputForm' type="password" onChange={handleInput} name="password"/>
                 </div> 
-                <button className="buttonForm" disabled={!input.email || !input.password}>Login</button>    
+                <Link to={"/hero"} element={<Hero/>}> <button className="buttonForm" disabled={!input.email || !input.password}>Login</button> </Link>   
             </form>
         </div>
     )

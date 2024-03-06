@@ -16,7 +16,7 @@ export function RegistrationInformation() {
             continua con google
           </button>
         </div>
-        <button id="registrati"><Link className="registrati link" to="./scegli/reg">registrati</Link> </button>
+        <button id="registrati"><Link className="registrati link" to="./registrazione">registrati</Link> </button>
         <div
           class="fb-login-button"
           data-width="400px"

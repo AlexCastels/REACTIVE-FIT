@@ -1,3 +1,6 @@
+import { RegistrationInformation } from "../benni-component/RegistrationInformation";
+import { RegistrationUser } from "../benni-component/RegistrationUser";
+import {UserAccessForm} from "../alex-components/UserAccessForm"
 import "./Homepage.css";
 import { Link } from "react-router-dom";
 export function Homepage() {
@@ -17,12 +20,13 @@ export function Homepage() {
             </span>
           </div>
           <div className="HomeBtn">
-            <button className="HomeAccedi hometwobtn">Accedi</button>
+            <Link to={"/accedi"} element={<UserAccessForm/>}><button className="HomeAccedi hometwobtn">Accedi</button></Link>
             <p className="homeBtnPara">
               Sei un personal trainer?{" "}
-              <Link to="/personal-trainer">Accedi qui</Link>
+              <Link to={"/accedi-pt"} element={<RegistrationUser/>}>Accedi qui</Link>
             </p>
-            <button className="HomeIscriviti hometwobtn">Iscriviti</button>
+            
+            <Link to={"/iscriviti"} element={<RegistrationUser/>}><button className="HomeIscriviti hometwobtn">Iscriviti</button></Link>
           </div>
         </div>
       </div>

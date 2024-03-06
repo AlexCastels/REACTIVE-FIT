@@ -1,3 +1,4 @@
+import { Homepage } from './Homepage';
 import './sidebar.css';
 import { Link } from 'react-router-dom';
 
@@ -36,7 +37,7 @@ export function Sidebar() {
         </Link>
       </li>
       <li>
-        <Link to="/logout" className="sidebarLogout">
+        <Link to="/" className="sidebarLogout" element={<Homepage/>}>
           <span className="sideIcon"><i className="bx bx-log-out"></i></span>
           <span className="sidebarPag">Logout</span>
         </Link>
