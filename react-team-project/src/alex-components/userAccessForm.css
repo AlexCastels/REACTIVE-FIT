@@ -33,7 +33,7 @@
     
 }
 
-h5{
+.h5{
     margin: 0;
 }
 
@@ -44,13 +44,13 @@ h5{
     gap: 10px;
 }
 
-input{
+.inputForm{
     width: 400px;
     height: 25px;
     font-size: 20px;
 }
 
-button{
+.buttonForm{
     display:inline-block;
     padding:0.7em 1.4em;
     margin:0 0.3em 0.3em 0;
@@ -71,11 +71,11 @@ button{
     transition: all 0.3s ease-in-out;
 }
 
-button:hover{
+.buttonForm:hover{
     background:rgb(137, 137, 137);
 }
 
-button:active{
+.buttonForm:active{
     background:#2d2d2d;
     top:0.15em;
     color:#D9D9D9;
