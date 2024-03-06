@@ -89,14 +89,16 @@ export function CounterCalories(){
             </div>
             <div className='pie-list'>
                 {data.length > 0 ? data.map((item , index) => (
-                    <p key={index}>{item.name} {item.calories}</p>
+                    <>
+                        <p key={index}>{item.name} {item.calories} <span>kcal</span></p>
+                        <div className='pie-list-line'></div>
+                    </>
                 )) : <p>Cerca un alimento da aggiungere alla lista!</p>}
             </div>
-            {counter !== 0 && <p>Kcal Totali: {Math.round(counter)} </p>}
-            {dailyKcal >= 0 ? <p>{Math.round(dailyKcal)} kcal rimanenti!</p> : <p>Kcal giornaliere raggiunte!</p>}
+            {counter !== 0 && <p>Total calories: {Math.round(counter)} </p>}
+            {dailyKcal >= 0 ? <p>{Math.round(dailyKcal)} Kcal remaining!</p> : <p>Daily Kcal reached! 🏆</p>}
             <div className='pie-cake'>
-               <CounterCaloriesPie macro={total}/>
-                
+               <CounterCaloriesPie macro={total}/>    
             </div>
         </div>
     )

@@ -9,12 +9,13 @@ import Weight from "./benni-component/Weight";
 import { WaterProvider } from "./context/WaterContext";
 import { Story } from "./benni-component/Story";
 import { StoryContainer } from "./components/StoryContainer";
+import { CounterCalories } from "./alex-components/CounterCalories"
 
 
 export function App() {
   return (
     <>
-      <WaterProvider>
+      {/* <WaterProvider>
         <WeightProvider>
           <GeneralContainer>
             
@@ -34,13 +35,16 @@ export function App() {
               <Element>
                 <Weight />
               </Element>
+              <Element>
+                
+              </Element>
             </CentralContainer>
             <AsideContainer></AsideContainer>
             
           </GeneralContainer>
 
         </WeightProvider>
-      </WaterProvider>
+      </WaterProvider> */}
     </>
   );
 }
