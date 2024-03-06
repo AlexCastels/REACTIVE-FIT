@@ -1,43 +1,54 @@
 import './sidebar.css';
+import { Link } from 'react-router-dom';
+import Collapsible from 'react-collapsible';
+import { useState } from 'react';
+
 export function Sidebar() {
+  // const [open, setopen] = useState(true)
+  // const toggleOpen = () => {
+  //       setopen(!open)
+  //   }
+
   return(
     <>
-<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+{/* <Collapsible trigger=""> */}
 <div className="sidebarContainer">
   <div className="sidebarDivContainer">
     <div className="sidebarH1Logo">
-      <i class='bx bx-dumbbell'></i>
+      <i className='bx bx-dumbbell'></i>
       <h1 className="sideText">FITNESS REACT</h1>
     </div>
-    <ul class="sidebarUl">
+    <ul className="sidebarUl">
       <li>
-        <a href="#" class="sidebarElenco">
-          <span class="sideIcon"><i class="bx bx-home"></i></span>
-          <span class="sidebarPag">Dashboard</span>
-        </a>
+        <Link to="/dashboard" className="sidebarElenco">
+          <span className="sideIcon"><i className="bx bx-home"></i></span>
+          <span className="sidebarPag">Dashboard</span>
+        </Link>
       </li>
       <li>
-        <a href="#" class="sidebarElenco">
-          <span class="sideIcon"><i class="bx bx-calendar"></i></span>
-          <span class="sidebarPag">Calendario</span>
-        </a>
+        <Link to="/calendario" className="sidebarElenco">
+          <span className="sideIcon"><i className="bx bx-calendar"></i></span>
+          <span className="sidebarPag">Calendario</span>
+        </Link>
       </li>
       <li>
-        <a href="#" class="sidebarElenco">
-          <span class="sideIcon"><i class="bx bx-news"></i></span>
-          <span class="sidebarPag">Notizie</span>
-        </a>
+        <Link to="/notizie" className="sidebarElenco">
+          <span className="sideIcon"><i className="bx bx-news"></i></span>
+          <span className="sidebarPag">Notizie</span>
+        </Link>
       </li>
       <li>
-        <a href="#" class="sidebarLogout">
-          <span class="sideIcon"><i class="bx bx-log-out"></i></span>
-          <span class="sidebarPag">Logout</span>
-        </a>
+        <Link to="/logout" className="sidebarLogout">
+          <span className="sideIcon"><i className="bx bx-log-out"></i></span>
+          <span className="sidebarPag">Logout</span>
+        </Link>
       </li>
     </ul>
   </div>
 </div>
+{/* </Collapsible> */}
 </>
   )
 }
