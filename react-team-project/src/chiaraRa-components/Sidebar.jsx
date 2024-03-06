@@ -1,19 +1,15 @@
 import './sidebar.css';
 import { Link } from 'react-router-dom';
-import Collapsible from 'react-collapsible';
-import { useState } from 'react';
+
 
 export function Sidebar() {
-  // const [open, setopen] = useState(true)
-  // const toggleOpen = () => {
-  //       setopen(!open)
-  //   }
+
 
   return(
     <>
 
 <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
-{/* <Collapsible trigger=""> */}
+
 <div className="sidebarContainer">
   <div className="sidebarDivContainer">
     <div className="sidebarH1Logo">
@@ -48,7 +44,6 @@ export function Sidebar() {
     </ul>
   </div>
 </div>
-{/* </Collapsible> */}
 </>
   )
 }
