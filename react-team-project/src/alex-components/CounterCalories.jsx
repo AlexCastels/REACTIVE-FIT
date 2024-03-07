@@ -27,7 +27,7 @@ export function CounterCalories(){
                 throw new Error('error')
             } else {
                 const json = await res.json()
-                if(json !== undefined){
+                if(json[0]){
                     setData((d) => [...d , json[0]])
                 }
             }
