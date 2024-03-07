@@ -21,14 +21,14 @@ export function FormAccessoPT(){
     return (
         <div>
             <h2 className="title">Accedi con le tue credenziali</h2>
-            <form onSubmit={handleSubmit}>
+            <form className="form-access" onSubmit={handleSubmit}>
                 <div>
                     <input type="text" placeholder="Username" value={username} onChange={handleUsernameChange} required />
                 </div>
                 <div>
                     <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} required />
                 </div>
-                <button type="submit">Accedi</button>
+                <button className="button-chiara" type="submit">Accedi</button>
             </form>
         </div>
     );
