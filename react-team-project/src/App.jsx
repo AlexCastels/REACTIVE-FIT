@@ -20,11 +20,13 @@ import { RegistrationUser } from "./benni-component/RegistrationUser";
 import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
+import { Atleti } from "./chiaraRa-components/Atleti";
 
 export function App() {
   return (
     <>
-      <WaterProvider>
+    <Atleti/>
+      {/* <WaterProvider>
         <WeightProvider>
           <GeneralContainer>
             <Routes>
@@ -38,7 +40,7 @@ export function App() {
             </Routes>
           </GeneralContainer>
         </WeightProvider>
-      </WaterProvider>
+      </WaterProvider> */}
     </>
   );
 }
