@@ -41,7 +41,7 @@ export default function Weight() {
           inserisci
         </button>
       </form>
-      <Card>
+      <Card color="transparent">
         <CardHeader
           floated={false}
           shadow={false}
@@ -51,7 +51,7 @@ export default function Weight() {
         <CardBody className="px-2 pb-0">
           <Chart {...chartConfig} />
         </CardBody>
-        <div className="flex justify-center h-3 text-yellow-500 text-center ">
+        <div className="flex justify-center h-3 text-yellow-500 text-center">
           <p>IBM= {ibm + " " +ibmValue}</p>
         </div>
       </Card>

@@ -95,8 +95,8 @@ export function CounterCalories(){
                     </>
                 )) : <p>Cerca un alimento da aggiungere alla lista!</p>}
             </div>
-            {counter !== 0 && <p>Total calories: {Math.round(counter)} </p>}
-            {dailyKcal >= 0 ? <p>{Math.round(dailyKcal)} Kcal remaining!</p> : <p>Daily Kcal reached! 🏆</p>}
+            {counter !== 0 && <p>Calorie totali: {Math.round(counter)} </p>}
+            {dailyKcal >= 0 ? <p>{Math.round(dailyKcal)} Kcal rimanenti!</p> : <p>Calorie giornaliere raggiunte! 🏆</p>}
             <div className='pie-cake'>
                <CounterCaloriesPie macro={total}/>    
             </div>
