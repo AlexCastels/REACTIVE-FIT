@@ -29,12 +29,12 @@ export default function CounterCaloriesPie({macro}) {
             legend: {
                 show: true,
             },
-            labels: ['PROTEIN g' , 'FAT g' , 'CARBO g'],
+            labels: ['PROTEINE g' , 'GRASSI g' , 'CARBO g'],
         },
     };
     
     return (
-        <Card>
+        <Card color="transparent">
             <CardHeader
                 floated={false}
                 shadow={false}
