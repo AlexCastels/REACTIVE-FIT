@@ -35,7 +35,6 @@ export function App() {
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/hero" element={<Hero />} />
               <Route path="*" element={<PageNotFound />} />
-
             </Routes>
           </GeneralContainer>
         </WeightProvider>

@@ -9,36 +9,42 @@ import { CentralContainer } from "./components/CentralContainer";
 import { Element } from "./components/Element";
 import { StoryContainer } from "./components/StoryContainer";
 import { UserComponents } from "./giusi_components/UserComponents";
+import './hero.css'
 
 export function Hero() {
-  return (
-    <>
-      <AsideContainer>
-        <Sidebar />
-      </AsideContainer>
-      <CentralContainer>
-        <StoryContainer>
-          <Story />
-          <Story />
-          <Story />
-        </StoryContainer>
-
-        <Element>
-          <Water />
-        </Element>
-        <Element>
-          <WorkoutAndSleep />
-        </Element>
-        <Element>
-          <Weight />
-        </Element>
-        <Element>
-          <CounterCalories />
-        </Element>
-      </CentralContainer>
-      <AsideContainer>
-        <UserComponents/>
-      </AsideContainer>
-    </>
-  );
+  	return (
+    	 <div className="hero-container">
+			
+      		<AsideContainer>
+        		 <Sidebar />
+      		</AsideContainer>
+      		<div className="central-container-hero">
+        		 <div className="central-container-hero-left">
+          			<Element>
+						<CounterCalories />
+					</Element>
+        		 </div>
+        		 <div className="central-container-hero-rigth">
+          			<div className="central-container-hero-rigth-top">
+						<WorkoutAndSleep />
+					</div>
+          			<div className="central-container-hero-rigth-bot">
+						<div className="weight-component">
+							<Element>
+								<Weight />
+							</Element>
+						</div>
+						<div className="water-component">
+							<Element>
+								<Water />
+							</Element>
+						</div>
+					</div>
+        		 </div>
+      		</div>
+      		<AsideContainer>
+        		 <UserComponents/>
+      		</AsideContainer>
+    	 </div>
+  	);
 }
