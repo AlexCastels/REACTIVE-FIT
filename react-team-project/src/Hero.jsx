@@ -8,6 +8,7 @@ import { AsideContainer } from "./components/AsideContainer";
 import { CentralContainer } from "./components/CentralContainer";
 import { Element } from "./components/Element";
 import { StoryContainer } from "./components/StoryContainer";
+import { UserComponents } from "./giusi_components/UserComponents";
 
 export function Hero() {
   return (
@@ -35,7 +36,9 @@ export function Hero() {
           <CounterCalories />
         </Element>
       </CentralContainer>
-      <AsideContainer></AsideContainer>
+      <AsideContainer>
+        <UserComponents/>
+      </AsideContainer>
     </>
   );
 }
