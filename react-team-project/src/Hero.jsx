@@ -1,5 +1,6 @@
 import WorkoutAndSleep from "./Chiarap-components/WorkandSleep";
 import { CounterCalories } from "./alex-components/CounterCalories";
+import { Calendar } from "./benni-component/Calendar";
 import { Story } from "./benni-component/Story";
 import { Water } from "./benni-component/Water";
 import Weight from "./benni-component/Weight";
@@ -18,30 +19,8 @@ export function Hero() {
       		<AsideContainer>
         		 <Sidebar />
       		</AsideContainer>
-      		<div className="central-container-hero">
-        		 <div className="central-container-hero-left">
-          			<Element>
-						<CounterCalories />
-					</Element>
-        		 </div>
-        		 <div className="central-container-hero-rigth">
-          			<div className="central-container-hero-rigth-top">
-						<WorkoutAndSleep />
-					</div>
-          			<div className="central-container-hero-rigth-bot">
-						<div className="weight-component">
-							<Element>
-								<Weight />
-							</Element>
-						</div>
-						<div className="water-component">
-							<Element>
-								<Water />
-							</Element>
-						</div>
-					</div>
-        		 </div>
-      		</div>
+      		<Calendar/>
+			
       		<AsideContainer>
         		 <UserComponents/>
       		</AsideContainer>

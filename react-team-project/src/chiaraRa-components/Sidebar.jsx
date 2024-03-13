@@ -1,3 +1,4 @@
+import { Calendar } from '../benni-component/Calendar';
 import { Homepage } from './Homepage';
 import './sidebar.css';
 import { Link } from 'react-router-dom';
@@ -25,7 +26,7 @@ export function Sidebar() {
         </Link>
       </li>
       <li>
-        <Link to="/calendario" className="sidebarElenco">
+        <Link to="/calendario" className="sidebarElenco" element={<Calendar/>}>
           <span className="sideIcon"><i className="bx bx-calendar"></i></span>
           <span className="sidebarPag">Calendario</span>
         </Link>
