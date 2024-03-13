@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "react-big-calendar": "^1.11.1"
+  },
+  "name": "react-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
