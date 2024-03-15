@@ -11,10 +11,11 @@ export function Calendar() {
   const handleTask = (e) => {
     e.preventDefault();
     setTasks((prev) => [...prev, input]);
+    setInput('')
   };
 
   return (
-    <div className="flex">
+    <div className="flex-col">
       <form onSubmit={handleTask}>
         <input
           type="text"
