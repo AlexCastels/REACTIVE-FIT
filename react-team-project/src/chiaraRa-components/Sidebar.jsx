@@ -1,3 +1,4 @@
+import { HeroCalendar } from '../HeroCalendar';
 import { Calendar } from '../benni-component/Calendar';
 import { Homepage } from './Homepage';
 import './sidebar.css';
@@ -26,7 +27,7 @@ export function Sidebar() {
         </Link>
       </li>
       <li>
-        <Link to="/calendario" className="sidebarElenco" element={<Calendar/>}>
+        <Link to="/calendario" className="sidebarElenco" element={<HeroCalendar/>}>
           <span className="sideIcon"><i className="bx bx-calendar"></i></span>
           <span className="sidebarPag">Calendario</span>
         </Link>
