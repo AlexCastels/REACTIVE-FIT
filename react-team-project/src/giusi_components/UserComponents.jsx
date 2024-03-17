@@ -3,7 +3,7 @@ export function UserComponents() {
     return (
         <>
             {/* <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/> */}
-            <div className="flex flex-col items-center justify-center min-h-screen bg-black">
+            <div className="flex flex-col items-center min-h-screen bg-black overflow-y-scroll h-screen">
                 <div className=" m-4">
                     <div className="max-w-3xl w-full mx-auto grid gap-4 grid-cols-1">
                         <div className="flex top-0 z-10 justify-center">

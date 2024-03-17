@@ -1,56 +1,59 @@
+
 /* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } */
 
-.general-container{
+.general-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    background-image: url(https://web-back.perfectgym.com/sites/default/files/styles/460x/public/equipment%20%286%29.jpg?itok=bC0T32-K);
+    /* height: 50vh; */
     background-position: center;
+    
+    background: transparent;
+    backdrop-filter: blur(50px);
 }
 
-.form-container{
+.form-container {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
-    border: 3px solid #ff9d00;
+    /* border: 1px solid  rgb(131, 131, 13); */
     border-radius: 10px;
     width: 500px;
     height: 350px;
     font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.1rem;
-    color:#ff9d00;
+    color: rgb(170, 170, 170);
     text-shadow: 0 0 0.2em #000000;
-    background-color: #545454;
-    background: transparent;
-    backdrop-filter: blur(50px);
-    
+
+
 }
 
-.h5{
+.h5-form{
     margin: 0;
+    font-size: 25px;
+    padding-bottom: 15px;
 }
 
-.input{
+.input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding: 15;
 }
 
-.inputForm{
+/* .inputForm{
     width: 400px;
     height: 25px;
     font-size: 20px;
-}
+} */
 
-.buttonForm{
+/* .buttonForm{
     display:inline-block;
     padding:0.7em 1.4em;
     margin:0 0.3em 0.3em 0;
@@ -69,9 +72,9 @@
     width: 400px;
     letter-spacing: 0.1rem;
     transition: all 0.3s ease-in-out;
-}
+} */
 
-.buttonForm:hover{
+/* .buttonForm:hover{
     background:rgb(137, 137, 137);
 }
 
@@ -80,4 +83,55 @@
     top:0.15em;
     color:#D9D9D9;
     box-shadow:none;
+} */
+
+input {
+    background: #1C1C1C;
+    border: 1px solid #323232;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    width: 400px;
+    padding: 0 10px;
+}
+
+.input label{
+    font-size: 18px;
+}
+
+.container-buttons-form{
+    padding: 20px;
+}
+.container-form-homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-button-pt{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-button-pt h5{
+    margin-bottom: 20px ;
+}
+
+.container-button-pt-iscriviti{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.container-button-pt p{
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 400; */
+    font-style: oblique;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: rgb(170, 170, 170);
+    padding: 10px;
+    
 }

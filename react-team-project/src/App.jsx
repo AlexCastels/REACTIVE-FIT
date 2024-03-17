@@ -11,7 +11,6 @@ import { PageNotFound } from "./chiaraRa-components/PageNotFound";
 import { Element } from "./components/Element";
 import { Sidebar } from "./chiaraRa-components/Sidebar";
 import { WeightProvider } from "./context/WeightContext";
-
 import { WaterProvider } from "./context/WaterContext";
 import { Story } from "./benni-component/Story";
 import { StoryContainer } from "./components/StoryContainer";
@@ -20,6 +19,7 @@ import { RegistrationUser } from "./benni-component/RegistrationUser";
 import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
+import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 
 export function App() {
@@ -27,17 +27,15 @@ export function App() {
     <>
       <WaterProvider>
         <WeightProvider>
-          <GeneralContainer>
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/accedi" element={<UserAccessForm />} />
               <Route path="/iscriviti" element={<RegistrationUser />} />
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
-              <Route path="/hero" element={<Hero />} />
+              <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
-          </GeneralContainer> 
         </WeightProvider>
       </WaterProvider>
     </>
