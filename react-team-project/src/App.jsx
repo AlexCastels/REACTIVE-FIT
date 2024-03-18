@@ -21,6 +21,7 @@ import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
 import { UserComponents } from "./giusi_components/UserComponents";
+import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 
 export function App() {
   return (
@@ -41,7 +42,8 @@ export function App() {
         </WeightProvider>
       </WaterProvider> */}
 
-      <Homepage/>
+      {/* <Homepage/> */}
+      <FormUsersSignup/>
     </>
   );
 }
