@@ -20,6 +20,7 @@ import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
 import { UserComponents } from "./giusi_components/UserComponents";
+import { HeroCalendar } from "./HeroCalendar";
 
 export function App() {
   return (
@@ -32,6 +33,7 @@ export function App() {
               <Route path="/iscriviti" element={<RegistrationUser />} />
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
+              <Route path="/calendario" element={<HeroCalendar/>} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>

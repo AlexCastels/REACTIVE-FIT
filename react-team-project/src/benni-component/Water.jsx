@@ -5,7 +5,7 @@ import "./wather.css";
 export function Water() {
  const [quantity, addWater]=useWater()
   const inlineStyle = {
-    height: `${quantity/20}px`,
+    height: `${quantity}px`,
     transition: `all 1s ease-in-out`,
   };
 

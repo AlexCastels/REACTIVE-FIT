@@ -6,9 +6,13 @@ import { useWeight } from "../context/WeightContext";
 export default function Weight() {
   const [chartConfig, handleWeight, handleAddWeight] = useWeight();
   const weight = chartConfig.series[0].data;
+
   const lastWeight = weight[weight.length - 1];
+
   const ibm = (lastWeight / 1.72 ** 2).toFixed(2);
+
   let ibmValue;
+  
   if (ibm < 16) {
     ibmValue = "grave magrezza";
   } else if (ibm >= 16 && ibm < 18.49) {
@@ -19,10 +23,10 @@ export default function Weight() {
     ibmValue = "sovrappeso";
   } else if (ibm >= 30 && ibm < 34.99) {
     ibmValue = "Obeso classe 1";
-  } else if (ibm >= 35&& ibm < 39.99) {
+  } else if (ibm >= 35 && ibm < 39.99) {
     ibmValue = "Obeso classe 2";
-  } else{
-    ibmValue= "Obeso classe 3"
+  } else {
+    ibmValue = "Obeso classe 3";
   }
   return (
     <>
@@ -52,7 +56,7 @@ export default function Weight() {
           <Chart {...chartConfig} />
         </CardBody>
         <div className="flex justify-center h-3 text-yellow-500 text-center">
-          <p>IBM= {ibm + " " +ibmValue}</p>
+          <p>IBM= {ibm + " " + ibmValue}</p>
         </div>
       </Card>
     </>
