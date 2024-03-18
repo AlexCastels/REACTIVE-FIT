@@ -8,11 +8,11 @@
     --tw-bg-opacity: 1;
     background-color: rgb(18, 11, 11);
     border-top-right-radius: 1.5rem;
-border-bottom-right-radius: 1.5rem;
-overflow: hidden;
-flex-direction: column;
-width: 14rem;
-display: flex;
+    border-bottom-right-radius: 1.5rem;
+    overflow: hidden;
+    flex-direction: column;
+    width: 14rem;
+    display: flex;
 }
 .sidebarH1Logo{
     --tw-shadow: 0 4px 6px -1px orange, 0 2px 4px -2px rgba(215, 146, 44, 0.1);
