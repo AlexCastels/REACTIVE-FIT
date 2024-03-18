@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "pgpromise": "^0.1.1",
     "react-big-calendar": "^1.11.1"
   },
   "name": "react-project",

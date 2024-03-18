@@ -2,7 +2,20 @@ import express, { json } from "express";
 const app = express();
 import cors from "cors";
 
-import { query } from "./db";
+const db = pgPromise()("postgres://postgres:270290@localhost:5432/postgres");
+
+const setubDb = async () => {
+  await db.none(`
+DROP TABLE IF EXISTS todo;
+
+  CREATE TABLE todo (
+    id SERIAL NOT NULL PRIMARY KEY,
+    description TEXT  NOT NULL 
+  )`);
+
+ 
+};
+setubDb()
 
 // Middleware
 app.use(cors());
@@ -11,7 +24,7 @@ app.use(json()); // Per consentire l'uso del corpo della richiesta come JSON
 // recupero tutti gli elementi del database
 app.get("/calendario", async (req, res) => {
   try {
-    const allTodos = await query("SELECT * FROM todo");
+    const allTodos = await db.many("SELECT * FROM todo");
     res.json(allTodos.rows);
   } catch (error) {
     console.error(error.message);
@@ -21,7 +34,7 @@ app.get("/calendario", async (req, res) => {
 app.get("/calendario/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const todo = await query("SELECT * FROM todo WHERE todo_id = $1", [
+    const todo = await db.one("SELECT * FROM todo WHERE todo_id = $1", [
       id,
     ]);
     res.json(todo.rows[0]);
@@ -33,7 +46,7 @@ app.get("/calendario/:id", async (req, res) => {
 app.post("/calendario", async (req, res) => {
   try {
     const { description } = req.body;
-    const newTodo = await query(
+    const newTodo = await db.one(
       "INSERT INTO todo (description) VALUES($1) RETURNING *",
       [description]
     );
@@ -46,7 +59,7 @@ app.post("/calendario", async (req, res) => {
 app.delete("/calendario/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const deleteTodo = await query("DELETE FROM todo WHERE todo_id = $1", [
+    const deleteTodo = await db.one("DELETE FROM todo WHERE todo_id = $1", [
       id,
     ]);
     res.json("task eliminato");
@@ -56,7 +69,7 @@ app.delete("/calendario/:id", async (req, res) => {
 });
 app.delete("/calendario/", async (req, res) => {
   try {
-    const deleteAlltask = await query("DELETE FROM todo ",);
+    const deleteAlltask = await db.many("DELETE FROM todo ",);
     res.json("tutti i Todo eliminati");
   } catch (err) {
     console.error(err.message);
@@ -67,7 +80,7 @@ app.put("/calendario/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const { description } = req.body;
-    const updateTodo = await query(
+    const updateTodo = await db.one(
       "UPDATE todo SET description =$1 WHERE todo_id=$2",
       [description, id]
     );
