@@ -31,18 +31,18 @@ export default function Weight() {
   return (
     <>
       <form
-        className="yellow-500 flex justify-center flex-col items-center gap-2"
+        className="yellow-400 flex items-center justify-center gap-2"
         onSubmit={handleWeight}
       >
-        <h2 className="text-yellow-500">peso</h2>
-        <input
-          className=" border border-yellow-500 text-yellow-500 yellow-500 bg-transparent text-lg p-2"
+        <h2 className="text-yellow-400">Peso</h2>
+          <input
+          className=" border border-yellow-400 text-yellow-400 yellow-400 bg-transparent text-lg p-2 w-12 rounded-md"
           onChange={handleAddWeight}
           type="text"
           name="weight"
         />
-        <button className="m-2  px-4 py-1 bg-slate-950 rounded-lg text-yellow-500">
-          inserisci
+        <button className="bg-yellow-400 hover:bg-transparent h-9 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium hover:text-gray-50 text-slate-950 rounded-md transition ease-in duration-700 max-w-40">
+          Inserisci
         </button>
       </form>
       <Card color="transparent">
@@ -50,12 +50,12 @@ export default function Weight() {
           floated={false}
           shadow={false}
           color="transparent"
-          className="flex flex-col yellow-500 gap-4 rounded-none md:flex-row md:items-center"
+          className="flex flex-col yellow-400 gap-4 rounded-none md:flex-row md:items-center"
         ></CardHeader>
         <CardBody className="px-2 pb-0">
           <Chart {...chartConfig} />
         </CardBody>
-        <div className="flex justify-center h-3 text-yellow-500 text-center">
+        <div className="flex justify-center h-3 text-yellow-400 text-center">
           <p>IBM= {ibm + " " + ibmValue}</p>
         </div>
       </Card>
