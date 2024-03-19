@@ -2,16 +2,21 @@ import express, { json } from "express";
 import * as dotenv from "dotenv"
 dotenv.config()
 import cors from "cors";
-import { login } from "./controllers/registrationController.mjs";
-
+import { login, signup, logout} from "./controllers/registrationController.mjs";
+import  authorize  from "./authorize.mjs";
+import "./passport.mjs"
 const app = express();
 // Middleware
 app.use(cors());
 app.use(json());
 
 //route
+//login
 app.post("/api/users/login", login);
-//app.post("/api/users/login", signup)
+//signup
+app.post("/api/users/signup", signup)
+//logout
+app.get("/api/users/logout", authorize, logout)
 // Avvio del server
 const PORT = 3000;
 app.listen(PORT, () => {
