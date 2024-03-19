@@ -6,19 +6,19 @@
 
 .containerbox {
     display: flex;
-    justify-content: center;
-    gap:10px;
+    justify-content: space-around;
     align-items: center;
+    gap:10px;
     margin:5px;
+    text-align: center;
 }
 
 .box {
-    border: 2px solid #3f3f46;
+    border: 1px solid #3f3f46;
     padding: 15px;
     border-radius: 8px;
-    height: 170px;
+    height: 200px;
     /* margin-bottom: 30px; */
-    /* width: 60%; */
     /* height: 70%; */
 }
 
@@ -30,15 +30,19 @@
     width: 235px;
 }
 
+.counter span{
+    color : #facc15
+}
+
 .counter button {
     padding: 5px 10px;
     font-size: 1rem;
     cursor: pointer;
 }
 
-.allenamentiSett{
-    width: 150px;
-    text-align: center;
+.allenamentiSett .counter{
+    font-size: 40px;
+    gap: 40px
 }
 
 /* .counter span {

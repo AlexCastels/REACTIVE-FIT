@@ -18,7 +18,37 @@ export function Hero() {
                 <Sidebar />
             </AsideContainer>
             <div className="central-container-hero">
-                <div className="central-container-hero-left">
+                <div className='title-general-hero'>
+                    <p>Dashboard Utente</p>
+                </div>
+                <div className="title-counter-sleep">
+                    <p>Sleep and work Counter</p>
+                    <div className="counter-sleep-style">
+                        <WorkoutAndSleep />
+                    </div>
+                </div>
+                <div className="title-contakcal">
+                    <p>Kcal Counter</p>
+                    <div>
+                        <Element>
+                            <CounterCalories />
+                        </Element>
+                    </div>
+                </div>
+                <div className="title-weight-water">
+                    <p>Progression</p>
+                    <div className='weight-water-style'>
+                        <Element>
+                            <Weight />
+                        </Element>
+                        <Element>
+                            <Water />
+                        </Element>
+                    </div>
+                </div>
+                
+            
+                {/* <div className="central-container-hero-left">
                     <Element>
                         <CounterCalories />
                     </Element>
@@ -39,7 +69,7 @@ export function Hero() {
                             </Element>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <AsideContainer>
                 <UserComponents />

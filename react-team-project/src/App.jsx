@@ -21,6 +21,7 @@ import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
+import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 
 export function App() {
   return (
@@ -30,7 +31,7 @@ export function App() {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/accedi" element={<UserAccessForm />} />
-              <Route path="/iscriviti" element={<RegistrationUser />} />
+              <Route path="/iscriviti" element={<FormUsersSignup/>} />
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
