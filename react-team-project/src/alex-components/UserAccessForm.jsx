@@ -29,7 +29,6 @@ export function UserAccessForm() {
     }
 
     return (
-        <div >
         <div className="container-form-homepage">
             <div className="general-container">
                 <form onSubmit={handleForm} className="form-container">
@@ -58,8 +57,6 @@ export function UserAccessForm() {
                     </div>
                 </form>
             </div>
-        </div>
-
         </div>
     )
 }
