@@ -3,7 +3,17 @@ const app = express();
 import cors from "cors";
 
 const db = pgPromise()("postgres://postgres:270290@localhost:5432/postgres");
+const users = [{
+  id: 1,
+  name: 'John Doe',
+  surname: 'Doe',
+  password:1234,
+  weigth:[86.5],
+  height:1.70,
+  cal: 2000,
+  numOfTraining: 3
 
+}]
 const setubDb = async () => {
   await db.none(`
 DROP TABLE IF EXISTS todo;
