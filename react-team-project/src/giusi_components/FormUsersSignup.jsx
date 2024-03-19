@@ -1,7 +1,11 @@
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
 import Calendar from "react-calendar";
-import './react-calendar.css'
+import './react-calendar.css';
+// import '../style-site/homepage-style.css'
+import '../style-site/form-users-style.css'
+import { ButtonComponent } from '../style-site/ButtonComponent';
+import { Element } from '../components/Element';
 
 export function FormUsersSignup() {
 	const [date, setDate] = useState(new Date());
@@ -59,7 +63,10 @@ export function FormUsersSignup() {
 
 	return (
 		<>
-			<h2 className='text-center p-5 bg-orange-500 text-neutral-900 font-bold '>SIGN-UP USER</h2>
+		
+		<div className='general-background-form backdrop-blur-50'>
+			<h2 className='text-start p-14 h2-signup-user'>Completa il form per registrarti al sito</h2>
+			
 			<div className='p-14'>
 				<form onSubmit={handleSubmitData}>
 					<div className="space-y-12">
@@ -90,7 +97,7 @@ export function FormUsersSignup() {
 									<label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
 										About
 									</label>
-									<p className="mt-1 text-sm leading-6 text-gray-600">Raccontaci di te, dei tuoi obiettivi di fitness e nutrizione.</p>
+									<p className="mt-1 text-sm leading-6 text-gray-400">Raccontaci di te, dei tuoi obiettivi di fitness e nutrizione.</p>
 
 									<div className="mt-2">
 										<textarea
@@ -104,14 +111,14 @@ export function FormUsersSignup() {
 								</div>
 
 								<div className="col-span-full">
-									<label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900">
+									<label htmlFor="photo"  className="block text-sm font-medium leading-6 text-gray-900 ">
 										Photo
 									</label>
 									<div className="mt-2 flex items-center gap-x-3">
 										<UserCircleIcon className="h-12 w-12 text-gray-300" aria-hidden="true" />
 										<button
 											type="button"
-											className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+											className="rounded-md bg-gray-300 px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
 										>
 											Change
 										</button>
@@ -130,10 +137,10 @@ export function FormUsersSignup() {
 													htmlFor="file-upload"
 													className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
 												>
-													<span>Upload a file</span>
+													<p className="mt-1 text-sm leading-6 text-gray-400 p-1">Upload a file</p>
 													<input id="file-upload" name="file-upload" type="file" className="sr-only" />
 												</label>
-												<p className="pl-1">or drag and drop</p>
+												<p className="pl-1 text-center">or drag and drop</p>
 											</div>
 											<p className="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
 										</div>
@@ -143,11 +150,11 @@ export function FormUsersSignup() {
 						</div>
 						<div className="border-b border-gray-900/10 pb-12 flex gap-20 justify-center">
 							<div>
-								<h2 className="text-base font-semibold leading-7 text-gray-900 p-2" >Your Birthday</h2>
+								<label className="text-base font-semibold leading-7 text-gray-900 plabel p-1" >Your Birthday</label>
 
 								<div className="sm:col-span-1">
 									<Calendar onChange={setDate} value={date} />
-									{date.getDay && <h5 className='p-4'> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 inline">
+									{date.getDay && <h5 className='p-4 mt-1 text-sm leading-6 text-gray-400'> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 inline">
 										<path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
 									</svg>
 										{currentDate}</h5>}
@@ -193,8 +200,8 @@ export function FormUsersSignup() {
 
 						</div>
 						<div className="border-b border-gray-900/10 pb-12">
-							<h2 className="text-base font-semibold leading-7 text-gray-900">Informazioni personali</h2>
-							<p className="mt-1 text-sm leading-6 text-gray-600">Utilizza un indirizzo email permanente dove puoi ricevere la posta.</p>
+							<label className="text-base font-semibold leading-7 text-gray-900">Informazioni personali</label>
+							<p className="mt-1 text-sm leading-6 text-gray-400">Utilizza un indirizzo email permanente dove puoi ricevere la posta.</p>
 
 							<div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 								<div className="sm:col-span-3">
@@ -366,7 +373,9 @@ export function FormUsersSignup() {
 					</div>
 
 					<div className="mt-6 flex items-center justify-end gap-x-6">
-						<button type="button" className="text-sm font-semibold leading-6 text-gray-900">
+						<ButtonComponent text={'Cancel'}/>
+						<ButtonComponent text={'Save'}/>
+						{/* <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
 							Cancel
 						</button>
 						<button
@@ -374,13 +383,16 @@ export function FormUsersSignup() {
 							className="rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 						>
 							Save
-						</button>
+						</button> */}
 					</div>
 					<div>
 						{errorUserData && <p>{errorUserData}</p>}
 					</div>
 				</form>
 			</div>
+		</div>
+		
+			
 		</>
 	)
 }

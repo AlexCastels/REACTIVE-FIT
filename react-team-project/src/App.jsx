@@ -20,6 +20,7 @@ import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
 import { UserComponents } from "./giusi_components/UserComponents";
+import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 import { HeroCalendar } from "./HeroCalendar";
 
 export function App() {
