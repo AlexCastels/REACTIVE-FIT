@@ -5,7 +5,10 @@
     /* background-color: #1c1c1c; */
     background-color: black;
     background-size: cover;
-    background-image: url('src/style-site/images-style/nnneon_1.svg');
+    background-image: url('/src/style-site/images-style/nnneon_1.svg');
+    background-repeat: repeat;
+    background-position-x: -72px;
+    background-position-y: 471px;
     /* background-image: url('src/style-site/images-style/bbblurry-4.svg'); */
     font-family: "Roboto", sans-serif;
     font-weight: 400;
