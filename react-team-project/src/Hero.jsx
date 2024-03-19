@@ -22,13 +22,13 @@ export function Hero() {
                     <p>Dashboard Utente</p>
                 </div>
                 <div className="title-counter-sleep">
-                    <p> ● Sleep and work Counter</p>
+                    <p>Sleep and work Counter</p>
                     <div className="counter-sleep-style">
                         <WorkoutAndSleep />
                     </div>
                 </div>
                 <div className="title-contakcal">
-                    <p> ● Kcal Counter</p>
+                    <p>Kcal Counter</p>
                     <div>
                         <Element>
                             <CounterCalories />
@@ -36,7 +36,7 @@ export function Hero() {
                     </div>
                 </div>
                 <div className="title-weight-water">
-                    <p> ● Progression</p>
+                    <p>Progression</p>
                     <div className='weight-water-style'>
                         <Element>
                             <Weight />

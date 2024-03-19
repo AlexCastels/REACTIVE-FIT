@@ -3,6 +3,7 @@ import './userAccessForm.css'
 import { Link } from "react-router-dom"
 import { Hero } from "../Hero"
 import { ButtonComponent } from "../style-site/ButtonComponent"
+import { FormUsersSignup } from "../giusi_components/FormUsersSignup"
 
 export function UserAccessForm() {
 
@@ -42,10 +43,11 @@ export function UserAccessForm() {
                         <input className='inputForm' type="password" onChange={handleInput} name="password" />
                     </div>
                     <div className="container-buttons-form">
-                        <Link to={"/hero"} element={<Hero />}>
-                            <ButtonComponent text={'Sign-up'} />
+                        <Link to={"/dashboard"} element={<Hero />}>
                             <ButtonComponent text={'Login'} />
-                            {/* <button className="buttonForm" disabled={!input.email || !input.password}>Login</button>  */}
+                        </Link>
+                        <Link to={'/iscriviti'} element={<FormUsersSignup/>}>
+                            <ButtonComponent text={'Sign-up'} />
                         </Link>
                     </div>
                     <div className="container-button-pt">

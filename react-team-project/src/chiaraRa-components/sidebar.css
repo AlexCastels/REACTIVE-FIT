@@ -1,12 +1,13 @@
-.sidebarContainer{
+.sidebarContainer {
     display: flex;
     min-height: 100vh;
     flex-direction: row;
     --tw-bg-opacity: 1;
 }
-.sidebarDivContainer{
+
+.sidebarDivContainer {
     --tw-bg-opacity: 1;
-    background-color: rgb(18, 11, 11);
+    /* background-color: rgb(18, 11, 11); */
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     overflow: hidden;
@@ -14,58 +15,62 @@
     width: 14rem;
     display: flex;
 }
-.sidebarH1Logo{
-    --tw-shadow: 0 4px 6px -1px orange, 0 2px 4px -2px rgba(215, 146, 44, 0.1);
---tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+.sidebarH1Logo {
+    --tw-shadow: 0 4px 6px -1px #facc15, 0 2px 4px -2px rgba(215, 146, 44, 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     justify-content: center;
-    align-items: center;
-    height: 5rem;
+    height: 18rem;
     display: flex;
 }
-.sideText{
+
+.sideText {
     font-style: italic;
     --tw-text-opacity: 1;
-color: orange;
-font-size: 1.875rem;
-line-height: 2.25rem;
-font-weight: inherit;
-margin-left: 15px;
+    color:  #facc15;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: inherit;
+    margin-left: 15px;
 }
-.sidebarUl{
+
+.sidebarUl {
     padding-top: 1rem;
-padding-bottom: 1rem;
-flex-direction: column;
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-}
-.sidebarElenco{
-color: rgb(229, 169, 57);
-align-items: center;
-flex-direction: row;
-height: 3rem;
-display: flex;
-text-decoration: inherit;
-cursor: pointer;
-margin-top: 30px;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.sidebarLogout{
-    color: rgb(229, 169, 57);
-align-items: center;
-flex-direction: row;
-height: 3rem;
-display: flex;
-text-decoration: inherit;
-cursor: pointer;
-margin-top: 150px;
+.sidebarElenco {
+    color: #facc15;
+    align-items: center;
+    flex-direction: row;
+    height: 3rem;
+    display: flex;
+    text-decoration: inherit;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.sidebarLogout {
+    color:  #facc15;
+    align-items: center;
+    flex-direction: row;
+    height: 3rem;
+    display: flex;
+    text-decoration: inherit;
+    cursor: pointer;
+    margin-top: 150px;
 
 }
-.sideIcon{
+
+.sideIcon {
     --tw-text-opacity: 1;
-    color:orange;
+    color: #facc15 ;
     font-size: 1.125rem;
     line-height: 1.75rem;
     width: 3rem;
@@ -74,24 +79,26 @@ margin-top: 150px;
     height: 3rem;
     display: inline-flex;
 }
-.sidebarPag{
+
+.sidebarPag {
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.25rem;
     margin-left: 15px;
-    transition: margin-left 1s;
     opacity: 1;
 }
-.sidebarPag:hover{
-    margin-left: 40px;
-    opacity: 0.7
-}
-.bx-dumbbell{
+
+.bx-dumbbell {
     font-style: italic;
     --tw-text-opacity: 1;
-color: orange;
-font-size: 1.875rem;
-line-height: 2.25rem;
-font-weight: inherit;
-margin: 3px;
+    color: orange;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: inherit;
+    margin: 3px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: aliceblue;
 }
