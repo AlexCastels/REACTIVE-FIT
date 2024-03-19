@@ -42,8 +42,8 @@ export function App() {
         </WeightProvider>
       </WaterProvider> */}
 
-      {/* <Homepage/> */}
-      <FormUsersSignup/>
+      <Homepage/>
+      {/* <FormUsersSignup/> */}
     </>
   );
 }
