@@ -21,11 +21,12 @@ import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
+import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 
 export function App() {
   return (
     <>
-      <WaterProvider>
+      {/* <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -37,7 +38,8 @@ export function App() {
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider>
+      </WaterProvider> */}
+      <FormUsersSignup/>
     </>
   );
 }
