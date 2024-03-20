@@ -4,10 +4,16 @@ dotenv.config()
 import cors from "cors";
 import { login, signup, logout} from "./controllers/registrationController.mjs";
 import  authorize  from "./authorize.mjs";
+import {getWeight} from "./controllers/dasboardControllers.mjs"
 import "./passport.mjs"
+import { db } from "./db.mjs";
 const app = express();
 // Middleware
-app.use(cors());
+
+app.use(cors({
+  origin: 'http://localhost:5173',
+}));
+
 app.use(json());
 
 //route
@@ -17,6 +23,9 @@ app.post("/api/users/login", login);
 app.post("/api/users/signup", signup)
 //logout
 app.get("/api/users/logout", authorize, logout)
+//caricamento utente fake
+app.get("/api/users/:id", getWeight);
+
 // Avvio del server
 const PORT = 3000;
 app.listen(PORT, () => {

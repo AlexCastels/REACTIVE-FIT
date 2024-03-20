@@ -8,7 +8,7 @@ export function Water() {
     height: `${quantity}px`,
     transition: `all 1s ease-in-out`,
   };
-
+  
   return (
     <>
       <div className="container w-80 flex flex-col items-center justify-center bg-transparent border-hidden m-5 p-3">

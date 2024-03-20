@@ -30,9 +30,11 @@ const login = async (req, res) => {
 
       // Invia una risposta con lo stato 200 e il token JWT
       res.status(200).send({ id: user.id, username, token });
+      console.log('ok')
     } else {
       // Invia una risposta con lo stato 400 se l'utente non esiste o la password non è corretta
       res.status(400).send({ message: "Username or Password is incorrect." });
+      console.log("ko")
     }
   } catch (error) {
     // Gestione degli errori
