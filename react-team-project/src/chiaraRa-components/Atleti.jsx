@@ -21,7 +21,7 @@ export function Atleti() {
                 <span>sofiarossi@email.com</span>
                 <span>3334455229</span>
                 </div>
-                <h3>Prox Appuntamento</h3>
+                <h3>Appuntamento: Martedì 11.30</h3>
             </div>
             <div className="AtletaCardDex">
               <form action="">
@@ -73,7 +73,7 @@ export function Atleti() {
                 <span>giovpolac@email.com</span>
                 <span>3334455230</span>
                 </div>
-                <h3>Prox Appuntamento</h3>
+                <h3>Appuntamento: Lunedì 16.30</h3>
             </div>
             <div className="AtletaCardDex">
               <form action="">
@@ -125,7 +125,7 @@ export function Atleti() {
                 <span>bianchima@email.com</span>
                 <span>3334455859</span>
                 </div>
-                <h3>Prox Appuntamento</h3>
+                <h3>Appuntamento: Giovedì 12.30</h3>
             </div>
             <div className="AtletaCardDex">
               <form action="">
@@ -177,7 +177,7 @@ export function Atleti() {
                 <span>aleromano@email.com</span>
                 <span>3383455229</span>
                 </div>
-                <h3>Prox Appuntamento</h3>
+                <h3>Appuntamento: Mercoledì 10.30</h3>
             </div>
             <div className="AtletaCardDex">
               <form action="">
