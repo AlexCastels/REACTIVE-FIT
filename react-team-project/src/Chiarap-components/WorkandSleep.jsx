@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "./Workandsleep.css"
+import { ButtonComponent } from "../style-site/ButtonComponent";
 
 function WorkoutAndSleep() {
     const [workoutCount, setWorkoutCount] = useState(0);
@@ -37,40 +38,45 @@ function WorkoutAndSleep() {
         <div className="containerbox">
 
             <div className="allenamentiSett">
-            <div className="box">
+                {/* ex className box */}
+            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50">
                 <h2>Conteggio Allenamenti Settimanali</h2>
                 <div className="counter">
-                    <button onClick={decreaseWorkouts}>-</button>
+                    <button className="counter" onClick={decreaseWorkouts}>-</button>
                     <span>{workoutCount}</span>
-                    <button onClick={increaseWorkouts}>+</button>
+                    <button className="counter" onClick={increaseWorkouts}>+</button>
                 </div>
             </div>
         </div>
 
 
         <div className="orediSonno">
-            <div className="box">
+            {/* ex className box */}
+            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50">
                 <h2>Seleziona Ore di Sonno</h2>
                 <div className="sleep-hours">
                     <input type="range" min="0" max="24" value={sleepHours} onChange={handleSleepHoursChange} />
                     <span>Ore di sonno selezionate: {sleepHours}</span>
-                    <div className="button-action">
-                    <button onClick={saveData}>Salva</button>
-                <button onClick={deleteAllData}>Cancella</button>
-                </div>
+                    
                 </div>
             </div>
             </div>
 
 
             <div className="storicoDati">
-            <div className="box">
+            {/* ex className box */}
+                <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50">
                 <h2>Storico Dati Salvati</h2>
                 <li>Allenamenti settimanali: {savedWorkoutCount}</li>
                 <li>
                 {savedSleepHours.reduce((total, item) => total + item.hours, 0)} ore
                 </li>
-            </div>
+                
+                <div className="button-action">
+                    <ButtonComponent onClick={saveData} text='Salva'/>
+                    <ButtonComponent onClick={deleteAllData} text='Cancella'/>
+                </div>
+                </div>
             </div>
         </div>
     );

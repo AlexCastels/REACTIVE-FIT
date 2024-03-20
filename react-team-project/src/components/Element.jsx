@@ -1,5 +1,5 @@
 export function Element({children}) {
-    return <div className="rounded-xl m-4 p-4 border-4 border-yellow-500 z-10  backdrop-blur-50"> 
+    return <div className="rounded-xl  border-2 border-gray-900 shadow-lg bg-transparent backdrop-blur-50 m-10 p-2"> 
     {children}
     </div>
 }

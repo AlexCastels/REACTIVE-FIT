@@ -1,0 +1,9 @@
+.user-components::-webkit-scrollbar {
+    width: 10px;               
+}
+   
+.user-components::-webkit-scrollbar-thumb {
+    background-color: rgb(68, 68, 68);  
+    border-radius: 10px;       
+    border: 3px solid rgb(62, 62, 62);  
+}

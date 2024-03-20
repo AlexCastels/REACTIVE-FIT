@@ -1,6 +1,7 @@
 import './counterCalories.css'
 import { useEffect, useState } from "react"
 import CounterCaloriesPie from "./CounterCaloriesPie"
+import { ButtonComponent } from '../style-site/ButtonComponent'
 
 export function CounterCalories(){
 
@@ -84,21 +85,27 @@ export function CounterCalories(){
     return (
         <div className="pie-container">
             <div className='pie-input'>
-                <input onChange={handleInput} placeholder="Search Foods.." value={input}></input>
-                <button onClick={handleBtn}>Search</button>
+                <input className='pie-input-text' onChange={handleInput} placeholder="Search Foods.." value={input} ></input>
+                <ButtonComponent onClick={handleBtn} text='Cerca'></ButtonComponent>
             </div>
-            <div className='pie-list'>
-                {data.length > 0 ? data.map((item , index) => (
-                    <>
-                        <p key={index}>{item.name} {item.calories} <span>kcal</span></p>
-                        <div className='pie-list-line'></div>
-                    </>
-                )) : <p>Cerca un alimento da aggiungere alla lista!</p>}
-            </div>
-            {counter !== 0 && <p>Total calories: {Math.round(counter)} </p>}
-            {dailyKcal >= 0 ? <p>{Math.round(dailyKcal)} Kcal remaining!</p> : <p>Daily Kcal reached! 🏆</p>}
-            <div className='pie-cake'>
-               <CounterCaloriesPie macro={total}/>    
+            <div className='pie-orizzontal'>
+                <div className='pie-box-info'>
+                    <div className='pie-list'>
+                    {data.length > 0 ? data.map((item , index) => (
+                        <>
+                            <p key={index}>{item.name} {item.calories} <span>kcal</span></p>
+                            <div className='pie-list-line'></div>
+                        </>
+                    )) : <p>Cerca un alimento da aggiungere alla lista!</p>}
+                    </div>
+                    <div className='pie-achievement'>
+                        {counter !== 0 && <p>Calorie totali: {Math.round(counter)} </p>}
+                        {dailyKcal >= 0 ? <p>{Math.round(dailyKcal)} Kcal rimanenti!</p> : <p>Calorie giornaliere raggiunte! 🏆</p>}
+                    </div>
+                </div>    
+                <div className='pie-cake'>
+                    <CounterCaloriesPie macro={total}/>    
+                </div>    
             </div>
         </div>
     )
