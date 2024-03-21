@@ -1,0 +1,48 @@
+.calendar {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .day {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .day:nth-child(7n) {
+    color: rgba(131, 131, 13, 0.747);
+  }
+  
+  .day:nth-child(7n + 1) {
+    color: red;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color:rgba(131, 131, 13, 0.747);
+  }
+  

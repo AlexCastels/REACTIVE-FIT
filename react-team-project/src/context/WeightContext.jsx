@@ -1,11 +1,20 @@
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useEffect, useState } from "react"
 
 const WeightContext = createContext()
 
 export const  WeightProvider = ({children}) => {
     const [weight, setWeight] = useState([]);
     const [addWeight, setAddWeight] = useState("");
-
+    const getWeigth = async ()=>{
+      const data = await fetch("http://localhost:3000/api/users/1")
+      const dataj = await data.json()
+      const pesi = dataj.map(peso => peso.peso)
+      setWeight(pesi)
+      console.log(pesi)
+      
+    }
+    
+    useEffect(getWeigth ,[])
     const handleWeight = (e) => {
         e.preventDefault();
         setWeight(prevWeight => [...prevWeight, addWeight]); 
