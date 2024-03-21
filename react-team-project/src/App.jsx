@@ -44,7 +44,7 @@ export function App() {
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider> 
+      </WaterProvider>
     </>
   );
 }
