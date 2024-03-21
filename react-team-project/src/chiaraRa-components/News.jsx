@@ -1,4 +1,7 @@
 import "./News.css";
+
+// rounded-xl  border-2 border-gray-900 shadow-lg bg-transparent backdrop-blur-50 m-10 p-2
+
 export function News() {
     return(
         <>
@@ -6,11 +9,11 @@ export function News() {
 <script src="https://cdn.tailwindcss.com"></script>
 <div className="NewsContainer" >
 <div class="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-  <div class="NewsFirst relative mx-auto w-full">
+  <div class="NewsFirst relative mx-auto w-full ">
     <a href="https://www.my-personaltrainer.it/peso-teorico.html" class="relative inline-block w-full transform transition-transform duration-300 ease-in-out hover:-translate-y-2">
       <div className=" NewsCard ">
         <div class="relative flex h-52 justify-center overflow-hidden rounded-lg">
-          <div class="w-full transform transition-transform duration-500 ease-in-out hover:scale-110">
+          <div class="w-full transform transition-transform duration-500 ease-in-out hover:scale-110 " >
             <div class="absolute inset-0 bg-black bg-opacity-80">
               <img src="https://www.my-personaltrainer.it/2022/02/18/peso-ideale_900x760.jpeg" alt="" />
             </div>
@@ -18,7 +21,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -51,7 +54,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -84,7 +87,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -117,7 +120,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -150,7 +153,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -183,7 +186,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -216,7 +219,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -249,7 +252,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>
@@ -282,7 +285,7 @@ export function News() {
 
           <div class="absolute bottom-0 right-5 mb-3 flex">
             <p class="flex items-center font-medium text-gray-800">
-              <i class="fa fa-heart mr-2 text-2xl text-white"></i>
+              <i class="fa fa-heart mr-2 text-2xl text-yellow-400"></i>
             </p>
           </div>          
         </div>

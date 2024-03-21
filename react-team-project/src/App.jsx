@@ -25,6 +25,8 @@ import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 import { DashboardPT } from "./alex-components/DashboardPT";
 import { News } from "./chiaraRa-components/News";
+import DashUtentePT from "./Chiarap-components/DashUtentePT";
+import { HeroNews } from "./HeroNews";
 
 
 
@@ -40,7 +42,7 @@ export function App() {
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
-              <Route path="/notizie" element={<News/>}/>
+              <Route path="/notizie" element={<HeroNews/>}/>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
