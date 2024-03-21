@@ -1,6 +1,7 @@
 .NewsContainer{
     padding: 10rem;
     display: flex;
+    background-color: gray;
 }
 .NewsCard{
         border-radius: 0.5rem; 
