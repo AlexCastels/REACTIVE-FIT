@@ -19,18 +19,16 @@ import { RegistrationUser } from "./benni-component/RegistrationUser";
 import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
-
 import { Atleti } from "./chiaraRa-components/Atleti";
-
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
+import { DashboardPT } from "./alex-components/DashboardPT";
 
 
 export function App() {
   return (
     <>
-    <Atleti/>
       {/* <WaterProvider>
         <WeightProvider>
             <Routes>
@@ -44,6 +42,7 @@ export function App() {
             </Routes>
         </WeightProvider>
       </WaterProvider> */}
+      <DashboardPT/>
     </>
   );
 }
