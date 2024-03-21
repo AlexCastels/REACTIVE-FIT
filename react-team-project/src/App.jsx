@@ -25,13 +25,14 @@ import { Atleti } from "./chiaraRa-components/Atleti";
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
+import { News } from "./chiaraRa-components/News";
 
 
 export function App() {
   return (
     <>
-    <Atleti/>
-      {/* <WaterProvider>
+
+      <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -40,10 +41,11 @@ export function App() {
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
+              <Route path="/notizie" element={<News/>}/>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider> */}
+      </WaterProvider> 
     </>
   );
 }
