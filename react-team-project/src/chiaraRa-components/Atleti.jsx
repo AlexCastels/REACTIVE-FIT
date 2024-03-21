@@ -20,8 +20,8 @@ export function Atleti() {
                                     <div>
                                         <p>Info:</p>
                                         <p>Età: 25</p>
-                                        <p>Peso: 80kg</p>
-                                        <p>Altezza: 169cm</p>
+                                        <p>Peso: 70kg</p>
+                                        <p>Altezza: 160cm</p>
                                     </div>
                                     <div>  
                                         <p>Contatti:</p>
@@ -62,7 +62,229 @@ export function Atleti() {
                                 <div className="AtletiTextArea">
                                     <p>
                                         <label htmlFor="">
-                                            Invia un messaggio:
+                                            Lascia un commento:
+                                        </label>
+                                    </p>
+                                    <textarea
+                                        name="messaggio"
+                                        id="messaggio"
+                                        cols="36"
+                                        rows="2"
+                                        className="atleti-style-textarea"
+                                    ></textarea>
+                                    <div className="btn-atleti-container">
+                                        <ButtonComponent text='invia'/>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div className="AtletaCard">
+                        <div className="AtletaCardSinx">
+                            <div className="AtletaCardSinxImg">
+                                <img
+                                    src="https://i.pinimg.com/474x/b5/d9/c9/b5d9c94c8bff8d4fa728e13ddf106bc0.jpg"
+                                    alt="Ragazza"
+                                />
+                                <h2>Giovanni Giorgio</h2>
+                            </div>
+                            <div className="AtletaCardsinxInfo">
+                                <div className="info-atleta-container">
+                                    <div>
+                                        <p>Info:</p>
+                                        <p>Età: 27</p>
+                                        <p>Peso: 75kg</p>
+                                        <p>Altezza: 170cm</p>
+                                    </div>
+                                    <div>  
+                                        <p>Contatti:</p>
+                                        <p>g.giorgio@email.com</p>
+                                        <p>3333569784</p>
+                                    </div>
+                                </div>
+                                <div className="prox-appuntamento-atleti">
+                                    <p>Prossimo appuntamento:</p>
+                                    <p>Control-Check: 27/04/24 Martedì 11.30</p>
+                                </div>       
+                            </div>
+                            
+                        </div>
+                        <div className="AtletaCardDex">
+                            <form action="">
+                                <div className="AtletiImportContainer">
+                                    <div className="AtletiImportP">
+                                        <p>Protocollo alimentare:</p>
+                                        <input
+                                            type="file"
+                                            id="myFile"
+                                            name="filename"
+                                            className="input-send-style"
+                                        />
+                                    </div>
+                                    <div className="AtletiImportA">
+                                        <p>Scheda allenamenti:</p>
+                                        <input
+                                            type="file"
+                                            id="myFile"
+                                            name="filename"
+                                            className="input-send-style"
+                                        />
+                                    </div>
+                                    
+                                </div>
+                                <div className="AtletiTextArea">
+                                    <p>
+                                        <label htmlFor="">
+                                        Lascia un commento:
+                                        </label>
+                                    </p>
+                                    <textarea
+                                        name="messaggio"
+                                        id="messaggio"
+                                        cols="36"
+                                        rows="2"
+                                        className="atleti-style-textarea"
+                                    ></textarea>
+                                    <div className="btn-atleti-container">
+                                        <ButtonComponent text='invia'/>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div className="AtletaCard">
+                        <div className="AtletaCardSinx">
+                            <div className="AtletaCardSinxImg">
+                                <img
+                                    src="data:image/jpeg;base64,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"
+                                    alt="Ragazza"
+                                />
+                                <h2>Manuel Joe</h2>
+                            </div>
+                            <div className="AtletaCardsinxInfo">
+                                <div className="info-atleta-container">
+                                    <div>
+                                        <p>Info:</p>
+                                        <p>Età: 30</p>
+                                        <p>Peso: 110kg</p>
+                                        <p>Altezza: 180cm</p>
+                                    </div>
+                                    <div>  
+                                        <p>Contatti:</p>
+                                        <p>joeM@email.com</p>
+                                        <p>3334455229</p>
+                                    </div>
+                                </div>
+                                <div className="prox-appuntamento-atleti">
+                                    <p>Prossimo appuntamento:</p>
+                                    <p>Control-Check: 27/04/24 Martedì 11.30</p>
+                                </div>       
+                            </div>
+                            
+                        </div>
+                        <div className="AtletaCardDex">
+                            <form action="">
+                                <div className="AtletiImportContainer">
+                                    <div className="AtletiImportP">
+                                        <p>Protocollo alimentare:</p>
+                                        <input
+                                            type="file"
+                                            id="myFile"
+                                            name="filename"
+                                            className="input-send-style"
+                                        />
+                                    </div>
+                                    <div className="AtletiImportA">
+                                        <p>Scheda allenamenti:</p>
+                                        <input
+                                            type="file"
+                                            id="myFile"
+                                            name="filename"
+                                            className="input-send-style"
+                                        />
+                                    </div>
+                                    
+                                </div>
+                                <div className="AtletiTextArea">
+                                    <p>
+                                        <label htmlFor="">
+                                        Lascia un commento:
+                                        </label>
+                                    </p>
+                                    <textarea
+                                        name="messaggio"
+                                        id="messaggio"
+                                        cols="36"
+                                        rows="2"
+                                        className="atleti-style-textarea"
+                                    ></textarea>
+                                    <div className="btn-atleti-container">
+                                        <ButtonComponent text='invia'/>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div className="AtletaCard">
+                        <div className="AtletaCardSinx">
+                            <div className="AtletaCardSinxImg">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72gB1cqsjUY7RhjCPsmHv-u0lJtFBXXXcLg&usqp=CAU"
+                                    alt="Ragazza"
+                                />
+                                <h2>Riccardo Biondi</h2>
+                            </div>
+                            <div className="AtletaCardsinxInfo">
+                                <div className="info-atleta-container">
+                                    <div>
+                                        <p>Info:</p>
+                                        <p>Età: 33</p>
+                                        <p>Peso: 78kg</p>
+                                        <p>Altezza: 176cm</p>
+                                    </div>
+                                    <div>  
+                                        <p>Contatti:</p>
+                                        <p>biondiR@email.com</p>
+                                        <p>3334455229</p>
+                                    </div>
+                                </div>
+                                <div className="prox-appuntamento-atleti">
+                                    <p>Prossimo appuntamento:</p>
+                                    <p>Control-Check: 27/04/24 Martedì 11.30</p>
+                                </div>       
+                            </div>
+                            
+                        </div>
+                        <div className="AtletaCardDex">
+                            <form action="">
+                                <div className="AtletiImportContainer">
+                                    <div className="AtletiImportP">
+                                        <p>Protocollo alimentare:</p>
+                                        <input
+                                            type="file"
+                                            id="myFile"
+                                            name="filename"
+                                            className="input-send-style"
+                                        />
+                                    </div>
+                                    <div className="AtletiImportA">
+                                        <p>Scheda allenamenti:</p>
+                                        <input
+                                            type="file"
+                                            id="myFile"
+                                            name="filename"
+                                            className="input-send-style"
+                                        />
+                                    </div>
+                                    
+                                </div>
+                                <div className="AtletiTextArea">
+                                    <p>
+                                        <label htmlFor="">
+                                        Lascia un commento:
                                         </label>
                                     </p>
                                     <textarea
@@ -136,229 +358,7 @@ export function Atleti() {
                                 <div className="AtletiTextArea">
                                     <p>
                                         <label htmlFor="">
-                                            Invia un messaggio:
-                                        </label>
-                                    </p>
-                                    <textarea
-                                        name="messaggio"
-                                        id="messaggio"
-                                        cols="36"
-                                        rows="2"
-                                        className="atleti-style-textarea"
-                                    ></textarea>
-                                    <div className="btn-atleti-container">
-                                        <ButtonComponent text='invia'/>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                    </div>
-                    <div className="AtletaCard">
-                        <div className="AtletaCardSinx">
-                            <div className="AtletaCardSinxImg">
-                                <img
-                                    src="https://2.bp.blogspot.com/_DLMbxIoKN3c/Sfmt_MI2jSI/AAAAAAAAUyE/HJXXjzI6jRs/s400/sophia-bush-17.jpg"
-                                    alt="Ragazza"
-                                />
-                                <h2>Sofia Rossi</h2>
-                            </div>
-                            <div className="AtletaCardsinxInfo">
-                                <div className="info-atleta-container">
-                                    <div>
-                                        <p>Info:</p>
-                                        <p>Età: 25</p>
-                                        <p>Peso: 80kg</p>
-                                        <p>Altezza: 169cm</p>
-                                    </div>
-                                    <div>  
-                                        <p>Contatti:</p>
-                                        <p>sofiarossi@email.com</p>
-                                        <p>3334455229</p>
-                                    </div>
-                                </div>
-                                <div className="prox-appuntamento-atleti">
-                                    <p>Prossimo appuntamento:</p>
-                                    <p>Control-Check: 27/04/24 Martedì 11.30</p>
-                                </div>       
-                            </div>
-                            
-                        </div>
-                        <div className="AtletaCardDex">
-                            <form action="">
-                                <div className="AtletiImportContainer">
-                                    <div className="AtletiImportP">
-                                        <p>Protocollo alimentare:</p>
-                                        <input
-                                            type="file"
-                                            id="myFile"
-                                            name="filename"
-                                            className="input-send-style"
-                                        />
-                                    </div>
-                                    <div className="AtletiImportA">
-                                        <p>Scheda allenamenti:</p>
-                                        <input
-                                            type="file"
-                                            id="myFile"
-                                            name="filename"
-                                            className="input-send-style"
-                                        />
-                                    </div>
-                                    
-                                </div>
-                                <div className="AtletiTextArea">
-                                    <p>
-                                        <label htmlFor="">
-                                            Invia un messaggio:
-                                        </label>
-                                    </p>
-                                    <textarea
-                                        name="messaggio"
-                                        id="messaggio"
-                                        cols="36"
-                                        rows="2"
-                                        className="atleti-style-textarea"
-                                    ></textarea>
-                                    <div className="btn-atleti-container">
-                                        <ButtonComponent text='invia'/>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                    </div>
-                    <div className="AtletaCard">
-                        <div className="AtletaCardSinx">
-                            <div className="AtletaCardSinxImg">
-                                <img
-                                    src="https://2.bp.blogspot.com/_DLMbxIoKN3c/Sfmt_MI2jSI/AAAAAAAAUyE/HJXXjzI6jRs/s400/sophia-bush-17.jpg"
-                                    alt="Ragazza"
-                                />
-                                <h2>Sofia Rossi</h2>
-                            </div>
-                            <div className="AtletaCardsinxInfo">
-                                <div className="info-atleta-container">
-                                    <div>
-                                        <p>Info:</p>
-                                        <p>Età: 25</p>
-                                        <p>Peso: 80kg</p>
-                                        <p>Altezza: 169cm</p>
-                                    </div>
-                                    <div>  
-                                        <p>Contatti:</p>
-                                        <p>sofiarossi@email.com</p>
-                                        <p>3334455229</p>
-                                    </div>
-                                </div>
-                                <div className="prox-appuntamento-atleti">
-                                    <p>Prossimo appuntamento:</p>
-                                    <p>Control-Check: 27/04/24 Martedì 11.30</p>
-                                </div>       
-                            </div>
-                            
-                        </div>
-                        <div className="AtletaCardDex">
-                            <form action="">
-                                <div className="AtletiImportContainer">
-                                    <div className="AtletiImportP">
-                                        <p>Protocollo alimentare:</p>
-                                        <input
-                                            type="file"
-                                            id="myFile"
-                                            name="filename"
-                                            className="input-send-style"
-                                        />
-                                    </div>
-                                    <div className="AtletiImportA">
-                                        <p>Scheda allenamenti:</p>
-                                        <input
-                                            type="file"
-                                            id="myFile"
-                                            name="filename"
-                                            className="input-send-style"
-                                        />
-                                    </div>
-                                    
-                                </div>
-                                <div className="AtletiTextArea">
-                                    <p>
-                                        <label htmlFor="">
-                                            Invia un messaggio:
-                                        </label>
-                                    </p>
-                                    <textarea
-                                        name="messaggio"
-                                        id="messaggio"
-                                        cols="36"
-                                        rows="2"
-                                        className="atleti-style-textarea"
-                                    ></textarea>
-                                    <div className="btn-atleti-container">
-                                        <ButtonComponent text='invia'/>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                    </div>
-                    <div className="AtletaCard">
-                        <div className="AtletaCardSinx">
-                            <div className="AtletaCardSinxImg">
-                                <img
-                                    src="https://2.bp.blogspot.com/_DLMbxIoKN3c/Sfmt_MI2jSI/AAAAAAAAUyE/HJXXjzI6jRs/s400/sophia-bush-17.jpg"
-                                    alt="Ragazza"
-                                />
-                                <h2>Sofia Rossi</h2>
-                            </div>
-                            <div className="AtletaCardsinxInfo">
-                                <div className="info-atleta-container">
-                                    <div>
-                                        <p>Info:</p>
-                                        <p>Età: 25</p>
-                                        <p>Peso: 80kg</p>
-                                        <p>Altezza: 169cm</p>
-                                    </div>
-                                    <div>  
-                                        <p>Contatti:</p>
-                                        <p>sofiarossi@email.com</p>
-                                        <p>3334455229</p>
-                                    </div>
-                                </div>
-                                <div className="prox-appuntamento-atleti">
-                                    <p>Prossimo appuntamento:</p>
-                                    <p>Control-Check: 27/04/24 Martedì 11.30</p>
-                                </div>       
-                            </div>
-                            
-                        </div>
-                        <div className="AtletaCardDex">
-                            <form action="">
-                                <div className="AtletiImportContainer">
-                                    <div className="AtletiImportP">
-                                        <p>Protocollo alimentare:</p>
-                                        <input
-                                            type="file"
-                                            id="myFile"
-                                            name="filename"
-                                            className="input-send-style"
-                                        />
-                                    </div>
-                                    <div className="AtletiImportA">
-                                        <p>Scheda allenamenti:</p>
-                                        <input
-                                            type="file"
-                                            id="myFile"
-                                            name="filename"
-                                            className="input-send-style"
-                                        />
-                                    </div>
-                                    
-                                </div>
-                                <div className="AtletiTextArea">
-                                    <p>
-                                        <label htmlFor="">
-                                            Invia un messaggio:
+                                            Lascia un commento:
                                         </label>
                                     </p>
                                     <textarea
