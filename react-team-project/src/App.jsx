@@ -24,12 +24,14 @@ import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 import { DashboardPT } from "./alex-components/DashboardPT";
+import { News } from "./chiaraRa-components/News";
+
 
 
 export function App() {
   return (
     <>
-      {/* <WaterProvider>
+      <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -38,11 +40,11 @@ export function App() {
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
+              <Route path="/notizie" element={<News/>}/>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider> */}
-      <DashboardPT/>
+      </WaterProvider> 
     </>
   );
 }
