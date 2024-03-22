@@ -30,8 +30,8 @@ import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 export function App() {
   return (
     <>
-    <Atleti/>
-      {/* <WaterProvider>
+    {/*<Atleti/>*/}
+     <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -43,7 +43,7 @@ export function App() {
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider> */}
+      </WaterProvider> 
     </>
   );
 }

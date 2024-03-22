@@ -25,7 +25,6 @@ export const  WeightProvider = ({children}) => {
     const handleAddWeight = (e) => {
         const weight = Number(e.target.value);
         setAddWeight(weight);
-        
     };
 
     const chartConfig = {
