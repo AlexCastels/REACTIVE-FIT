@@ -27,13 +27,14 @@ import { DashboardPT } from "./alex-components/DashboardPT";
 import { News } from "./chiaraRa-components/News";
 import DashUtentePT from "./Chiarap-components/DashUtentePT";
 import { HeroNews } from "./HeroNews";
+import { WorkList } from "./alex-components/WorkList";
 
 
 
 export function App() {
   return (
     <>
-      <WaterProvider>
+      {/* <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -46,7 +47,8 @@ export function App() {
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider>
+      </WaterProvider> */}
+      {/* <WorkList/> */}
     </>
   );
 }
