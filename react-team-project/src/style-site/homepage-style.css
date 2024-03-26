@@ -27,15 +27,6 @@
     justify-content: center;
 }
 
-
-
-/* .image-homepage img {
-    width: 450px;
-    z-index: 2;
-    opacity: 0.9;
-} */
-
-
 @keyframes scalaImmagine {
     from {
         transform: scale(1);
@@ -45,12 +36,6 @@
         transform: scale(1.1);
     }
 }
-
-/* .image-homepage img:hover {
-    animation-name: scalaImmagine;
-    transform: scale(1);
-    animation-duration: 5s;
-} */
 
 .image-homepage {
     display: flex;

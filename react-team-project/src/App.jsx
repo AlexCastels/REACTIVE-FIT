@@ -30,6 +30,7 @@ import DashUtentePT from "./Chiarap-components/DashUtentePT";
 import { HeroNews } from "./HeroNews";
 
 
+
 export function App() {
   
   return (
@@ -48,8 +49,8 @@ export function App() {
             </Routes>
         </WeightProvider>
       </WaterProvider>
+      
       {/* <AsidePtComponent/> */}
-      {/* <ImagesHome/> */}
     </>
   );
 }
