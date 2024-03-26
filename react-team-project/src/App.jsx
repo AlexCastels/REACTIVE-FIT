@@ -37,7 +37,7 @@ export function App() {
   
   return (
     <>
-      <WaterProvider>
+      {/* <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -51,8 +51,8 @@ export function App() {
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider>
-      
+      </WaterProvider> */}
+      <WorkList/>
       {/* <AsidePtComponent/> */}
     </>
   );

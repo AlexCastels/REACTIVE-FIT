@@ -51,9 +51,9 @@ export function WorkList() {
                 </select>
             </div>
             <div className="workApi-card-container">
-                {data.map((item) => (
+                {data.length > 0 ? data.map((item) => (
                     <WorkApiCard key={item.id} item={item} />
-                ))}
+                )) : <p>Ci dispiace, Errore nel caricamento dei dati!</p>}
             </div>
         </div>
     );
