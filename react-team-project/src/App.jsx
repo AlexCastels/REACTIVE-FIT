@@ -25,9 +25,12 @@ import { Atleti } from "./chiaraRa-components/Atleti";
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
+import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
+
 
 
 export function App() {
+  
   return (
     <>
     {/* <Atleti/> */}
@@ -44,6 +47,11 @@ export function App() {
             </Routes>
         </WeightProvider>
       </WaterProvider>
+      {/* <AsidePtComponent/> */}
+
+      {/* <ImagesHome/> */}
+    
+
     </>
   );
 }
