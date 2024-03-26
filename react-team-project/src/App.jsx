@@ -48,7 +48,7 @@ export function App() {
             </Routes>
         </WeightProvider>
       </WaterProvider> */}
-      {/* <WorkList/> */}
+      <WorkList/>
     </>
   );
 }

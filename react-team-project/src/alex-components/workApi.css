@@ -1,0 +1,40 @@
+.workApi-general-container{
+    display: flex;
+    justify-content: center;
+}
+
+.workApi-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    width: 600px;
+}
+
+.workC-title{
+    text-align: center;
+}
+
+.workC-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius:7px;
+    width: 300px;
+    height: 500px;
+    
+}
+
+.workC-gif{
+    border:1px solid grey;
+    padding:15px;
+    border-radius:7px
+}
+
+.workC-instructions{
+    overflow-y: scroll;
+    padding: 20px;
+}
