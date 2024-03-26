@@ -19,14 +19,15 @@ import { RegistrationUser } from "./benni-component/RegistrationUser";
 import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
-
 import { Atleti } from "./chiaraRa-components/Atleti";
-
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
-
+import { DashboardPT } from "./alex-components/DashboardPT";
+import { News } from "./chiaraRa-components/News";
+import DashUtentePT from "./Chiarap-components/DashUtentePT";
+import { HeroNews } from "./HeroNews";
 
 
 
@@ -34,7 +35,6 @@ export function App() {
   
   return (
     <>
-    {/* <Atleti/> */}
       <WaterProvider>
         <WeightProvider>
             <Routes>
@@ -44,16 +44,13 @@ export function App() {
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
+              <Route path="/notizie" element={<HeroNews/>}/>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
       </WaterProvider>
       
       {/* <AsidePtComponent/> */}
-
- 
-    
-
     </>
   );
 }

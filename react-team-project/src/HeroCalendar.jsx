@@ -18,7 +18,12 @@ export function HeroCalendar() {
       <AsideContainer>
         <Sidebar />
       </AsideContainer>
-      <CalendarPage />
+      <div className="central-container-hero">
+        <div className="title-calendar">
+          <p>Calendario:</p>
+        </div>
+        <CalendarPage />
+      </div>
       <AsideContainer>
         <UserComponents />
       </AsideContainer>
