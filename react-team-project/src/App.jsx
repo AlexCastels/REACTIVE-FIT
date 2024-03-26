@@ -29,6 +29,7 @@ import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
 
 
 
+
 export function App() {
   
   return (
@@ -47,9 +48,10 @@ export function App() {
             </Routes>
         </WeightProvider>
       </WaterProvider>
+      
       {/* <AsidePtComponent/> */}
 
-      {/* <ImagesHome/> */}
+ 
     
 
     </>

@@ -73,8 +73,8 @@ export function Hero() {
                 </div> */}
             </div>
             <AsideContainer>
-                {/* <UserComponents /> */}
-                <AsidePtComponent/>
+                <UserComponents />
+                {/* <AsidePtComponent/> */}
             </AsideContainer>
         </div>
     );
