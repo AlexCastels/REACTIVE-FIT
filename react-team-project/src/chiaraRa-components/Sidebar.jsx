@@ -34,6 +34,12 @@ export function Sidebar() {
         </Link>
       </li>
       <li>
+        <Link to="/workExample" className="sidebarElenco bg-transparent border border-gray-800 shadow-lg rounded-2xl p-4 transition ease-in duration-500  transform hover:scale-105" element={<News/>}>
+          <span className="sideIcon"><i className="bx bx-news"></i></span>
+          <span className="sidebarPag text-gray-200  hover:text-yellow-400">Work Example</span>
+        </Link>
+      </li>
+      <li>
         <Link to="/notizie" className="sidebarElenco bg-transparent border border-gray-800 shadow-lg rounded-2xl p-4 transition ease-in duration-500  transform hover:scale-105" element={<News/>}>
           <span className="sideIcon"><i className="bx bx-news"></i></span>
           <span className="sidebarPag text-gray-200  hover:text-yellow-400">Notizie</span>

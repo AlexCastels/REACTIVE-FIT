@@ -28,6 +28,8 @@ import { DashboardPT } from "./alex-components/DashboardPT";
 import { News } from "./chiaraRa-components/News";
 import DashUtentePT from "./Chiarap-components/DashUtentePT";
 import { HeroNews } from "./HeroNews";
+import { WorkList } from "./alex-components/WorkList";
+import { HeroWorkEx } from "./HeroWorkEx";
 
 
 
@@ -45,6 +47,7 @@ export function App() {
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
               <Route path="/notizie" element={<HeroNews/>}/>
+              <Route path="/workExample" element={<HeroWorkEx/>}/>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
