@@ -6,7 +6,6 @@ import { ComponentContainer } from "./benni-component/ComponentContainer";
 import Weight from "./benni-component/Weight";
 import { RegistrationInformation } from "./benni-component/RegistrationInformation";
 import { Routes, Route } from "react-router-dom";
-import { Homepage } from "./chiaraRa-components/Homepage";
 import { PageNotFound } from "./chiaraRa-components/PageNotFound";
 import { Element } from "./components/Element";
 import { Sidebar } from "./chiaraRa-components/Sidebar";
@@ -24,6 +23,7 @@ import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
+import { Homepage } from "./chiaraRa-components/Homepage";
 import { DashboardPT } from "./alex-components/DashboardPT";
 import { News } from "./chiaraRa-components/News";
 import DashUtentePT from "./Chiarap-components/DashUtentePT";
@@ -31,13 +31,11 @@ import { HeroNews } from "./HeroNews";
 import { WorkList } from "./alex-components/WorkList";
 import { HeroWorkEx } from "./HeroWorkEx";
 
-
-
 export function App() {
   
   return (
     <>
-      {/* <WaterProvider>
+      <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -51,9 +49,7 @@ export function App() {
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider> */}
-      <WorkList/>
-      {/* <AsidePtComponent/> */}
+      </WaterProvider>
     </>
   );
 }

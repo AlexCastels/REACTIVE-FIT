@@ -232,3 +232,217 @@
     }
 }
 
+.containerCardHome{
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+
+.containerSingleCardHome{
+    width: 300px;
+    /* background-color: rgb(61, 61, 25); */
+    background-color: rgb(61, 61, 16);
+    /* background-color: #333333; */
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerSingleCardHome img{
+    width: 100px;
+}
+
+.containerSingleCardHome h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(170, 170, 170);
+}
+
+.containerSingleCardHome p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: rgb(219, 219, 219);
+    text-align: center;
+}
+
+.containerDescriptionOut{
+    background-image: url('src/style-site/images-style/bbblurry-2.svg');
+    background-color: #1c1c1c;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+}
+.containerDescription{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    gap: 50px;
+}
+
+.descriptioneLeft{
+    padding: 30px;
+}
+
+.descriptioneLeft p{
+    width: 70%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(170, 170, 170);
+}
+
+.descriptioneLeft h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(170, 170, 170);
+    margin-bottom: 10px;
+}
+/* .descriptionRight img{
+ 
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    width: 50%;
+    height: auto; 
+}
+
+.imageHomeDue{
+   
+    position: absolute;
+    width: 50px;
+  
+} */
+
+.descriptionRight {
+    position: relative;
+    width: 100%;
+    height: auto; /* o imposta un'altezza specifica */
+}
+
+.descriptionRight img {
+    position: absolute;
+    width: 100%;
+    height: auto; /* o imposta un'altezza specifica */
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.imageOne {
+    top: -105px;
+    left: 148px;
+}
+
+.imageTwo {
+    top: -217px;
+    left: -163px;
+}
+
+.containerParagraphsDescrip{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerSingleCardHome:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.containerAbout{
+    /* padding: 30px 0; */
+    background-image: url('src/style-site/images-style/bbblurry-2.svg');
+    background-size: cover;
+    /* height: 500px; */
+    /* height: 500px; */
+}
+.containerMeet h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color:rgb(0, 0, 0);
+    padding: 150px;
+    text-align: center;
+}
+
+.containerMeet{
+    background-image: url('src/style-site/images-style/imagesHome/3986448.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerTeam{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.containerAvatarTeamA{
+    background-image: url('src/style-site/images-style/imagesHome/annagiusi.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.containerAvatarTeamAl{
+    background-image: url('src/style-site/images-style/imagesHome/alessandro-cast.png');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.containerAvatarTeamCp{
+    background-image: url('src/style-site/images-style/imagesHome/chiaraP.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.logoLinkedinGithub{
+    display: flex;
+    gap: 15px;
+}
+.logoLinkedinGithub img{
+    width: 35px;
+}
+
+.logoLinkedinGithub img:hover{
+    opacity: 0.3;
+}
