@@ -8,6 +8,7 @@ import { AsideContainer } from "./components/AsideContainer";
 import { CentralContainer } from "./components/CentralContainer";
 import { Element } from "./components/Element";
 import { StoryContainer } from "./components/StoryContainer";
+import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
 import { UserComponents } from "./giusi_components/UserComponents";
 import "./hero.css";
 
@@ -72,7 +73,8 @@ export function Hero() {
                 </div> */}
             </div>
             <AsideContainer>
-                <UserComponents />
+                {/* <UserComponents /> */}
+                <AsidePtComponent/>
             </AsideContainer>
         </div>
     );

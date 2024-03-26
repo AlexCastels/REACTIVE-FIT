@@ -23,14 +23,15 @@ import { Atleti } from "./chiaraRa-components/Atleti";
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
+import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
 import { DashboardPT } from "./alex-components/DashboardPT";
 import { News } from "./chiaraRa-components/News";
 import DashUtentePT from "./Chiarap-components/DashUtentePT";
 import { HeroNews } from "./HeroNews";
 
 
-
 export function App() {
+  
   return (
     <>
       <WaterProvider>
@@ -47,6 +48,8 @@ export function App() {
             </Routes>
         </WeightProvider>
       </WaterProvider>
+      {/* <AsidePtComponent/> */}
+      {/* <ImagesHome/> */}
     </>
   );
 }

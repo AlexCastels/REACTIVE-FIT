@@ -1,0 +1,10 @@
+@import "rsuite/dist/rsuite.css";
+
+.rs-calendar-table{
+    width: 100%;
+}
+
+.rs-calendar-panel .rs-calendar-header{
+    width: 50%;
+    padding:20px;
+  }

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 50px;
 }
 
 .general-background {
@@ -15,7 +16,7 @@
     background-color: #1c1c1c;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 1000px;
 }
 
 
@@ -28,11 +29,11 @@
 
 
 
-.image-homepage img {
+/* .image-homepage img {
     width: 450px;
     z-index: 2;
     opacity: 0.9;
-}
+} */
 
 
 @keyframes scalaImmagine {
@@ -45,11 +46,11 @@
     }
 }
 
-.image-homepage img:hover {
+/* .image-homepage img:hover {
     animation-name: scalaImmagine;
     transform: scale(1);
     animation-duration: 5s;
-}
+} */
 
 .image-homepage {
     display: flex;
@@ -63,11 +64,11 @@
     border-radius: 50%;
     z-index: 1;
     position: relative;
-   left: 250px;
+    left: 250px;
     /* top:950px; bottom:0; left:0;right:0; */
     overflow: hidden;
     margin: auto;
-    animation: muoviticerchio 18s linear infinite; 
+    animation: muoviticerchio 18s linear infinite;
 }
 
 .cerchioV2 {
@@ -80,7 +81,7 @@
     left: 250px;
     overflow: hidden;
     margin: auto;
-    animation: muoviticerchioV2 18s alternate infinite; 
+    animation: muoviticerchioV2 18s alternate infinite;
 }
 
 .cerchioV3 {
@@ -93,7 +94,7 @@
     left: 250px;
     overflow: hidden;
     margin: auto;
-    animation: muoviticerchio 21s alternate-reverse infinite; 
+    animation: muoviticerchio 21s alternate-reverse infinite;
 }
 
 .cerchioV4 {
@@ -106,7 +107,7 @@
     left: 250px;
     overflow: hidden;
     margin: auto;
-    animation: muoviticerchio 22s backwards infinite; 
+    animation: muoviticerchio 22s backwards infinite;
 }
 
 .cerchioV5 {
@@ -119,7 +120,7 @@
     left: 250px;
     overflow: hidden;
     margin: auto;
-    animation: muoviticerchio 23s linear infinite; 
+    animation: muoviticerchio 23s linear infinite;
 }
 
 .cerchioV6 {
@@ -132,7 +133,7 @@
     left: 250px;
     overflow: hidden;
     margin: auto;
-    animation: muoviticerchio 19s alternate infinite; 
+    animation: muoviticerchio 19s alternate infinite;
 }
 
 
@@ -159,12 +160,12 @@
     }
 
     80% {
-        opacity: 0.7; 
+        opacity: 0.7;
     }
 
     100% {
         transform: rotate(360deg) translate(-300px) rotate(-360deg);
-        opacity: 0.8;  
+        opacity: 0.8;
     }
 }
 
@@ -183,21 +184,22 @@
     }
 
     80% {
-        opacity: 0.7; 
+        opacity: 0.7;
     }
 
     100% {
         transform: rotate(360deg) translate(-300px) rotate(-360deg);
-        opacity: 0.8;  
+        opacity: 0.8;
     }
 }
-.header-text-home{
+
+.header-text-home {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header-text-home p{
+.header-text-home p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: oblique;
@@ -206,7 +208,7 @@
     color: rgb(170, 170, 170);
 }
 
-.header-text-home h2{
+.header-text-home h2 {
     padding-top: 40px;
     text-align: center;
     color: rgb(170, 170, 170);
@@ -217,13 +219,31 @@
     letter-spacing: 2px;
 }
 
-.animation-h3{
+.animation-h3 {
     animation-duration: 2.5s;
     display: inline-block;
 }
 
-/* .container-input-access {
-    border: 1px solid white;
-    background: transparent;
-    backdrop-filter: blur(50px);
-} */
+.carouselHome {
+    width: 500px;
+    height: 500px;
+}
+
+.carouselImage.active {
+    animation: opacityImage 5s normal infinite;
+}
+
+@keyframes opacityImage {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
