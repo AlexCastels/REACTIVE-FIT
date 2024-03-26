@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import { WorkApiCard } from "./WorkApiCard";
-import './workApi.css'
-
+import "./workApi.css";
 
 export function WorkList() {
-    
-    const [data , setData] = useState([])
-    
+
+    const [data, setData] = useState([]);
+    const [selectValue , setSelectValue] = useState('back')
+
     async function getData() {
-        const url =
-            "https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=30";
+        const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${selectValue}?limit=30`;
         const options = {
             method: "GET",
             headers: {
@@ -22,7 +21,7 @@ export function WorkList() {
         try {
             const response = await fetch(url, options);
             const result = await response.json();
-            setData(result)
+            setData(result);
             console.log(data);
         } catch (error) {
             console.error(error);
@@ -31,10 +30,26 @@ export function WorkList() {
 
     useEffect(() => {
         getData();
-    }, []);
+    }, [selectValue]);
+
+    function handleSelect(e){
+        setSelectValue(e.target.value)
+    }
 
     return (
         <div className="workApi-general-container">
+            <div className="workApi-input">
+                <label htmlFor="exercise">Select a muscle group: </label>
+                <select onChange={handleSelect} name="exercise" id="exercise" className="workApi-input-select">
+                    <option value="back">Back</option>
+                    <option value="chest">Chest</option>
+                    <option value="lower%20legs">Legs</option>
+                    <option value="lower%20arms">Arms</option>
+                    <option value="neck">Neck</option>
+                    <option value="shoulders">Shoulders</option>
+                    <option value="cardio">Cardio</option>
+                </select>
+            </div>
             <div className="workApi-card-container">
                 {data.map((item) => (
                     <WorkApiCard key={item.id} item={item} />
@@ -43,4 +58,3 @@ export function WorkList() {
         </div>
     );
 }
-

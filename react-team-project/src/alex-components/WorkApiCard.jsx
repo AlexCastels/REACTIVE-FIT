@@ -9,9 +9,9 @@ export function WorkApiCard({item}){
 				<img alt='gif' src={item.gifUrl}/>
 			</div>
 			<div className="workC-instructions">
-				<p>{item.instructions.map((item , index) => {
-                    return <p key={index}>{item}</p>
-                })}</p>
+				{item.instructions.map((item , index) => {
+                    return <p key={index}>{index}: {item}</p>
+                })}
 			</div>
         </div>
     )

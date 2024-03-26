@@ -1,18 +1,24 @@
 .workApi-general-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap:30px;
 }
 
 .workApi-card-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:20px;
+    gap:35px;
     width: 600px;
+    width:80%;
+    
 }
 
 .workC-title{
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .workC-card{
@@ -21,20 +27,32 @@
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    border: 1px solid grey;
-    border-radius:7px;
+    border: 1px solid #111827;
+    border-radius:20px;
     width: 300px;
     height: 500px;
+    backdrop-filter: blur(20px);
+    background-color: black;
+    color: aliceblue;
+    letter-spacing: 0.1rem;
     
 }
 
 .workC-gif{
-    border:1px solid grey;
     padding:15px;
-    border-radius:7px
+    border-radius:20px
+}
+
+.workC-gif img{
+    border-radius:20px
 }
 
 .workC-instructions{
     overflow-y: scroll;
     padding: 20px;
+}
+
+.workApi-input-select{
+    cursor: pointer;
+    margin-left:5px
 }
