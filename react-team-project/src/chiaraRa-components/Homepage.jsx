@@ -73,11 +73,8 @@ export function Homepage() {
 							</div>
 						</div>
 					</div>
-
-
 					<div className="line-homepage">
 					</div>
-
 					<div className="container-input-access">
 						<UserAccessForm />
 					</div>
@@ -100,6 +97,7 @@ export function Homepage() {
 					<p>Il tuo percorso, il nostro impegno</p>
 				</div>
 			</div>
+			<div className="spazio-vuoto"></div>
 			<div className="containerDescriptionOut">
 				<div className="containerDescription">
 					<div className="descriptioneLeft">
@@ -139,40 +137,39 @@ export function Homepage() {
 					<div className="containerAvatarTeamAl containerImgTeam">
 						</div>
 						<h2>ALESSANDRO CASTELLI</h2>
-						<p>Full-Stack</p>
+						<p>Full-Stack Designer</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/alessandro-f-castelli-5baa3a236/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/AlexCastels"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
 						<div className="containerAvatarTeamA containerImgTeam">
 						</div>
 						<h2>ANNAGIUSI VOLPE</h2>
-						<p>FE Designer</p>
+						<p>Front-End Designer</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/annagiusi-volpe-7a0027177/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/Annagiusi96"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
 					<div className="containerAvatarTeamB containerImgTeam">
 						</div>
-						<h2>BENDETTO MICELI</h2>
-						<p>Full-Stack</p>
+						<h2>BENEDETTO MICELI</h2>
+						<p>Full-Stack Designer</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/benedetto-miceli-14b8b3293/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/benni90100"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
 					<div className="containerAvatarTeamCp containerImgTeam">
 						</div>
 						<h2>CHIARA PALUZZI</h2>
-						<p>Fronted</p>
+						<p>Front-end</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/chiara-paluzzi-9856a92a9/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/paluzz34"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
 					<div className="containerAvatarTeamCr containerImgTeam">
 						</div>
 						<h2>CHIARA RAPISARDI</h2>
-						<p>Fronted</p>
+						<p>Front-end</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/chiara-rapisardi-6533a82a9/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/chiaRapisar"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>	
 				</div>
-			</div>
-
+			
 			<div className="containerTool">
 				<div>
 					<h2>Technologies used</h2>
@@ -196,22 +193,66 @@ export function Homepage() {
 					<div className="containerSingleTool">
 						<div className="containerLogoToolR containerImgLogo">
 						</div>
-						<h3>REACT</h3>
+						<h3>REACT.JS</h3>
 					</div>
 					<div className="containerSingleTool">
 						<div className="containerLogoToolN containerImgLogo">
 						</div>
-						<h3>NODE JS</h3>
+						<h3>NODE.JS</h3>
 					</div>
 					<div className="containerSingleTool">
 						<div className="containerLogoToolP containerImgLogo">
 						</div>
 						<h3>POSTGRESQL</h3>
 					</div>
-
+					<div className="containerSingleTool">
+						<div className="containerLogoToolEX containerImgLogo">
+						</div>
+						<h3>EXPRESS.JS</h3>
+					</div>
+					<div className="containerSingleTool">
+						<div className="containerLogoToolT containerImgLogo">
+						</div>
+						<h3>TAILWIND CSS</h3>
+					</div>
 				</div>
 			</div>
-
+			</div>
+			{/* sezione metologia gile */}
+			<div className="agile-container">
+				<div className="agile-title">
+					<h2>Agile Methodology</h2>
+				</div>
+				<div className="agile-linea-text">
+					<div className="agile-linea-container">
+						<div className="agile-linea"></div>
+						<div className="agile-ball"></div>
+						<div className="agile-linea"></div>
+						<div className="agile-ball"></div>
+						<div className="agile-linea"></div>
+						<div className="agile-ball"></div>
+						<div className="agile-linea"></div>				
+					</div>
+					<div className="agile-text-global-container">
+						<div className="agile-text-container">
+							<h2>Daily Stand-up</h2>
+							<p>Momento giornaliero in cui aggiornare i colleghi sul proprio stato del progetto, condividere e scambiare idee, utilizzando anche lo strumento Trello.</p>
+						</div>
+						<div className="agile-text-container">
+							<h2>Sprint</h2>
+							<p>Momento dedicato alla realizzazione degli obiettivi prefissati.</p>
+						</div>
+						<div className="agile-text-container">
+							<h2>Code Debug</h2>
+							<p>Momenti di revisione del codice , push and merge.</p>
+						</div>
+						<div className="agile-text-container">
+							<h2>Recap with Tutor</h2>
+							<p>Momento della settimana dove discutere col tutor sullo stato attuale del progetto e su eventuali dubbi o chiarimenti.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</>
 	);
 }

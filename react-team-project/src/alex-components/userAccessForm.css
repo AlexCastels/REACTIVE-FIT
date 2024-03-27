@@ -44,14 +44,16 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    padding: 15;
+    padding: 15px;
 }
 
-/* .inputForm{
-    width: 400px;
-    height: 25px;
+.inputForm{
+    padding: 5px;
     font-size: 20px;
-} */
+    border-radius: 5px;
+    height: 35px;
+    
+}
 
 /* .buttonForm{
     display:inline-block;
@@ -92,7 +94,7 @@ input {
     height: 30px;
     line-height: 30px;
     width: 400px;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .input label{
@@ -123,8 +125,15 @@ input {
 .container-button-pt-iscriviti{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    gap:20px;
+
 }
+
+.container-button-pt-iscriviti-link{
+    text-decoration: none;
+}
+
 .container-button-pt p{
     font-family: "Roboto", sans-serif;
     /* font-weight: 400; */
@@ -133,5 +142,9 @@ input {
     letter-spacing: 1px;
     color: rgb(170, 170, 170);
     padding: 10px;
-    
+    transition: all 0.5s ease-in-out;    
+}
+
+.container-button-pt p:hover{
+    color:#facc15
 }

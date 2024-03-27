@@ -16,7 +16,7 @@ export function UserAccessForm() {
                         <label htmlFor="email"> E-mail</label>
                         <input
                             className="inputForm"
-                            type="text"
+                            type="email"
                             onChange={handleInput}
                             name="username"
                             value={input.username}
@@ -26,7 +26,7 @@ export function UserAccessForm() {
                         <label htmlFor="password"> Password</label>
                         <input
                             className="inputForm"
-                            type="text"
+                            type="password"
                             onChange={handleInput}
                             name="password"
                             value={input.password}
@@ -42,7 +42,7 @@ export function UserAccessForm() {
                         <h5>Sei un Personal Trainer?</h5>
                         <div className="container-button-pt-iscriviti">
                             <ButtonComponent text={"Accedi"} />
-                            <p>o iscriviti</p>
+                            <Link style={{textDecoration: 'none'}} to='#'><p className="container-button-pt-iscriviti-link">o iscriviti</p></Link>
                         </div>
                     </div>
                 </form>
