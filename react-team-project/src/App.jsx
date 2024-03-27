@@ -30,27 +30,29 @@ import DashUtentePT from "./Chiarap-components/DashUtentePT";
 import { HeroNews } from "./HeroNews";
 import { WorkList } from "./alex-components/WorkList";
 import { HeroWorkEx } from "./HeroWorkEx";
+import { LoginProvider } from "./context/LoginContext";
 
 
 export function App() {
-  
   return (
     <>
-      <WaterProvider>
-        <WeightProvider>
+      <LoginProvider>
+        <WaterProvider>
+          <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/accedi" element={<UserAccessForm />} />
-              <Route path="/iscriviti" element={<FormUsersSignup/>} />
+              <Route path="/iscriviti" element={<FormUsersSignup />} />
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
-              <Route path="/calendario" element={<HeroCalendar/>} />
-              <Route path="/notizie" element={<HeroNews/>}/>
-              <Route path="/workExample" element={<HeroWorkEx/>}/>
+              <Route path="/calendario" element={<HeroCalendar />} />
+              <Route path="/notizie" element={<HeroNews />} />
+              <Route path="/workExample" element={<HeroWorkEx />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
-        </WeightProvider>
-      </WaterProvider>
+          </WeightProvider>
+        </WaterProvider>
+      </LoginProvider>
     </>
   );
 }

@@ -1,18 +1,24 @@
 import express, { json } from "express";
-import * as dotenv from "dotenv"
-dotenv.config()
+import * as dotenv from "dotenv";
+dotenv.config();
 import cors from "cors";
-import { login, signup, logout} from "./controllers/registrationController.mjs";
-import  authorize  from "./authorize.mjs";
-import {getWeight} from "./controllers/dasboardControllers.mjs"
-import "./passport.mjs"
+import {
+  login,
+  signup,
+  logout,
+} from "./controllers/registrationController.mjs";
+import authorize from "./authorize.mjs";
+import { getWeight, postWeight } from "./controllers/dasboardControllers.mjs";
+import "./passport.mjs";
 import { db } from "./db.mjs";
 const app = express();
 // Middleware
 
-app.use(cors({
-  origin: 'http://localhost:5173',
-}));
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 
 app.use(json());
 
@@ -20,10 +26,11 @@ app.use(json());
 //login
 app.post("/api/users/login", login);
 //signup
-app.post("/api/users/signup", signup)
+app.post("/api/users/signup", signup);
 //logout
-app.get("/api/users/logout", authorize, logout)
+app.get("/api/users/logout", authorize, logout);
 //caricamento utente fake
+app.post("/api/users/:id", postWeight);
 app.get("/api/users/:id", getWeight);
 
 // Avvio del server
