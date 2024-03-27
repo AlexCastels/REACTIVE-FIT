@@ -136,35 +136,35 @@ export function Homepage() {
 				</div>
 				<div className={`containerCardHome fade-in ${isVisible ? 'visible' : ''}`} ref={cardRef} id="containerTeam">
 					<div className="containerSingleCardHome">
-					<div className="containerAvatarTeamAl">
+					<div className="containerAvatarTeamAl containerImgTeam">
 						</div>
 						<h2>ALESSANDRO CASTELLI</h2>
 						<p>Full-Stack</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/alessandro-f-castelli-5baa3a236/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/AlexCastels"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
-						<div className="containerAvatarTeamA">
+						<div className="containerAvatarTeamA containerImgTeam">
 						</div>
 						<h2>ANNAGIUSI VOLPE</h2>
 						<p>FE Designer</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/annagiusi-volpe-7a0027177/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/Annagiusi96"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
-					<div className="containerAvatarTeamB">
+					<div className="containerAvatarTeamB containerImgTeam">
 						</div>
 						<h2>BENDETTO MICELI</h2>
 						<p>Full-Stack</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/benedetto-miceli-14b8b3293/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/benni90100"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
-					<div className="containerAvatarTeamCp">
+					<div className="containerAvatarTeamCp containerImgTeam">
 						</div>
 						<h2>CHIARA PALUZZI</h2>
 						<p>Fronted</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/chiara-paluzzi-9856a92a9/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/paluzz34"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
 					</div>
 					<div className="containerSingleCardHome">
-					<div className="containerAvatarTeamCr">
+					<div className="containerAvatarTeamCr containerImgTeam">
 						</div>
 						<h2>CHIARA RAPISARDI</h2>
 						<p>Fronted</p>
@@ -175,9 +175,39 @@ export function Homepage() {
 
 			<div className="containerTool">
 				<div>
-					<h2>Tool Used</h2>
+					<h2>Technologies used</h2>
 				</div>
-				<div>
+				<div className="containerLogosOut">
+					<div className="containerSingleTool">
+						<div className="containerLogoToolH containerImgLogo">
+						</div>
+						<h3>HTML</h3>
+					</div>
+					<div className="containerSingleTool">
+						<div className="containerLogoToolC containerImgLogo">
+						</div>
+						<h3>CSS</h3>
+					</div>
+					<div className="containerSingleTool">
+						<div className="containerLogoToolJ containerImgLogo">
+						</div>
+						<h3>JAVASCRIPT</h3>
+					</div>
+					<div className="containerSingleTool">
+						<div className="containerLogoToolR containerImgLogo">
+						</div>
+						<h3>REACT</h3>
+					</div>
+					<div className="containerSingleTool">
+						<div className="containerLogoToolN containerImgLogo">
+						</div>
+						<h3>NODE JS</h3>
+					</div>
+					<div className="containerSingleTool">
+						<div className="containerLogoToolP containerImgLogo">
+						</div>
+						<h3>POSTGRESQL</h3>
+					</div>
 
 				</div>
 			</div>
