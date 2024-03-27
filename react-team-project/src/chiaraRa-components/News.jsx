@@ -1,3 +1,4 @@
+import { Animate } from "../benni-component/Animate";
 import "./News.css";
 
 // rounded-xl  border-2 border-gray-900 shadow-lg bg-transparent backdrop-blur-50 m-10 p-2
@@ -5,6 +6,7 @@ import "./News.css";
 export function News() {
     return(
         <>
+        <Animate>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
 <script src="https://cdn.tailwindcss.com"></script>
 <div className="NewsContainer" >
@@ -309,7 +311,7 @@ export function News() {
 
 </div>
 </div>
-
+</Animate>
 </>
 
     )
