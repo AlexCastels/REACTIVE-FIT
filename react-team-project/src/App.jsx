@@ -34,7 +34,7 @@ import { HeroNews } from "./HeroNews";
 import { WorkList } from "./alex-components/WorkList";
 import { HeroWorkEx } from "./HeroWorkEx";
 import { LoginProvider } from "./context/LoginContext";
-
+import IsLoading from "./Chiarap-components/IsLoading";
 
 
 export function App() {
@@ -53,6 +53,7 @@ export function App() {
               <Route path="/notizie" element={<HeroNews />} />
               <Route path="/workExample" element={<HeroWorkEx />} />
               <Route path="*" element={<PageNotFound />} />
+              <Route path="*//" element={<IsLoading />} />
             </Routes>
           </WeightProvider>
         </WaterProvider>
