@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { WorkApiCard } from "./WorkApiCard";
 import "./workApi.css";
+import { AnimateFlip } from "../benni-component/AnimateFlip";
 
 export function WorkList() {
 
@@ -50,11 +51,13 @@ export function WorkList() {
                     <option value="cardio">Cardio</option>
                 </select>
             </div>
-            <div className="workApi-card-container">
+           
+           <div className="workApi-card-container">
                 {data.length > 0 ? data.map((item) => (
                     <WorkApiCard key={item.id} item={item} />
                 )) : <p>Ci dispiace, Errore nel caricamento dei dati!</p>}
             </div>
+          
         </div>
     );
 }
