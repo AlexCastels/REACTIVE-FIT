@@ -6,7 +6,6 @@ import { ComponentContainer } from "./benni-component/ComponentContainer";
 import Weight from "./benni-component/Weight";
 import { RegistrationInformation } from "./benni-component/RegistrationInformation";
 import { Routes, Route } from "react-router-dom";
-
 import { PageNotFound } from "./chiaraRa-components/PageNotFound";
 import { Element } from "./components/Element";
 import { Sidebar } from "./chiaraRa-components/Sidebar";
@@ -19,26 +18,25 @@ import { RegistrationUser } from "./benni-component/RegistrationUser";
 import { UserAccessForm } from "./alex-components/UserAccessForm";
 import { Hero } from "./Hero";
 import FormAccessoPT from "./Chiarap-components/FormAccessoPT";
-
 import { Atleti } from "./chiaraRa-components/Atleti";
-
 import { UserComponents } from "./giusi_components/UserComponents";
 import { HeroCalendar } from "./HeroCalendar";
 import { FormUsersSignup } from "./giusi_components/FormUsersSignup";
 import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
 import { Homepage } from "./chiaraRa-components/Homepage";
-
-
-
-
+import { DashboardPT } from "./alex-components/DashboardPT";
+import { News } from "./chiaraRa-components/News";
+import DashUtentePT from "./Chiarap-components/DashUtentePT";
+import { HeroNews } from "./HeroNews";
+import { WorkList } from "./alex-components/WorkList";
+import { HeroWorkEx } from "./HeroWorkEx";
 
 
 export function App() {
   
   return (
     <>
-    {/* <Atleti/> */}
-      {/* <WaterProvider>
+      <WaterProvider>
         <WeightProvider>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -47,20 +45,12 @@ export function App() {
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar/>} />
+              <Route path="/notizie" element={<HeroNews/>}/>
+              <Route path="/workExample" element={<HeroWorkEx/>}/>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
         </WeightProvider>
-      </WaterProvider> */}
-      
-      {/* <AsidePtComponent/> */}
-
-      <Homepage/>
-
-    
-
- 
-    
-
+      </WaterProvider>
     </>
   );
 }
