@@ -242,6 +242,19 @@
     top: -50px;
 }
 
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
 .containerSingleCardHome{
     width: 300px;
     /* background-color: rgb(61, 61, 25); */
