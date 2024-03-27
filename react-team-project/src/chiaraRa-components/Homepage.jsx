@@ -9,11 +9,24 @@ import FormAccessoPT from "../Chiarap-components/FormAccessoPT";
 import { useState } from "react";
 import { useEffect } from "react";
 import { NavbarL } from "../giusi_components/Homepage/NavbarL";
+import { useRef } from "react";
 
 
 export function Homepage() {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
+	const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setIsVisible(entry.isIntersecting));
+    });
+
+    observer.observe(cardRef.current);
+
+    return () => observer.unobserve(cardRef.current);
+  }, []);
 
 	const images = ['src/style-site/images-style/imagesHome/3d-render-male-figure-boxing-pose.png',
 		'src/style-site/images-style/imagesHome/3d-render-male-figure-holding-knee.png',
@@ -91,7 +104,7 @@ export function Homepage() {
 				<div className="containerDescription">
 					<div className="descriptioneLeft">
 						<h2>Il nostro obiettivo</h2>
-						<div className="containerParagraphsDescrip">
+						<div className="containerParagraphsDescrip" >
 							<p>
 								Benvenuti nel nostro sito web dedicato al fitness e al benessere personale, dove sia gli utenti che i personal trainer possono tenere sotto controllo ogni aspetto del loro percorso di
 								salute. Con una gamma completa di strumenti e funzionalità, il nostro sito offre agli utenti la possibilità di monitorare la propria alimentazione,
@@ -121,7 +134,7 @@ export function Homepage() {
 				<div className="containerMeet">
 					<h2>Meet Our Team</h2>
 				</div>
-				<div className="containerCardHome" id="containerTeam">
+				<div className={`containerCardHome fade-in ${isVisible ? 'visible' : ''}`} ref={cardRef} id="containerTeam">
 					<div className="containerSingleCardHome">
 					<div className="containerAvatarTeamAl">
 						</div>
@@ -156,8 +169,16 @@ export function Homepage() {
 						<h2>CHIARA RAPISARDI</h2>
 						<p>Fronted</p>
 						<span className="logoLinkedinGithub"><a href="https://www.linkedin.com/in/chiara-rapisardi-6533a82a9/"><img src="src/style-site/images-style/imagesHome/1522007_linkedin_linked_network_social_connection_icon.png"  /></a><a href="https://github.com/chiaRapisar"><img src="src/style-site/images-style/imagesHome/211904_social_github_icon.png" alt="" /></a></span>
-					</div>
-					
+					</div>	
+				</div>
+			</div>
+
+			<div className="containerTool">
+				<div>
+					<h2>Tool Used</h2>
+				</div>
+				<div>
+
 				</div>
 			</div>
 
