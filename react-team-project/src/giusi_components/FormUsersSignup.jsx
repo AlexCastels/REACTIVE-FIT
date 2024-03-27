@@ -83,7 +83,7 @@ export function FormUsersSignup() {
 												name="username"
 												id="username"
 												autoComplete="username"
-												className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+												className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-white p-4 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
 												placeholder="janesmith"
 												required
 												onChange={(e) => handleChangeInput('username', e)}
@@ -103,7 +103,7 @@ export function FormUsersSignup() {
 											id="about"
 											name="about"
 											rows={3}
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6 h-36 text-white p-2 text-lg"
 											defaultValue={''}
 										/>
 									</div>
@@ -172,7 +172,7 @@ export function FormUsersSignup() {
 											autoComplete="height"
 											placeholder='cm'
 											required
-											className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-3 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="text-white p-2 block rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('height', e)}
 										/>
 									</div>
@@ -190,7 +190,7 @@ export function FormUsersSignup() {
 											autoComplete="weight"
 											placeholder='kg'
 											required
-											className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-3 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('weight', e)}
 										/>
 									</div>
@@ -214,7 +214,7 @@ export function FormUsersSignup() {
 											id="firstName"
 											autoComplete="given-name"
 											required
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('firstName', e)}
 										/>
 									</div>
@@ -231,7 +231,7 @@ export function FormUsersSignup() {
 											id="lastName"
 											autoComplete="family-name"
 											required
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('lastName', e)}
 										/>
 									</div>
@@ -248,7 +248,7 @@ export function FormUsersSignup() {
 											type="email"
 											autoComplete="email"
 											required
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('email', e)}
 										/>
 									</div>
@@ -263,7 +263,7 @@ export function FormUsersSignup() {
 											id="gender"
 											name="gender"
 											autoComplete="gender-name"
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:max-w-xs sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:max-w-xs sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('gender', e)}
 										>
 											<option value='male'>Male</option>
@@ -285,7 +285,7 @@ export function FormUsersSignup() {
 											id="streetAddress"
 											autoComplete="streetAddress"
 											required
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('streetAddress', e)}
 										/>
 									</div>
@@ -302,7 +302,7 @@ export function FormUsersSignup() {
 											id="city"
 											autoComplete="address-level2"
 											required
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('city', e)}
 										/>
 									</div>
@@ -319,7 +319,7 @@ export function FormUsersSignup() {
 											id="region"
 											autoComplete="address-level1"
 											required
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('region', e)}
 										/>
 									</div>
@@ -336,7 +336,7 @@ export function FormUsersSignup() {
 											id="postalCode"
 											autoComplete="postalCode"
 											required
-											className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
+											className="block w-full rounded-md border-0 py-1.5 text-white p-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6"
 											onChange={(e) => handleChangeInput('postalCode', e)}
 										/>
 									</div>

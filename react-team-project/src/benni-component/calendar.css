@@ -29,7 +29,7 @@
   }
   
   .day:nth-child(7n) {
-    color: blue;
+    color: rgba(131, 131, 13, 0.747);
   }
   
   .day:nth-child(7n + 1) {
@@ -43,6 +43,6 @@
   }
   
   button:hover {
-    color: blue;
+    color:rgba(131, 131, 13, 0.747);
   }
   

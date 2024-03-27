@@ -1,15 +1,52 @@
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useEffect, useState } from "react"
 
 const WeightContext = createContext()
 
 export const  WeightProvider = ({children}) => {
     const [weight, setWeight] = useState([]);
     const [addWeight, setAddWeight] = useState("");
-
+    const getWeigth = async ()=>{
+     try {
+      const data = await fetch("http://localhost:3000/api/users/1")
+      const dataj = await data.json()
+      console.log(dataj)
+      const pesi = dataj.map(peso => peso.peso)
+      setWeight(pesi)
+      console.log(pesi)
+     } catch (error) {
+      console.error(error.message);
+     }
+      
+    }
+    const postWeight = async () => {
+      try {
+        const response = await fetch("/api/peso/1", {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ peso: Number(addWeight) })
+        });
+    
+        if (!response.ok) {
+          throw new Error('Errore durante la richiesta');
+        }
+    
+        setWeight(prevWeight => [...prevWeight, addWeight]);
+        console.log("Peso aggiunto con successo!");
+        console.log(response)
+      } catch (error) {
+        console.error(error.message);
+      }
+    };
+    
+    
+    useEffect(getWeigth ,[])
     const handleWeight = (e) => {
         e.preventDefault();
         setWeight(prevWeight => [...prevWeight, addWeight]); 
         setAddWeight(""); 
+        postWeight()
         console.log(weight)
     };
 
@@ -102,7 +139,7 @@ export const  WeightProvider = ({children}) => {
         },
       };
     return(
-        <WeightContext.Provider value={[chartConfig, handleWeight, handleAddWeight, weight]}>
+        <WeightContext.Provider value={[chartConfig, handleWeight, handleAddWeight, weight, postWeight]}>
             {children}
         </WeightContext.Provider>
     )

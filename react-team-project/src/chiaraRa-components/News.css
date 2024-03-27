@@ -1,15 +1,19 @@
 .NewsContainer{
-    padding: 10rem;
     display: flex;
-    background-color: gray;
+    flex-wrap: wrap;
+    padding:25px;
 }
+
 .NewsCard{
-        border-radius: 0.5rem; 
-        background-color: #000;
-        padding: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    border: 1px solid rgb(38, 38, 38);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(50px); 
+    /* background-color: #000; */
+    padding: 1rem;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);       */
     
 }
+
 .NewsCardText {
         display: -webkit-box;
         -webkit-box-orient: vertical;
