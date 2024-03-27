@@ -1,51 +1,12 @@
 import { useState } from "react";
 import "./userAccessForm.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ButtonComponent } from "../style-site/ButtonComponent";
 import { FormUsersSignup } from "../giusi_components/FormUsersSignup";
+import { useLogin } from "../context/LoginContext";
 
 export function UserAccessForm() {
-  const [input, setInput] = useState({
-    email: "",
-    password: "",
-  });
-
-let history = useHistory();
-
-  const handleForm = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(input),
-      });
-      if (response.ok) {
-        const data = await response.json();
-        const token = data.token;
-        localStorage.setItem("token", token);
-        console.log("Utente autenticato con successo");
-        // Reindirizza l'utente a una pagina diversa dopo il login
-        history.push("/dashboard");
-      } else {
-        // Gestisci l'errore di autenticazione qui
-        console.error("Credenziali non valide");
-      }
-    } catch (error) {
-      console.error("Errore di rete:", error);
-    }
-  };
-
-  const handleInput = (e) => {
-    const { name, value } = e.target;
-    setInput((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
+  const [handleInput, handleForm, input, setInput] = useLogin();
   return (
     <div className="container-form-homepage">
       <div className="general-container">
@@ -55,17 +16,17 @@ let history = useHistory();
             <label htmlFor="email"> E-mail</label>
             <input
               className="inputForm"
-              type="email"
+              type="text"
               onChange={handleInput}
-              name="email"
-              value={input.email}
+              name="username"
+              value={input.username}
             />
           </div>
           <div className="input">
             <label htmlFor="password"> Password</label>
             <input
               className="inputForm"
-              type="password"
+              type="text"
               onChange={handleInput}
               name="password"
               value={input.password}
