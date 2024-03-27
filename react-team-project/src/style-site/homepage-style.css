@@ -245,8 +245,8 @@
 
 .fade-in {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 3s ease-out, transform 3s ease-out;
+    transform: translateY(-60px);
+    transition: opacity 4s ease-out, transform 4s ease-out;
   }
   
   .fade-in.visible {
@@ -392,7 +392,8 @@
     /* height: 500px; */
     /* height: 500px; */
 }
-.containerMeet h2{
+.containerMeet h2,
+.containerTool h2{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -423,31 +424,31 @@
 
 .containerAvatarTeamA{
     background-image: url('src/style-site/images-style/imagesHome/annagiusi.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
 }
 
 .containerAvatarTeamAl{
     background-image: url('src/style-site/images-style/imagesHome/alessandro-cast.png');
-    background-size: cover;
-    background-position: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
 }
 
 .containerAvatarTeamCp{
     background-image: url('src/style-site/images-style/imagesHome/chiaraP.jpg');
+}
+
+.containerAvatarTeamCr{
+    background-image: url('src/style-site/images-style/imagesHome/chiaraR.jpg');
+}
+
+.containerAvatarTeamB{
+    background-image: url('src/style-site/images-style/imagesHome/benni.jpeg'); 
+}
+
+.containerImgTeam{
     background-size: cover;
     background-position: center;
     width: 150px;
     height: 150px;
     border-radius: 100px;
 }
-
 .logoLinkedinGithub{
     display: flex;
     gap: 15px;
@@ -458,4 +459,68 @@
 
 .logoLinkedinGithub img:hover{
     opacity: 0.3;
+}
+
+/* .containerTool{
+    background-color: #1c1c1c;
+} */
+
+.containerLogosOut{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.containerSingleTool{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.containerSingleTool h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+.containerImgLogo{
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #dbd803;
+}
+
+.containerLogoToolH{
+    background-image: url('src/style-site/images-style/imagesHome/loghi/html_1051328.png');
+}
+
+.containerLogoToolC{
+    background-image: url('src/style-site/images-style/imagesHome/loghi/css-3_5968473.png');
+}
+
+.containerLogoToolJ{
+    background-image: url('src/style-site/images-style/imagesHome/loghi/java-script_721671.png');
+}
+
+.containerLogoToolR{
+    background-image: url('src/style-site/images-style/imagesHome/loghi/core-value_13101876.png');
+}
+
+.containerLogoToolN{
+    background-image: url('src/style-site/images-style/imagesHome/loghi/node-js.png');
+}
+
+.containerLogoToolP{
+    background-image: url('src/style-site/images-style/imagesHome/loghi/postgre_6422230.png');
+
 }
