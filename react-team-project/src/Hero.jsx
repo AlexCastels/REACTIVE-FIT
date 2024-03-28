@@ -17,84 +17,62 @@ import "./hero.css";
 export function Hero() {
   return (
     <div className="hero-container">
-      <Animate delay={1}>
+
       <AsideContainer>
         <Sidebar />
       </AsideContainer>
-      </Animate>
+
       <div className="central-container-hero">
-        <Animate delay={2}>
-        <div className="title-general-hero">
-          <p>Dashboard Utente</p>
-        </div>
-        </Animate>
-        <Animate delay={2}>
-        <div className="title-counter-sleep">
-          <p>Sleep and work Counter</p>
-          <div className="counter-sleep-style">
-            <WorkoutAndSleep />
+        <Animate delay={1}>
+          <div className="title-general-hero">
+            <p>Dashboard Utente</p>
           </div>
-        </div>
         </Animate>
-        <Animate delay={2}>
-        <div className="title-contakcal">
-          <p>Kcal Counter</p>
-          <div>
-            <Element>
-              <CounterCalories />
-            </Element>
+        <Animate delay={1}>
+          <div className="title-counter-sleep">
+            <p>Sleep and work Counter</p>
+            <div className="counter-sleep-style">
+              <WorkoutAndSleep />
+            </div>
           </div>
-        </div>
         </Animate>
-        <Animate delay={2}>
-        <div className="title-weight-water">
-          
-          <p className="">Progression</p>
-          
-          <div className="weight-water-style">
-            
+        <Animate delay={1}>
+          <div className="title-contakcal">
+            <p>Kcal Counter</p>
+            <div>
+              <Element>
+                <CounterCalories />
+              </Element>
+            </div>
+          </div>
+        </Animate>
+        <Animate delay={1}>
+          <div className="title-weight-water">
+
+            <p className="">Progression</p>
+
+            <div className="weight-water-style">
+
               <Element>
                 <Weight />
               </Element>
-            
-            <Animate delay={2}>
-              <Element>
-                <Water />
-              </Element>
-            </Animate>
-            
+
+              <Animate delay={1}>
+                <Element>
+                  <Water />
+                </Element>
+              </Animate>
+
+            </div>
           </div>
-        </div>
         </Animate>
-        {/* <div className="central-container-hero-left">
-                    <Element>
-                        <CounterCalories />
-                    </Element>
-                </div>
-                <div className="central-container-hero-rigth">
-                    <div className="central-container-hero-rigth-top">
-                        <WorkoutAndSleep />
-                    </div>
-                    <div className="central-container-hero-rigth-bot">
-                        <div className="weight-component">
-                            <Element>
-                                <Weight />
-                            </Element>
-                        </div>
-                        <div className="water-component">
-                            <Element>
-                                <Water />
-                            </Element>
-                        </div>
-                    </div>
-                </div> */}
       </div>
-      <Animate delay={1}>
+
       <AsideContainer>
         <UserComponents />
         {/* <AsidePtComponent/> */}
       </AsideContainer>
-      </Animate>
+
     </div>
   );
 }

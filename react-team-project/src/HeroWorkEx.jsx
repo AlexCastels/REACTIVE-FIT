@@ -8,26 +8,26 @@ export function HeroWorkEx() {
   return (
     <>
       <div className="hero-container">
-        <Animate delay={1}>
+    
           <AsideContainer>
             <Sidebar />
           </AsideContainer>
-        </Animate>
+      
         <div className="central-container-hero">
-          <Animate delay={2}>
+          <Animate delay={1}>
             <div className="title-news">
               <p>Exercise Instructions:</p>
             </div>
           </Animate>
-          <Animate delay={2}>
+          <Animate delay={1}>
             <WorkList />
           </Animate>
         </div>
-        <Animate delay={1}>
+       
           <AsideContainer>
             <UserComponents />
           </AsideContainer>
-        </Animate>
+      
       </div>
     </>
   );

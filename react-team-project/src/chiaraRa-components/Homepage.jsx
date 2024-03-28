@@ -8,7 +8,6 @@ import FormAccessoPT from "../Chiarap-components/FormAccessoPT";
 
 import { useState } from "react";
 import { useEffect } from "react";
-import { NavbarL } from "../giusi_components/Homepage/NavbarL";
 import { useRef } from "react";
 import { Animate } from "../benni-component/Animate";
 

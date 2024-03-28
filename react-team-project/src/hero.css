@@ -5,7 +5,8 @@
     /* background-color: #1c1c1c; */
     background-color: black;
     background-size: cover;
-    /* background-image: url('/src/style-site/images-style/nnneon_1.svg'); */
+    background-image: url('/src/style-site/images-style/nnneon_1.svg');
+    backdrop-filter: blur(100px);
     background-repeat: repeat;
     background-position-x: -72px;
     background-position-y: 471px;
@@ -76,4 +77,8 @@
 
 .water-component{
     width: 300px;
+}
+
+.counter-sleep-style{
+    padding-top: 20px;
 }
