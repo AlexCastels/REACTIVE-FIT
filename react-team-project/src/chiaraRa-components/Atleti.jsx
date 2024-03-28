@@ -18,19 +18,19 @@ export function Atleti() {
                             <div className="AtletaCardsinxInfo">
                                 <div className="info-atleta-container">
                                     <div>
-                                        <p>Info:</p>
+                                        <p><b>Info:</b></p>
                                         <p>Età: 25</p>
                                         <p>Peso: 70kg</p>
                                         <p>Altezza: 160cm</p>
                                     </div>
                                     <div>  
-                                        <p>Contatti:</p>
-                                        <p>sofiarossi@email.com</p>
+                                        <p><b>Contatti:</b></p>
+                                        <p>s.rossi@email.com</p>
                                         <p>3334455229</p>
                                     </div>
                                 </div>
                                 <div className="prox-appuntamento-atleti">
-                                    <p>Prossimo appuntamento:</p>
+                                    <p><b>Prossimo appuntamento:</b></p>
                                     <p>Control-Check: 27/04/24 Martedì 11.30</p>
                                 </div>       
                             </div>
@@ -87,24 +87,24 @@ export function Atleti() {
                                     src="https://i.pinimg.com/474x/b5/d9/c9/b5d9c94c8bff8d4fa728e13ddf106bc0.jpg"
                                     alt="Ragazza"
                                 />
-                                <h2>Giovanni Giorgio</h2>
+                                <h2>Matteo Bianchi</h2>
                             </div>
                             <div className="AtletaCardsinxInfo">
                                 <div className="info-atleta-container">
                                     <div>
-                                        <p>Info:</p>
+                                        <p><b>Info:</b></p>
                                         <p>Età: 27</p>
                                         <p>Peso: 75kg</p>
                                         <p>Altezza: 170cm</p>
                                     </div>
                                     <div>  
-                                        <p>Contatti:</p>
-                                        <p>g.giorgio@email.com</p>
+                                        <p><b>Contatti:</b></p>
+                                        <p>g.giorg@gmail.it</p>
                                         <p>3333569784</p>
                                     </div>
                                 </div>
                                 <div className="prox-appuntamento-atleti">
-                                    <p>Prossimo appuntamento:</p>
+                                    <p><b>Prossimo appuntamento:</b></p>
                                     <p>Control-Check: 27/04/24 Martedì 11.30</p>
                                 </div>       
                             </div>
@@ -166,13 +166,13 @@ export function Atleti() {
                             <div className="AtletaCardsinxInfo">
                                 <div className="info-atleta-container">
                                     <div>
-                                        <p>Info:</p>
+                                        <p><b>Info:</b></p>
                                         <p>Età: 30</p>
                                         <p>Peso: 110kg</p>
                                         <p>Altezza: 180cm</p>
                                     </div>
                                     <div>  
-                                        <p>Contatti:</p>
+                                        <p><b>Contatti:</b></p>
                                         <p>joeM@email.com</p>
                                         <p>3334455229</p>
                                     </div>
@@ -240,19 +240,19 @@ export function Atleti() {
                             <div className="AtletaCardsinxInfo">
                                 <div className="info-atleta-container">
                                     <div>
-                                        <p>Info:</p>
+                                        <p><b>Info:</b></p>
                                         <p>Età: 33</p>
                                         <p>Peso: 78kg</p>
                                         <p>Altezza: 176cm</p>
                                     </div>
                                     <div>  
-                                        <p>Contatti:</p>
-                                        <p>biondiR@email.com</p>
+                                        <p><b>Contatti:</b></p>
+                                        <p>biondiR@email.it</p>
                                         <p>3334455229</p>
                                     </div>
                                 </div>
                                 <div className="prox-appuntamento-atleti">
-                                    <p>Prossimo appuntamento:</p>
+                                    <p><b>Prossimo appuntamento:</b></p>
                                     <p>Control-Check: 27/04/24 Martedì 11.30</p>
                                 </div>       
                             </div>
@@ -314,19 +314,19 @@ export function Atleti() {
                             <div className="AtletaCardsinxInfo">
                                 <div className="info-atleta-container">
                                     <div>
-                                        <p>Info:</p>
+                                        <p><b>Info:</b></p>
                                         <p>Età: 25</p>
                                         <p>Peso: 80kg</p>
                                         <p>Altezza: 169cm</p>
                                     </div>
                                     <div>  
-                                        <p>Contatti:</p>
-                                        <p>sofiarossi@email.com</p>
+                                        <p><b>Contatti:</b></p>
+                                        <p>sofiarossi@email.it</p>
                                         <p>3334455229</p>
                                     </div>
                                 </div>
                                 <div className="prox-appuntamento-atleti">
-                                    <p>Prossimo appuntamento:</p>
+                                    <p><b>Prossimo appuntamento:</b></p>
                                     <p>Control-Check: 27/04/24 Martedì 11.30</p>
                                 </div>       
                             </div>

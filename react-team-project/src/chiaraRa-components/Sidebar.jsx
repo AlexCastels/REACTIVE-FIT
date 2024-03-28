@@ -17,7 +17,7 @@ export function Sidebar() {
 <div className="sidebarContainer bg-black p-4">
   <div className="sidebarDivContainer">
     <div className="sidebarH1Logo">
-      <img src="src/style-site/images-style/reactiveLogo-Photoroom.png-Photoroom.png" />
+      <img src="/src/style-site/images-style/reactiveLogo-Photoroom.png-Photoroom.png" />
     </div>
     <ul className="sidebarUl">
       <li>

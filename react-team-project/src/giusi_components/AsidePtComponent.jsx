@@ -11,7 +11,7 @@ export function AsidePtComponent() {
             {/* <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/> */}
             <div className="flex flex-col items-center min-h-screen bg-black overflow-y-scroll overflow-x-hidden h-screen user-components">
                 <div className=" m-4">
-                    <div className="max-w-xl w-full mx-auto grid gap-4 grid-cols-1">
+                    <div className="max-w-md w-full mx-auto grid gap-4 grid-cols-1">
                         <div className="flex top-0 z-10 justify-center">
                             <div className="bg-transparent border border-gray-800 shadow-lg rounded-2xl p-4">
                                 <div className="flex-none sm:flex">
