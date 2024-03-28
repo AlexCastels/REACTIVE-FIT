@@ -19,6 +19,15 @@
     height: 1000px;
 }
 
+.logoHomepage{
+    background-image: url('src/style-site/images-style/reactiveLogo-Photoroom.png-Photoroom.png');
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 450px;
+    position: relative;
+    top: 50px;
+}
 
 .container-img-homepage {
     display: flex;
@@ -631,3 +640,4 @@
 		width: 230px;
 	}
 }
+
