@@ -26,15 +26,11 @@ import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
 import { Homepage } from "./chiaraRa-components/Homepage";
 import { DashboardPT } from "./alex-components/DashboardPT";
 import { News } from "./chiaraRa-components/News";
-
-
-
 import DashUtentePT from "./Chiarap-components/DashUtentePT";
 import { HeroNews } from "./HeroNews";
 import { WorkList } from "./alex-components/WorkList";
 import { HeroWorkEx } from "./HeroWorkEx";
 import { LoginProvider } from "./context/LoginContext";
-import IsLoading from "./Chiarap-components/IsLoading";
 
 
 export function App() {
@@ -48,12 +44,12 @@ export function App() {
               <Route path="/accedi" element={<UserAccessForm />} />
               <Route path="/iscriviti" element={<FormUsersSignup />} />
               <Route path="/iscriviti-pt" element={<FormAccessoPT />} />
+              <Route path="/dashboard/pt" element={<DashboardPT/>}/>
               <Route path="/dashboard" element={<Hero />} />
               <Route path="/calendario" element={<HeroCalendar />} />
               <Route path="/notizie" element={<HeroNews />} />
               <Route path="/workExample" element={<HeroWorkEx />} />
               <Route path="*" element={<PageNotFound />} />
-              <Route path="*//" element={<IsLoading />} />
             </Routes>
           </WeightProvider>
         </WaterProvider>

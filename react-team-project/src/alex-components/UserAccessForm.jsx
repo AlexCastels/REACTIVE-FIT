@@ -41,7 +41,7 @@ export function UserAccessForm() {
                     <div className="container-button-pt">
                         <h5>Sei un Personal Trainer?</h5>
                         <div className="container-button-pt-iscriviti">
-                            <ButtonComponent text={"Accedi"} />
+                            <Link to='/dashboard/pt'><ButtonComponent text={"Accedi"} /></Link>
                             <Link style={{textDecoration: 'none'}} to='#'><p className="container-button-pt-iscriviti-link">o iscriviti</p></Link>
                         </div>
                     </div>

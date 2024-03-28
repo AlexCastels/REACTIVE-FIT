@@ -1,9 +1,11 @@
 
 .AtletiInfo{
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     /* text-align: center; */
     margin-bottom: 90px;
+    font-family: "Roboto", sans-serif;
+    
 }
 .AtletaCard{
     display: flex;
@@ -11,8 +13,9 @@
     justify-content: space-around;
     height: 13vw;
     /* box-shadow: 0 10px 15px -3px gray; */
-    margin-bottom: 30px;  
+    margin-bottom: 60px;  
     backdrop-filter: blur(40px);
+    
 }  
 
 .AtletaCardSinxImg{
