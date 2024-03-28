@@ -17,8 +17,7 @@ export function Sidebar() {
 <div className="sidebarContainer bg-black p-4">
   <div className="sidebarDivContainer">
     <div className="sidebarH1Logo">
-      <i className='bx bx-dumbbell'></i>
-      <h1 className="sideText text-gray-200">FITNESS REACT</h1>
+      <img src="src/style-site/images-style/reactiveLogo-Photoroom.png-Photoroom.png" />
     </div>
     <ul className="sidebarUl">
       <li>
@@ -35,8 +34,8 @@ export function Sidebar() {
       </li>
       <li>
         <Link to="/workExample" className="sidebarElenco bg-transparent border border-gray-800 shadow-lg rounded-2xl p-4 transition ease-in duration-500  transform hover:scale-105" element={<News/>}>
-          <span className="sideIcon"><i className="bx bx-news"></i></span>
-          <span className="sidebarPag text-gray-200  hover:text-yellow-400">Work Example</span>
+          <span className="sideIcon"><ion-icon name="barbell-outline"></ion-icon></span>
+          <span className="sidebarPag text-gray-200  hover:text-yellow-400">Exercises</span>
         </Link>
       </li>
       <li>

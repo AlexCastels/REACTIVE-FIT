@@ -16,26 +16,26 @@ import { Animate } from "./benni-component/Animate";
 export function HeroCalendar() {
   return (
     <div className="hero-container">
-      <Animate delay={1}>
-      <AsideContainer>
-        <Sidebar />
-      </AsideContainer>
-      </Animate>
+      
+        <AsideContainer>
+          <Sidebar />
+        </AsideContainer>
+    
       <div className="central-container-hero">
-        <Animate delay={2}>
-        <div className="title-calendar">
-          <p>Calendario:</p>
-        </div>
+       
+          <div className="title-calendar">
+            <p>Calendario:</p>
+          </div>
+       
+        <Animate delay={1}>
+          <CalendarPage />
         </Animate>
-        <Animate delay={2}>
-        <CalendarPage />
-          </Animate>
       </div>
-      <Animate delay={1}>
-      <AsideContainer>
-        <UserComponents />
-      </AsideContainer>
-      </Animate>
+      
+        <AsideContainer>
+          <UserComponents />
+        </AsideContainer>
+  
     </div>
   );
 }
