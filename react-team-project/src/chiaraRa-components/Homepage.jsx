@@ -10,10 +10,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { NavbarL } from "../giusi_components/Homepage/NavbarL";
 import { useRef } from "react";
+import { Animate } from "../benni-component/Animate";
 
 
 export function Homepage() {
-	const [currentIndex, setCurrentIndex] = useState(0);
+	// const [currentIndex, setCurrentIndex] = useState(0);
 
 	const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef();
@@ -28,18 +29,18 @@ export function Homepage() {
     return () => observer.unobserve(cardRef.current);
   }, []);
 
-	const images = ['src/style-site/images-style/imagesHome/3d-render-male-figure-boxing-pose.png',
-		'src/style-site/images-style/imagesHome/3d-render-male-figure-holding-knee.png',
-		'src/style-site/images-style/imagesHome/QvhJ8UDgHXFXb-qiRiijv-transformed.png'
-	]
+	// const images = ['src/style-site/images-style/imagesHome/3d-render-male-figure-boxing-pose.png',
+	// 	'src/style-site/images-style/imagesHome/3d-render-male-figure-holding-knee.png',
+	// 	'src/style-site/images-style/imagesHome/QvhJ8UDgHXFXb-qiRiijv-transformed.png'
+	// ]
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-		}, 3000);
+	// useEffect(() => {
+	// 	const interval = setInterval(() => {
+	// 		setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+	// 	}, 3000);
 
-		return () => clearInterval(interval);
-	}, [images]);
+	// 	return () => clearInterval(interval);
+	// }, [images]);
 
 
 
@@ -51,7 +52,7 @@ export function Homepage() {
 					<p>Rimani in contatto con il tuo Personal Trainer</p>
 				</div>
 				<div className="general-container-site">
-
+					<Animate delay={1}>
 					<div className="container-img-homepage">
 						<div className="image-homepage">
 							<div className="cerchioV1"></div>
@@ -60,7 +61,10 @@ export function Homepage() {
 							<div className="cerchioV4"></div>
 							<div className="cerchioV5"></div>
 							<div className="cerchioV6"></div>
-							<div className="carouselHome">
+							<div className="logoHomepage">
+
+							</div>
+							{/* <div className="carouselHome">
 								{images.map((image, idx) => (
 									<img
 										key={idx}
@@ -70,14 +74,17 @@ export function Homepage() {
 										id="carouselImagesHome"
 									/>
 								))}
-							</div>
+							</div> */}
 						</div>
 					</div>
+					</Animate>
 					<div className="line-homepage">
 					</div>
+					<Animate delay={1}>
 					<div className="container-input-access">
 						<UserAccessForm />
 					</div>
+					</Animate>
 				</div>
 			</div>
 			<div className="containerCardHome">
