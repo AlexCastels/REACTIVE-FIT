@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { useEffect, useState } from "react"
 
-export const Animate = ({ sx, ...props }) => {
+export const Animate = ({ sx, ...props}) => {
     const [translateY, setTranslateY] = useState(1000);
     const [opacity, setOpacity] = useState(0);
   

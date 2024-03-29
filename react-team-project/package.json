@@ -31,7 +31,7 @@
     "react-router-dom": "^6.22.3",
     "react-scroll-parallax": "^3.4.5",
     "react-transition-group": "^4.4.5",
-    "rsuite": "^5.57.0",
+    "rsuite": "^5.58.1",
     "swr": "^2.2.4"
   },
   "devDependencies": {

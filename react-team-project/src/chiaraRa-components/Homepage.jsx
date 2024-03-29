@@ -15,18 +15,7 @@ import { Animate } from "../benni-component/Animate";
 export function Homepage() {
 	// const [currentIndex, setCurrentIndex] = useState(0);
 
-	const [isVisible, setIsVisible] = useState(false);
-  const cardRef = useRef();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setIsVisible(entry.isIntersecting));
-    });
-
-    observer.observe(cardRef.current);
-
-    return () => observer.unobserve(cardRef.current);
-  }, []);
 
 	// const images = ['src/style-site/images-style/imagesHome/3d-render-male-figure-boxing-pose.png',
 	// 	'src/style-site/images-style/imagesHome/3d-render-male-figure-holding-knee.png',
@@ -138,7 +127,7 @@ export function Homepage() {
 				<div className="containerMeet">
 					<h2>Meet Our Team</h2>
 				</div>
-				<div className={`containerCardHome fade-in ${isVisible ? 'visible' : ''}`} ref={cardRef} id="containerTeam">
+				<div className="containerCardHome"  id="containerTeam">
 					<div className="containerSingleCardHome">
 					<div className="containerAvatarTeamAl containerImgTeam">
 						</div>

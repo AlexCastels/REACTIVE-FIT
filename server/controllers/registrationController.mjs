@@ -8,13 +8,13 @@ const login = async (req, res) => {
 
   try {
     // Query per ottenere l'utente dal database
-    const user = await db.one(
+    const user = await db.query(
       "SELECT * FROM users WHERE username=$1",
-      username
+      [username]
     );
 
     // Verifica se l'utente esiste e se la password è corretta
-    if (user && user.password === password) {
+    if (user && user[0].password === password) {
       // Genera il token JWT
       const payload = {
         id: user.id,
