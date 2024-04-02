@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ButtonComponent } from "../style-site/ButtonComponent";
 import { FormUsersSignup } from "../giusi_components/FormUsersSignup";
 import { useLogin } from "../context/LoginContext";
+import { HeartIcon } from "@heroicons/react/24/solid";
 
 export function UserAccessForm() {
   const [handleInput, handleForm, input, setInput] = useLogin();
@@ -33,12 +34,13 @@ export function UserAccessForm() {
             />
           </div>
           <div className="container-buttons-form">
-            <button
+            <Link to={"/dashboard"} ><button
               type="submit"
               className="bg-yellow-400 hover:bg-transparent h-9 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium hover:text-gray-50 text-slate-950 rounded-md transition ease-in duration-700 max-w-40"
             >
+              
               Invia
-            </button>
+            </button></Link>
             <Link to={"/iscriviti"} element={<FormUsersSignup />}>
               <ButtonComponent text={"Sign-up"} />
             </Link>

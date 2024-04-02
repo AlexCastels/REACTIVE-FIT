@@ -19,7 +19,7 @@ export const WeightProvider = ({ children }) => {
   };
   const postWeight = async () => {
     try {
-      const response = await fetch("/api/peso/1", {
+      const response = await fetch("http://localhost:3000/api/users/1", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,7 +38,9 @@ export const WeightProvider = ({ children }) => {
     }
   };
 
-  useEffect(getWeigth, []);
+  useEffect(() => {
+    getWeigth();
+  }, []);
   const handleWeight = (e) => {
     e.preventDefault();
     setWeight((prevWeight) => [...prevWeight, addWeight]);
