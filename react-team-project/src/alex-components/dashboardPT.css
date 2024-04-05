@@ -6,3 +6,9 @@
 .PT-title p{
     font-size: 30px;
 }
+@media only screen and (max-width: 660px) {
+    .PT-title{
+        margin-left: 60px;
+        margin-top: 30px;
+    } 
+}
