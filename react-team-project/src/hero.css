@@ -17,6 +17,11 @@
     color: rgb(211, 211, 211);
     justify-content: space-between;
 }
+@media screen and (max-width: 900px){
+    .hero-container{
+        flex-direction: column;
+    }
+}
 
 .central-container-hero{
     display: flex;

@@ -1,3 +1,3 @@
-export function AsideContainer({children}) {
-    return <div className="md:flex flex-col hidden ">{children}</div>;
+export function AsideContainerDx({children}) {
+    return <div className="flex flex-col md:hidden ">{children}</div>;
 }

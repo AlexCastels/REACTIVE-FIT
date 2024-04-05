@@ -3,10 +3,12 @@ import { CounterCalories } from "./alex-components/CounterCalories";
 import { Animate } from "./benni-component/Animate";
 import { AnimateFlip } from "./benni-component/AnimateFlip";
 import { Story } from "./benni-component/Story";
+import { UserComponentResponsive } from "./benni-component/UserComponentResponsive";
 import { Water } from "./benni-component/Water";
 import Weight from "./benni-component/Weight";
 import { Sidebar } from "./chiaraRa-components/Sidebar";
 import { AsideContainer } from "./components/AsideContainer";
+import { AsideContainerDx } from "./components/AsideContainerDx";
 import { CentralContainer } from "./components/CentralContainer";
 import { Element } from "./components/Element";
 import { StoryContainer } from "./components/StoryContainer";
@@ -16,12 +18,7 @@ import "./hero.css";
 
 export function Hero() {
   return (
-    <div className="hero-container">
-
-      <AsideContainer>
-        <Sidebar />
-      </AsideContainer>
-
+    <div className="hero-container ">
       <div className="central-container-hero">
         <Animate delay={1}>
           <div className="title-general-hero">
@@ -48,11 +45,9 @@ export function Hero() {
         </Animate>
         <Animate delay={1}>
           <div className="title-weight-water">
-
             <p className="">Progression</p>
 
             <div className="weight-water-style">
-
               <Element>
                 <Weight />
               </Element>
@@ -62,17 +57,18 @@ export function Hero() {
                   <Water />
                 </Element>
               </Animate>
-
             </div>
           </div>
         </Animate>
       </div>
-
       <AsideContainer>
         <UserComponents />
-        {/* <AsidePtComponent/> */}
       </AsideContainer>
 
+      <AsideContainerDx>
+        <UserComponentResponsive />
+        {/* <AsidePtComponent/> */}
+      </AsideContainerDx>
     </div>
   );
 }
