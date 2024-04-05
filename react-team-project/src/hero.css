@@ -82,3 +82,10 @@
 .counter-sleep-style{
     padding-top: 20px;
 }
+@media only screen and (max-width:768px) {
+    .counter-sleep-style{
+        display: block;
+    }
+ 
+    
+}
