@@ -18,9 +18,9 @@ export function Hero() {
   return (
     <div className="hero-container">
 
-      <AsideContainer>
+      {/* <AsideContainer>
         <Sidebar />
-      </AsideContainer>
+      </AsideContainer> */}
 
       <div className="central-container-hero">
         <Animate delay={1}>
@@ -68,10 +68,10 @@ export function Hero() {
         </Animate>
       </div>
 
-      <AsideContainer>
+      {/* <AsideContainer>
         <UserComponents />
-        {/* <AsidePtComponent/> */}
-      </AsideContainer>
+        <AsidePtComponent/>
+      </AsideContainer> */}
 
     </div>
   );
