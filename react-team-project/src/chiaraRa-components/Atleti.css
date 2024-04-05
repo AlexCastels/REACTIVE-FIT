@@ -142,10 +142,15 @@
    
     }
     .AtletiImportContainer{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
     .AtletiTextArea{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .AtletaCardSinxImg img{
         width: 70px;
@@ -182,7 +187,20 @@
     #myFileAlim{
         display: flex;
         flex-direction: column;
-
+        width: 250px;
     }
-    
+    #myFileAllen{
+            display: flex;
+            flex-direction: column;
+            width: 250px;    
+    }
+    #messaggio{
+        width: 250px;
+    }
+    .AtletaCardDex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
 }
