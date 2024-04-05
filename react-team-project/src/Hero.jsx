@@ -70,7 +70,7 @@ export function Hero() {
 
       <AsideContainer>
         <UserComponents />
-        {/* <AsidePtComponent/> */}
+      
       </AsideContainer>
 
     </div>
