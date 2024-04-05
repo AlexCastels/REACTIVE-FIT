@@ -19,6 +19,9 @@ import "./hero.css";
 export function Hero() {
   return (
     <div className="hero-container ">
+      <AsideContainer>
+        <Sidebar />
+      </AsideContainer>
       <div className="central-container-hero">
         <Animate delay={1}>
           <div className="title-general-hero">
@@ -67,7 +70,6 @@ export function Hero() {
 
       <AsideContainerDx>
         <UserComponentResponsive />
-        {/* <AsidePtComponent/> */}
       </AsideContainerDx>
     </div>
   );
