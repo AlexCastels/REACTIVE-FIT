@@ -7,9 +7,9 @@ import './dashboardPT.css'
 export function DashboardPT(){
     return (
         <div className="hero-container">
-            <AsideContainer>
+            {/* <AsideContainer>
                 <Sidebar/>
-            </AsideContainer>
+            </AsideContainer> */}
             <div className="central-container-hero">
                 <div className="PT-title">
                     <p>Benvenuto, Allenatore!</p>
@@ -17,9 +17,9 @@ export function DashboardPT(){
                 </div>
                 <Atleti/>
             </div>
-            <AsideContainer>
+            {/* <AsideContainer>
                 <AsidePtComponent/>
-            </AsideContainer>
+            </AsideContainer> */}
         </div>
     )
 }

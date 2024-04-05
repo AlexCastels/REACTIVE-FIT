@@ -126,13 +126,15 @@
 }
 @media only screen and (max-width: 1000px) {
     .AtletaCard{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 100%;
         width:350px;
     }
     .AtletiInfo{
 
-       margin-left:5rem
+       margin-left:1rem
     }
     .AtletaCardSinx{
         display: block;
@@ -146,16 +148,17 @@
         display: block;
     }
     .AtletaCardSinxImg img{
-    
         width: 70px;
         height: 70px;
     }
     .info-atleta-container{
     display: block;
+    text-align: center;
     }
     .AtletaCardsinxInfo{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         margin-left: 5px;
         
     }
@@ -164,7 +167,22 @@
         font-size: 15px
     }
     .prox-appuntamento-atleti{
-        margin-left: 50px;
+      margin-top: 20px;
+    }
+    .central-container-hero{
+        width: 100%;
+    }
+    .AtletaCardSinxImg{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+    #myFileAlim{
+        display: flex;
+        flex-direction: column;
+
     }
     
 }
