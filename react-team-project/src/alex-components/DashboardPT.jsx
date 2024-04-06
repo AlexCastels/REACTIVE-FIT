@@ -9,7 +9,7 @@ import './dashboardPT.css'
 export function DashboardPT(){
     return (
         <div className="hero-container">
-          <AsideContainer>
+            <AsideContainer>
                 <Sidebar/>
             </AsideContainer> 
             <div className="central-container-hero">
@@ -23,8 +23,8 @@ export function DashboardPT(){
                 <AsidePtComponent/>
             </AsideContainer> 
             <AsideContainerDx>
-        <UserComponentResponsive />
-      </AsideContainerDx>
+                <UserComponentResponsive />
+            </AsideContainerDx>
         </div>
     )
 }

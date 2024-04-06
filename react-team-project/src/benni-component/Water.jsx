@@ -10,10 +10,10 @@ export function Water() {
   };
   
   return (
-    <>
-      <div className="container w-80 flex flex-col items-center justify-center bg-transparent border-hidden m-5 p-3">
+    <div className="h-96 min-[1400px]:w-96 flex item-center justify-center">
+      <div className="container flex flex-col items-center justify-center bg-transparent border-hidden p-10">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-yellow-400">Acqua</h2>
+          <h2 className="text-yellow-400 text-lg">Acqua</h2>
           <div className="flex gap-2 text-yellow-500 p-2"></div>
         </div>
 
@@ -26,9 +26,9 @@ export function Water() {
         </button>
 
         <div className="flex">
-          <p className="text-yellow-400">Quantità: {quantity}</p>
+          <p className="text-yellow-400 text-base">Quantità: {quantity} cl</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -43,7 +43,7 @@ export default function CounterCaloriesPie({macro}) {
             >
                 <div>
                     <Typography variant="h6" color="blue-gray">
-                         {/*TITOLO*/}
+                        {/*TITOLO*/}
                     </Typography>
                     <Typography
                         variant="small"

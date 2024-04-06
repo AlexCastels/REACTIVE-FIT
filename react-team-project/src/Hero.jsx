@@ -25,7 +25,7 @@ export function Hero() {
       <div className="central-container-hero">
         <Animate delay={1}>
           <div className="title-general-hero">
-            <p>Dashboard Utente</p>
+            <p>Benvenuto Utente!</p>
           </div>
         </Animate>
         <Animate delay={1}>
@@ -49,12 +49,10 @@ export function Hero() {
         <Animate delay={1}>
           <div className="title-weight-water">
             <p className="">Progression</p>
-
             <div className="weight-water-style">
               <Element>
                 <Weight />
               </Element>
-
               <Animate delay={1}>
                 <Element>
                   <Water />
@@ -67,7 +65,6 @@ export function Hero() {
       <AsideContainer>
         <UserComponents />
       </AsideContainer>
-
       <AsideContainerDx>
         <UserComponentResponsive />
       </AsideContainerDx>

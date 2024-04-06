@@ -29,7 +29,7 @@ export default function Weight() {
     ibmValue = "Obeso classe 3";
   }
   return (
-    <>
+    <div className="p-10 h-96">
       <form
         className="yellow-400 flex items-center justify-center gap-2"
         onSubmit={handleWeight}
@@ -59,6 +59,6 @@ export default function Weight() {
           <p>IBM= {ibm + " " + ibmValue}</p>
         </div>
       </Card>
-    </>
+    </div>
   );
 }
