@@ -70,3 +70,22 @@
     font-size: 1rem;
     cursor: pointer;
 }
+@media only screen and (max-width:768px) {
+    .containerbox{
+        display: block;
+        justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin:25px;
+    text-align: center;
+        
+    }
+    .central-container-hero{
+        display: flex;
+        align-items: center;}
+        .orediSonno{
+            padding: 15px;
+            margin-left: 25px;
+        }
+    
+}

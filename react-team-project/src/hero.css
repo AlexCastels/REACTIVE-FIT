@@ -90,6 +90,10 @@
 }
 
 @media screen and (max-width:600px) {
+    .counter-sleep-style{
+        display: block;
+    }
+  
     .hero-container{
         background-position-x: -202px;
         background-position-y: 414px;

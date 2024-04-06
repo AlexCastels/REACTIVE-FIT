@@ -76,3 +76,8 @@
     transform: scale(11);
   }
 }
+@media only screen and (max-width:768px){
+  .weight-water-style{
+    display: block;
+  }
+}
