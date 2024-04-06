@@ -39,7 +39,7 @@ function WorkoutAndSleep() {
 
             <div className="allenamentiSett">
                 {/* ex className box */}
-            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50">
+            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 flex flex-col justify-center">
                 <h2>Conteggio Allenamenti Settimanali</h2>
                 <div className="counter">
                     <button className="counter" onClick={decreaseWorkouts}>-</button>
@@ -52,7 +52,7 @@ function WorkoutAndSleep() {
 
         <div className="orediSonno">
             {/* ex className box */}
-            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50">
+            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 ">
                 <h2>Seleziona Ore di Sonno</h2>
                 <div className="sleep-hours">
                     <input type="range" min="0" max="24" value={sleepHours} onChange={handleSleepHoursChange} />
@@ -65,11 +65,11 @@ function WorkoutAndSleep() {
 
             <div className="storicoDati">
             {/* ex className box */}
-                <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50">
+                <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 text-lg list-none p-3">
                 <h2>Storico Dati Salvati</h2>
                 <li>Allenamenti settimanali: {savedWorkoutCount}</li>
                 <li>
-                {savedSleepHours.reduce((total, item) => total + item.hours, 0)} ore
+                Ore di sonno: {savedSleepHours.reduce((total, item) => total + item.hours, 0)} 
                 </li>
                 
                 <div className="button-action">

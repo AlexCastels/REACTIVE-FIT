@@ -31,10 +31,10 @@ export function Hero() {
         <Animate delay={1}>
           <div className="title-counter-sleep">
             <p>Sleep and work Counter</p>
-            <div className="counter-sleep-style">
-              <WorkoutAndSleep />
-            </div>
           </div>
+          <div className="counter-sleep-style">
+            <WorkoutAndSleep />
+          </div>  
         </Animate>
         <Animate delay={1}>
           <div className="title-contakcal">

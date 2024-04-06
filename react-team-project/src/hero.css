@@ -95,12 +95,22 @@
     }
   
     .hero-container{
-        background-position-x: -202px;
-        background-position-y: 414px;
+        background-position-x: -181px;
+        background-position-y: 442px;
     }
 
     .weight-water-style{
         display: flex;
         flex-direction: column;
+    }
+    .title-counter-sleep p,
+    .title-contakcal > p,
+    .title-weight-water > p ,
+    .title-news > p,
+    .title-calendar > p,
+    .title-general-hero > p{
+        margin-left: 0px;
+        text-align: center;
+        
     }
 }
