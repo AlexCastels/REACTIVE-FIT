@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react"
 const WaterContext = createContext()
 
 export const  WaterProvider = ({children}) => {
-    const [quantity, setQuantity] = useState(20);
+    const [quantity, setQuantity] = useState(0);
 
     const addWater = () => {
       setQuantity((c) => c + 20);
