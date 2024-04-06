@@ -1,0 +1,15 @@
+.responsive-user-component-dx{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: all 1s ease-in-out;
+}
+.workout-responsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.anim{
+    transition: all 1s ease-in-out;
+}

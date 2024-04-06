@@ -1,95 +1,97 @@
-
-.AtletiInfo{
-    margin: 0 auto;
-    padding: 1rem;
-    /* text-align: center; */
-    margin-bottom: 90px;
-    font-family: "Roboto", sans-serif;
-    
+.AtletiInfo {
+  margin: 0 auto;
+  padding: 1rem;
+  /* text-align: center; */
+  margin-bottom: 90px;
+  font-family: "Roboto", sans-serif;
+  padding-top:20px ;
 }
-.AtletaCard{
-    display: flex;
-    border-radius: 20px;
-    justify-content: space-around;
-    height: 13vw;
-    /* box-shadow: 0 10px 15px -3px gray; */
-    margin-bottom: 60px;  
-    backdrop-filter: blur(40px);
-    
-}  
-
-.AtletaCardSinxImg{
-    padding: 15px;
-    text-align: center;
+.AtletaCard {
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-around;
+  margin-top: 20px;
+  backdrop-filter: blur(40px);
 }
 
-.AtletaCardSinxImg img{
-    border-radius: 100%;
-    border: 1px solid black;
-    width: 120px;
-    height: 120px;    
+.AtletaCardSinxImg {
+  padding: 15px;
+  text-align: center;
 }
 
-.AtletaCardSinxImg h2{
-    font-weight: 600;
-    font-size: 18px
+.AtletaCardSinxImg img {
+  border-radius: 100%;
+  border: 1px solid black;
+  width: 120px;
+  height: 120px;
 }
 
-.AtletaCardsinxInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+.AtletaCardSinxImg h2 {
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.info-atleta-container{
-    display: flex;
-    gap:20px
+.AtletaCardsinxInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.prox-appuntamento-atleti{
-    border-top: 1px solid #facc15;
-    padding-top: 15px;
+.info-atleta-container {
+  display: flex;
+  gap: 20px;
 }
 
-.AtletaCardSinx{
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    border-right: 1px solid #facc15;
-    height: 100%;
-    padding: 10px;
+.prox-appuntamento-atleti {
+  border-top: 1px solid #facc15;
+  padding-top: 15px;
 }
 
-.AtletaCardDex{
-   width: 60%;
-   /* display: grid;
+.AtletaCardSinx {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #facc15;
+  height: 100%;
+  padding: 10px;
+}
+
+.AtletaCardDex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  width: 60%;
+  /* display: grid;
    grid-template-columns: repeat(3, 1fr); */
-   padding: 10px;
+  padding: 10px;
 }
 
 .AtletaCardDex h5 {
-    border: 1px solid black;
-    grid-column: 1fr;
-    height: 60px;
+  border: 1px solid black;
+  grid-column: 1fr;
+  height: 60px;
 }
 
 .AtletiImportContainer {
-    /* display: grid;
+  /* display: grid;
     grid-template-columns: 1fr 1fr ; */
-    gap: 4px;
-    display: flex;
-    justify-content: space-around;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.AtletiTextArea{
-    /* display: grid;
+.AtletiTextArea {
+  /* display: grid;
     grid-template-columns: 1fr 1fr ; */
-   /* align-items: flex-start; */
-   display: flex;
-   padding: 30px;
-   gap: 10px;
-  
+  /* align-items: flex-start; */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 10px;
 }
 
 /* .AtletiBtn{
@@ -100,26 +102,103 @@
     align-items: flex-end;
 } */
 
-.atleti-style-textarea{
-    max-width: 300px; 
-    max-height: 100px;
-    height: 100px;
+.atleti-style-textarea {
+  max-width: 300px;
+  max-height: 100px;
+  height: 100px;
 }
 
-.input-send-style{
-    width: 300px;
-    padding: 2px;
+.input-send-style {
+  width: 300px;
+  padding: 2px;
 }
 
-.btn-atleti-container{
-    width: 300px;
-    height: 100px;
+.btn-atleti-container {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AtletiImportP p,
+.AtletiImportA p {
+  padding-bottom: 7px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1000px) {
+  .AtletaCard {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 350px;
+  }
+  .AtletiInfo {
+    margin-left: 1rem;
+  }
+  .AtletaCardSinx {
+    display: block;
+    border-right: none;
+  }
+  .AtletiImportContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .AtletiTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .AtletaCardSinxImg img {
+    width: 70px;
+    height: 70px;
+  }
+  .info-atleta-container {
+    display: block;
+    text-align: center;
+  }
+  .AtletaCardsinxInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .AtletaCardSinxImg h2 {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .prox-appuntamento-atleti {
+    margin-top: 20px;
+  }
+  .central-container-hero {
+    width: 100%;
+  }
+  .AtletaCardSinxImg {
+    display: flex;
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
-}
-
-.AtletiImportP p , .AtletiImportA p{
-    padding-bottom: 7px;
-    font-size: 16px;
+  }
+  #myFileAlim {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  #myFileAllen {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  #messaggio {
+    width: 250px;
+  }
+  .AtletaCardDex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -1,3 +1,3 @@
 export function AsideContainer({children}) {
-    return <div className="flex flex-col  ">{children}</div>;
+    return <div className="md:flex flex-col hidden ">{children}</div>;
 }
