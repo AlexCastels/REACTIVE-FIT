@@ -45,7 +45,7 @@ const TABLE_ROWS4 = [
     <ButtonComponent onClick={() => setOpenModal(true)} text={"Open"}/>
       <div className="flex flex-wrap">
       <Modal className="bg-black bg-opacity-50 dark:bg-opacity-70 relative h-full max-w-full p-4 md:h-auto" position={modalPlacement} show={openModal} onClose={() => setOpenModal(false)}>
-        <Modal.Header className="bg-black bg-opacity-9"> <p className="text-xl font-bold text-gray-200">Power Board</p></Modal.Header>
+        <Modal.Header className="bg-black bg-opacity-95"> <p className="text-xl font-bold text-gray-200">Power Board</p></Modal.Header>
         <Modal.Body className="bg-black">
           <div className="space-y-6 gap-10 p-2 align-middle flex">
             <TableComp TABLE_HEAD={TABLE_HEAD4} TABLE_ROWS={TABLE_ROWS4}/>
