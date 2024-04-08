@@ -48,8 +48,8 @@
 }
 
 .title-general-hero > p{
-    font-size: 44px;
-    margin-left: 40px;
+    font-size: 30px;
+    margin-left: 44px;
     margin-top:15px;
 }
 
@@ -58,9 +58,21 @@
 .title-weight-water > p ,
 .title-news > p,
 .title-calendar > p{
-    font-size: 28px;
     margin-left: 44px;
     margin-top:15px;
+    font-size: 25px;
+}
+
+.title-general-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 44px;
+    margin-top:15px;
+}
+
+.title-general-hero p:last-child{
+    font-size: 25px;
 }
 
 

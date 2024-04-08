@@ -13,6 +13,7 @@ import { CentralContainer } from "./components/CentralContainer";
 import { Element } from "./components/Element";
 import { StoryContainer } from "./components/StoryContainer";
 import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
+import { DataToday } from "./giusi_components/DataToday";
 import { UserComponents } from "./giusi_components/UserComponents";
 import "./hero.css";
 
@@ -24,13 +25,19 @@ export function Hero() {
       </AsideContainer>
       <div className="central-container-hero">
         <Animate delay={1}>
+          <div className="title-general-hero font-normal">
+            <p className="tracking-wide">Dashboard Utente</p>
+            <DataToday/>
           <div className="title-general-hero">
             <p>Benvenuto Utente!</p>
           </div>
         </Animate>
         <Animate delay={1}>
           <div className="title-counter-sleep">
-            <p>Sleep and work Counter</p>
+            <p className="font-light text-white tracking-wide">Sleep and work Counter</p>
+            <div className="counter-sleep-style">
+              <WorkoutAndSleep />
+            </div>
           </div>
           <div className="counter-sleep-style">
             <WorkoutAndSleep />
@@ -38,7 +45,7 @@ export function Hero() {
         </Animate>
         <Animate delay={1}>
           <div className="title-contakcal">
-            <p>Kcal Counter</p>
+            <p className="font-light text-white tracking-wide">Kcal Counter</p>
             <div>
               <Element>
                 <CounterCalories />
@@ -48,7 +55,7 @@ export function Hero() {
         </Animate>
         <Animate delay={1}>
           <div className="title-weight-water">
-            <p className="">Progression</p>
+            <p className="font-light text-white tracking-wide">Progression</p>
             <div className="weight-water-style">
               <Element>
                 <Weight />
