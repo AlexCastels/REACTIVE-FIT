@@ -13,7 +13,7 @@ export function UserComponentResponsive() {
     };
     return (
         <>
-            <div className="flex flex-col anim gap-3 bg-black;" onClick={() => {
+            <div className="flex flex-col anim bg-black;" onClick={() => {
                 collapse();
             }}
                 style={{ height: isCollapse ? "400px" : "100px" }}>
