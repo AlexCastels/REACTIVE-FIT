@@ -31,6 +31,8 @@ import { HeroNews } from "./HeroNews";
 import { WorkList } from "./alex-components/WorkList";
 import { HeroWorkEx } from "./HeroWorkEx";
 import { LoginProvider } from "./context/LoginContext";
+import { ModalComp } from "./giusi_components/ModalComp";
+import { TableComp } from "./giusi_components/TableComp";
 
 
 export function App() {
@@ -54,6 +56,12 @@ export function App() {
           </WeightProvider>
         </WaterProvider>
       </LoginProvider>
+
+      {/* <ModalComp/> */}
+{/* 
+      <UserComponents/> */}
+
+      {/* <TableComp/> */}
     </>
   );
 }
