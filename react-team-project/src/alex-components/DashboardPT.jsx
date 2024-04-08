@@ -1,6 +1,8 @@
+import { UserComponentResponsive } from "../benni-component/UserComponentResponsive";
 import { Atleti } from "../chiaraRa-components/Atleti";
 import { Sidebar } from "../chiaraRa-components/Sidebar";
 import { AsideContainer } from "../components/AsideContainer";
+import { AsideContainerDx } from "../components/AsideContainerDx";
 import { AsidePtComponent } from "../giusi_components/AsidePtComponent";
 import './dashboardPT.css'
 
@@ -9,7 +11,7 @@ export function DashboardPT(){
         <div className="hero-container">
             <AsideContainer>
                 <Sidebar/>
-            </AsideContainer>
+            </AsideContainer> 
             <div className="central-container-hero">
                 <div className="PT-title">
                     <p>Benvenuto, Allenatore!</p>
@@ -19,7 +21,10 @@ export function DashboardPT(){
             </div>
             <AsideContainer>
                 <AsidePtComponent/>
-            </AsideContainer>
+            </AsideContainer> 
+            <AsideContainerDx>
+                <UserComponentResponsive />
+            </AsideContainerDx>
         </div>
     )
 }

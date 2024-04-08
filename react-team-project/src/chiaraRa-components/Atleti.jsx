@@ -43,7 +43,7 @@ export function Atleti() {
                                         <p>Protocollo alimentare:</p>
                                         <input
                                             type="file"
-                                            id="myFile"
+                                            id="myFileAlim"
                                             name="filename"
                                             className="input-send-style"
                                         />
@@ -52,7 +52,7 @@ export function Atleti() {
                                         <p>Scheda allenamenti:</p>
                                         <input
                                             type="file"
-                                            id="myFile"
+                                            id="myFileAllen"
                                             name="filename"
                                             className="input-send-style"
                                         />

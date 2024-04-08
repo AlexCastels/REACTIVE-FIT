@@ -10,7 +10,7 @@
     align-items: center;
     gap:10px;
     margin:5px;
-    text-align: center;
+    text-align: center; 
 }
 
 .box {
@@ -69,4 +69,29 @@
     padding: 5px 10px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.storicoDati > li{
+    text-decoration: none;
+}
+@media only screen and (max-width:600px) {
+    .containerbox{
+        /* display: block;
+        justify-content: center;    
+        gap:10px;
+        margin:25px;    */
+        flex-direction: column;
+        align-items: center;
+        gap:30px
+    }
+
+    .central-container-hero{
+        display: flex;
+        align-items: center;   
+    }
+        /* .orediSonno{
+            padding: 15px;
+            margin-left: 25px;
+        } */
+    
 }

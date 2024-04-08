@@ -1,18 +1,18 @@
 import { WorkList } from "./alex-components/WorkList";
 import { Animate } from "./benni-component/Animate";
+import { UserComponentResponsive } from "./benni-component/UserComponentResponsive";
 import { Sidebar } from "./chiaraRa-components/Sidebar";
 import { AsideContainer } from "./components/AsideContainer";
+import { AsideContainerDx } from "./components/AsideContainerDx";
 import { UserComponents } from "./giusi_components/UserComponents";
 
 export function HeroWorkEx() {
   return (
     <>
       <div className="hero-container">
-    
-          <AsideContainer>
-            <Sidebar />
-          </AsideContainer>
-      
+        <AsideContainer>
+          <Sidebar />
+        </AsideContainer>
         <div className="central-container-hero">
           <Animate delay={1}>
             <div className="title-news">
@@ -23,11 +23,12 @@ export function HeroWorkEx() {
             <WorkList />
           </Animate>
         </div>
-       
-          <AsideContainer>
-            <UserComponents />
-          </AsideContainer>
-      
+        <AsideContainer>
+          <UserComponents />
+        </AsideContainer>
+        <AsideContainerDx>
+          <UserComponentResponsive />
+        </AsideContainerDx>
       </div>
     </>
   );

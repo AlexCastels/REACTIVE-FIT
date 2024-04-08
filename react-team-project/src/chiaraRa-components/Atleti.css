@@ -1,4 +1,3 @@
-
 .AtletiInfo{
     margin: 0 auto;
     padding: 1rem;
@@ -17,6 +16,7 @@
     backdrop-filter: blur(40px);
     
 }  
+
 
 .AtletaCardSinxImg{
     padding: 15px;
@@ -123,3 +123,84 @@
     padding-bottom: 7px;
     font-size: 16px;
 }
+@media only screen and (max-width: 1000px) {
+    .AtletaCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width:350px;
+    }
+    .AtletiInfo{
+
+       margin-left:1rem
+    }
+    .AtletaCardSinx{
+        display: block;
+        border-right: none;
+   
+    }
+    .AtletiImportContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .AtletiTextArea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AtletaCardSinxImg img{
+        width: 70px;
+        height: 70px;
+    }
+    .info-atleta-container{
+    display: block;
+    text-align: center;
+    }
+    .AtletaCardsinxInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+        
+    }
+    .AtletaCardSinxImg h2{
+        font-weight: 500;
+        font-size: 15px
+    }
+    .prox-appuntamento-atleti{
+      margin-top: 20px;
+    }
+    .central-container-hero{
+        width: 100%;
+    }
+    .AtletaCardSinxImg{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+    #myFileAlim{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    #myFileAllen{
+            display: flex;
+            flex-direction: column;
+            width: 250px;    
+    }
+    #messaggio{
+        width: 250px;
+    }
+    .AtletaCardDex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
