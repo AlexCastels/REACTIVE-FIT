@@ -14,6 +14,7 @@ import "./hero.css";
 import { Animate } from "./benni-component/Animate";
 import { AsideContainerDx } from "./components/AsideContainerDx";
 import { UserComponentResponsive } from "./benni-component/UserComponentResponsive";
+import { HamburgerMenu } from "./giusi_components/HamburgerMenu";
 
 export function HeroCalendar() {
   return (
@@ -21,6 +22,9 @@ export function HeroCalendar() {
       <AsideContainer>
         <Sidebar />
       </AsideContainer>
+      <AsideContainerDx>
+        <HamburgerMenu/>
+      </AsideContainerDx>
       <div className="central-container-hero">
         <div className="title-calendar">
           <p>Calendario:</p>
