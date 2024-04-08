@@ -16,7 +16,7 @@ export function AsidePtComponent() {
                             <div className="bg-transparent border border-gray-800 shadow-lg rounded-2xl p-4">
                                 <div className="flex-none sm:flex">
                                     <div className=" relative h-32 w-32   sm:mb-0 mb-3">
-                                        <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="aji" className=" w-32 h-32 object-cover rounded-2xl" />
+                                        <img src="/src/style-site/images-style/AVATAR PT.png" className=" w-32 h-32 object-cover rounded-2xl"/>
                                         <a href="#" className="absolute -right-2 bottom-2   -ml-3  text-white p-1 text-xs bg-orange-600 hover:bg-orange-400 font-medium tracking-wider rounded-full transition ease-in duration-300">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-2 w-2">
                                                 <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z">
@@ -28,7 +28,7 @@ export function AsidePtComponent() {
                                         <div className="flex items-center justify-between sm:mt-2">
                                             <div className="flex items-center">
                                                 <div className="flex flex-col">
-                                                    <div className="w-full flex-none text-lg text-gray-200 font-bold leading-none">Name Surname</div>
+                                                    <div className="w-full flex-none text-lg text-gray-200 font-bold leading-none">Allenatore Admin</div>
                                                     <div className="flex-auto text-gray-400 my-1">
                                                         <span className="mr-3 ">example@email.com</span>
                                                     </div>
@@ -49,7 +49,7 @@ export function AsidePtComponent() {
                                         <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
                                         <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
                                     </svg>
-                                    <div className="text-2xl text-gray-100 font-medium leading-8 mt-5">5</div>
+                                    <div className="text-2xl text-gray-100 font-medium leading-8">5</div>
                                     <div className="text-sm text-gray-500">Clients</div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ export function AsidePtComponent() {
                                     <div className="flex justify-between items-center ">
                                         <i className="fab fa-behance text-xl text-gray-400"></i>
                                     </div>
-                                    <div className="text-2xl text-gray-100 font-medium leading-8 mt-5">8.5</div>
+                                    <div className="text-2xl text-gray-100 font-medium leading-8">8.5</div>
                                     <div className="text-sm text-gray-500">Reviews</div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@ export function AsidePtComponent() {
                                     <div className="flex justify-between items-center ">
                                         <i className="fab fa-codepen text-xl text-gray-400"></i>
                                     </div>
-                                    <div className="text-2xl text-gray-100 font-medium leading-8 mt-5">52</div>
+                                    <div className="text-2xl text-gray-100 font-medium leading-8 ">52</div>
                                     <div className="text-sm text-gray-500">Goals</div>
                                 </div>
                             </div>
