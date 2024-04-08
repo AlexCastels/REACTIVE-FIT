@@ -26,10 +26,8 @@ export function Hero() {
       <div className="central-container-hero">
         <Animate delay={1}>
           <div className="title-general-hero font-normal">
-            <p className="tracking-wide">Dashboard Utente</p>
+            <p className="tracking-wide">Benvenuto, Utente!</p>
             <DataToday/>
-          <div className="title-general-hero">
-            <p>Benvenuto Utente!</p>
           </div>
         </Animate>
         <Animate delay={1}>
@@ -39,9 +37,6 @@ export function Hero() {
               <WorkoutAndSleep />
             </div>
           </div>
-          <div className="counter-sleep-style">
-            <WorkoutAndSleep />
-          </div>  
         </Animate>
         <Animate delay={1}>
           <div className="title-contakcal">
