@@ -14,6 +14,7 @@ import { Element } from "./components/Element";
 import { StoryContainer } from "./components/StoryContainer";
 import { AsidePtComponent } from "./giusi_components/AsidePtComponent";
 import { DataToday } from "./giusi_components/DataToday";
+import { HamburgerMenu } from "./giusi_components/HamburgerMenu";
 import { UserComponents } from "./giusi_components/UserComponents";
 import "./hero.css";
 
@@ -23,6 +24,9 @@ export function Hero() {
       <AsideContainer>
         <Sidebar />
       </AsideContainer>
+      <AsideContainerDx>
+        <HamburgerMenu/>
+      </AsideContainerDx>
       <div className="central-container-hero">
         <Animate delay={1}>
           <div className="title-general-hero font-normal">

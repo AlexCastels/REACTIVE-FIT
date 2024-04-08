@@ -39,47 +39,47 @@ function WorkoutAndSleep() {
 
             <div className="allenamentiSett">
                 {/* ex className box */}
-            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 flex flex-col justify-center">
-                <h2>Conteggio Allenamenti Settimanali</h2>
-                <div className="counter">
-                    <button className="counter" onClick={decreaseWorkouts}>-</button>
-                    <span>{workoutCount}</span>
-                    <button className="counter" onClick={increaseWorkouts}>+</button>
+                <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 flex flex-col justify-center">
+                    <h2>Conteggio Allenamenti Settimanali</h2>
+                    <div className="counter">
+                        <button className="counter" onClick={decreaseWorkouts}>-</button>
+                        <span>{workoutCount}</span>
+                        <button className="counter" onClick={increaseWorkouts}>+</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div className="orediSonno">
-            {/* ex className box */}
-            <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 ">
-                <h2>Seleziona Ore di Sonno</h2>
-                <div className="sleep-hours">
-                    <input type="range" min="0" max="24" value={sleepHours} onChange={handleSleepHoursChange} />
-                    <span>Ore di sonno selezionate: {sleepHours}</span>
-                    
+            <div className="orediSonno">
+                {/* ex className box */}
+                <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 ">
+                    <h2>Seleziona Ore di Sonno</h2>
+                    <div className="sleep-hours">
+                        <input type="range" min="0" max="24" value={sleepHours} onChange={handleSleepHoursChange} />
+                        <span>Ore di sonno selezionate: {sleepHours}</span>
+
+                    </div>
                 </div>
-            </div>
             </div>
 
 
             <div className="storicoDati">
-            {/* ex className box */}
-                <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50 text-lg list-none p-3">
-                <h2>Storico Dati Salvati</h2>
-                <li>Allenamenti settimanali: {savedWorkoutCount}</li>
-                <li>
-                Ore di sonno: {savedSleepHours.reduce((total, item) => total + item.hours, 0)} 
-                </li>
-                
-                <div className="button-action">
-                    <ButtonComponent onClick={saveData} text='Salva'/>
-                    <ButtonComponent onClick={deleteAllData} text='Cancella'/>
-                </div>
+                {/* ex className box */}
+                <div className="box bg-transparent border-gray-800 shadow-lg  backdrop-blur-50  list-none p-3">
+                    <h2>Storico Dati Salvati</h2>
+                    <li>Allenamenti settimanali: {savedWorkoutCount}</li>
+                    <li>
+                        Ore di sonno: {savedSleepHours.reduce((total, item) => total + item.hours, 0)}
+                    </li>
+
+                    <div className="button-action">
+                        <ButtonComponent onClick={saveData} text='Salva' />
+                        <ButtonComponent onClick={deleteAllData} text='Cancella' />
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
 
-            export default WorkoutAndSleep;
+export default WorkoutAndSleep;
