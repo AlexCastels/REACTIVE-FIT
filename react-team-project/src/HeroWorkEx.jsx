@@ -4,6 +4,7 @@ import { UserComponentResponsive } from "./benni-component/UserComponentResponsi
 import { Sidebar } from "./chiaraRa-components/Sidebar";
 import { AsideContainer } from "./components/AsideContainer";
 import { AsideContainerDx } from "./components/AsideContainerDx";
+import { HamburgerMenu } from "./giusi_components/HamburgerMenu";
 import { UserComponents } from "./giusi_components/UserComponents";
 
 export function HeroWorkEx() {
@@ -13,6 +14,9 @@ export function HeroWorkEx() {
         <AsideContainer>
           <Sidebar />
         </AsideContainer>
+        <AsideContainerDx>
+        <HamburgerMenu/>
+      </AsideContainerDx>
         <div className="central-container-hero">
           <Animate delay={1}>
             <div className="title-news">

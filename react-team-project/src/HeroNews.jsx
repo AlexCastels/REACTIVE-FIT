@@ -4,6 +4,7 @@ import { News } from "./chiaraRa-components/News";
 import { Sidebar } from "./chiaraRa-components/Sidebar";
 import { AsideContainer } from "./components/AsideContainer";
 import { AsideContainerDx } from "./components/AsideContainerDx";
+import { HamburgerMenu } from "./giusi_components/HamburgerMenu";
 import { UserComponents } from "./giusi_components/UserComponents";
 import "./hero.css";
 
@@ -13,6 +14,9 @@ export function HeroNews() {
       <AsideContainer>
         <Sidebar />
       </AsideContainer>
+      <AsideContainerDx>
+        <HamburgerMenu/>
+      </AsideContainerDx>
       <div className="central-container-hero">
         <div className="title-news">
           <p>News:</p>
