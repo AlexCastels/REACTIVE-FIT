@@ -60,16 +60,18 @@
 
 
 .button-action {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
+.button-action button{}
 
-.button-action button {
+
+/* .button-action button {
     margin-right: 10px;
     padding: 5px 10px;
     font-size: 1rem;
     cursor: pointer;
-}
+} */
 
 .storicoDati > li{
     text-decoration: none;
