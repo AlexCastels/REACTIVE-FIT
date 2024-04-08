@@ -1,4 +1,6 @@
 import { ButtonComponent } from "../style-site/ButtonComponent"
+import { ModalComp } from "./ModalComp"
+import { ModalCompAlim } from "./ModalCompAlim"
 import "./userComponents.css"
 
 export function UserComponents() {
@@ -83,7 +85,7 @@ export function UserComponents() {
                                         <h2 className="text-xl font-bold py-4 text-gray-200">Workout</h2>
                                     </div>
                                     <div className="p-3  mt-2 text-center space-x-4 md:block">
-                                        <ButtonComponent text='Open'/>
+                                        <ModalComp/>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +97,7 @@ export function UserComponents() {
                                         <h2 className="text-xl font-bold py-4 text-gray-200">Power Board</h2>
                                     </div>
                                     <div className="p-3  mt-2 text-center space-x-4 md:block">
-                                    <ButtonComponent text='Open'/>
+                                    <ModalCompAlim/>
                                     </div>
                                 </div>
                             </div>

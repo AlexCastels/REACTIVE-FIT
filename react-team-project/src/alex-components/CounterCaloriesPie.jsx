@@ -23,7 +23,7 @@ export default function CounterCaloriesPie({macro}) {
                 show: "la mia torta",
             },
             dataLabels: {
-                enabled: false,
+                enabled: true,
             },
             colors: ["#020617", "#ff8f00", "#00897b", "#1e88e5", "#d81b60"],
             legend: {
