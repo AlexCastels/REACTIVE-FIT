@@ -13,7 +13,7 @@ export function UserComponents() {
                             <div className="bg-transparent border border-gray-800 shadow-lg rounded-2xl p-4">
                                 <div className="flex-none sm:flex">
                                     <div className=" relative h-32 w-32   sm:mb-0 mb-3">
-                                        <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="aji" className=" w-32 h-32 object-cover rounded-2xl" />
+                                        <img src="\src\style-site\images-style\AVATAR FIT.png" alt="aji" className=" w-32 h-32 object-cover rounded-2xl" />
                                         <a href="#" className="absolute -right-2 bottom-2   -ml-3  text-white p-1 text-xs bg-orange-600 hover:bg-orange-400 font-medium tracking-wider rounded-full transition ease-in duration-300">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-2 w-2">
                                                 <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z">
@@ -25,15 +25,13 @@ export function UserComponents() {
                                         <div className="flex items-center justify-between sm:mt-2">
                                             <div className="flex items-center">
                                                 <div className="flex flex-col">
-                                                    <div className="w-full flex-none text-lg text-gray-200 font-bold leading-none">Name Surname</div>
+                                                    <div className="w-full flex-none text-lg text-gray-200 font-bold leading-none">Utente Admin</div>
                                                     <div className="flex-auto text-gray-400 my-1">
                                                         <span className="mr-3 ">example@email.com</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -46,7 +44,7 @@ export function UserComponents() {
                                         <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
                                         <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
                                     </svg>
-                                    <div className="text-2xl text-gray-100 font-medium leading-8 mt-5">85</div>
+                                    <div className="text-2xl text-gray-100 font-medium leading-8">85</div>
                                     <div className="text-sm text-gray-500">Balancy</div>
                                 </div>
                             </div>
@@ -56,22 +54,22 @@ export function UserComponents() {
                                         <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
                                     </svg>
                                     <div className="flex justify-between items-center ">
-                                        <i className="fab fa-behance text-xl text-gray-400"></i>
+                                        {/* <i className="fab fa-behance text-xl text-gray-400"></i> */}
                                     </div>
-                                    <div className="text-2xl text-gray-100 font-medium leading-8 mt-5">87</div>
+                                    <div className="text-2xl text-gray-100 font-medium leading-8 ">87</div>
                                     <div className="text-sm text-gray-500">Progress</div>
                                 </div>
                             </div>
                             <div className="grid-cols-1">
-                                <div className="p-4 relative  bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9  absolute bottom-4 right-3 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                                <div className="p-4   relative  bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9 absolute bottom-4 right-3 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
                                         <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                     </svg>
                                     <div className="flex justify-between items-center ">
-                                        <i className="fab fa-codepen text-xl text-gray-400"></i>
+                                        {/* <i className="fab fa-codepen text-xl text-gray-400"></i> */}
                                     </div>
-                                    <div className="text-2xl text-gray-100 font-medium leading-8 mt-5">60</div>
-                                    <div className="text-sm text-gray-500">Goals</div>
+                                    <div className="text-2xl text-gray-100 font-medium leading-8 ">60</div>
+                                    <div className="text-sm text-gray-500 ">Goals</div>
                                 </div>
                             </div>
                         </div>
