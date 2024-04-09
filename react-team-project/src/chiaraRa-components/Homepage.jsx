@@ -50,7 +50,6 @@ export function Homepage() {
 							<div className="cerchioV5"></div>
 							<div className="cerchioV6"></div>
 							<div className="logoHomepage">
-
 							</div>
 							{/* <div className="carouselHome">
 								{images.map((image, idx) => (
