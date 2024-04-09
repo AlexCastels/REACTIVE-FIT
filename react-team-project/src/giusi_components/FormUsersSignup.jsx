@@ -161,7 +161,7 @@ export function FormUsersSignup() {
 										{currentDate}</h5>}
 								</div>
 							</div>
-							<div className='flex gap-20 '>
+							<div className='flex gap-20 respoColumn'>
 								<div className="sm:col-span-3">
 									<label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
 										Height (cm) *
