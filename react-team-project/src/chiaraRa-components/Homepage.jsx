@@ -1,8 +1,8 @@
 import { RegistrationInformation } from "../benni-component/RegistrationInformation";
 import { RegistrationUser } from "../benni-component/RegistrationUser";
 import { UserAccessForm } from "../alex-components/UserAccessForm"
-// import "./Homepage.css";
-import "../style-site/homepage-style.css"
+import "./Homepage.css";
+// import "../style-site/homepage-style.css"
 import { Link } from "react-router-dom";
 import FormAccessoPT from "../Chiarap-components/FormAccessoPT";
 
