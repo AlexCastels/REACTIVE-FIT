@@ -19,14 +19,14 @@ export function UserComponentResponsive() {
                 collapse();
             }}
                 style={{ height: isCollapse ? "450px" : "120px" }}>
-                <div className="bg-black pt-6">
+                <div className="bg-black pt-4">
                     <div
                         className="responsive-user-component-dx"
                     >
-                        <div className=" ">
+                        <div className="flex items-center">
                             <img src="\src\style-site\images-style\AVATAR FIT.png" alt="aji" className=" w-20 h-20 object-cover rounded-2xl" />
                         </div>
-                        <div className="grid grid-cols-3 gap-3">
+                        <div className="grid grid-cols-3 gap-2">
                             <div className="grid-cols-1">
                                 <div className="p-4 relative  bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4  absolute bottom-4 right-1 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
@@ -62,7 +62,7 @@ export function UserComponentResponsive() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center gap-5 bg-black pt-1">
+                <div className="flex justify-center gap-5 bg-black pt-5">
                     <div className=" relative bg-transparent border border-gray-800 shadow-lg rounded-2xl flex flex-col items-center">
                         <div className="text-center p-4 flex-auto justify-center w-36">
                             <h2 className="text-lg font-bold py-4 text-gray-200">Workout</h2>

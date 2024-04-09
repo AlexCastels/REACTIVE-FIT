@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 125px;
 }
 
 .general-background {
@@ -852,24 +852,10 @@ box-shadow: 0 2px 4px orange, 0 8px 16px rgba(242, 206, 5, 0.1);
     gap: 50px;
   }
 
-  .descriptioneLeft {
-    /* text-align: center; */
-    
-  }
-
-  .containerParagraphsDescrip {
-    /* display: flex;
-    gap: 5px;
-    flex-direction: column; */
-    
-  }
-
   .descriptionRight {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-
   }
 
   .descriptionRight img {
@@ -881,12 +867,6 @@ box-shadow: 0 2px 4px orange, 0 8px 16px rgba(242, 206, 5, 0.1);
     position: initial;
     display: none;
   }
-
-  /* .containerAbout {
-    background-image: url(src/style-site/images-style/bbblurry-2.svg);
-    background-size: cover;
-    
-  } */
 
   .containerMeet{
     display:block;
