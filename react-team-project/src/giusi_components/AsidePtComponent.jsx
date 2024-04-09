@@ -16,7 +16,7 @@ export function AsidePtComponent() {
                             <div className="bg-transparent border border-gray-800 shadow-lg rounded-2xl p-4">
                                 <div className="flex-none sm:flex">
                                     <div className=" relative h-32 w-32   sm:mb-0 mb-3">
-                                        <img src="/src/style-site/images-style/AVATAR PT.png" className=" w-32 h-32 object-cover rounded-2xl"/>
+                                        <img src="/src/style-site/images-style/AVATAR PT.png" className=" w-32 h-32 object-cover rounded-2xl" />
                                         <a href="#" className="absolute -right-2 bottom-2   -ml-3  text-white p-1 text-xs bg-orange-600 hover:bg-orange-400 font-medium tracking-wider rounded-full transition ease-in duration-300">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-2 w-2">
                                                 <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z">
@@ -79,10 +79,9 @@ export function AsidePtComponent() {
                             </div>
                         </div>
                         <div className="grid gap-4 grid-cols-1">
-
-                        <div className="flex flex-col p-4 relative items-center justify-center bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
+                            <div className="flex flex-col p-4 relative items-center justify-center bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
                                 <div className="">
-                                   <CalendarPage/>
+                                    <CalendarPage />
                                 </div>
                             </div>
                         </div>
@@ -96,7 +95,7 @@ export function AsidePtComponent() {
                                                 <h2 className="font-medium leading-none text-gray-100">Wednesday 3 March | Hour: 17:00 </h2>
                                                 <p className="text-sm text-gray-300 leading-none mt-1 truncate">CHECK PT</p>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                     <div className="flex flex-col ml-3 min-w-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -115,7 +114,7 @@ export function AsidePtComponent() {
                                                 <h2 className="font-medium leading-none text-gray-100">Wednesday 3 March | Hour: 17:00 </h2>
                                                 <p className="text-sm text-gray-300 leading-none mt-1 truncate">CHECK PT</p>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                     <div className="flex flex-col ml-3 min-w-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -134,7 +133,7 @@ export function AsidePtComponent() {
                                                 <h2 className="font-medium leading-none text-gray-100">Wednesday 3 March | Hour: 17:00 </h2>
                                                 <p className="text-sm text-gray-300 leading-none mt-1 truncate">CHECK PT</p>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                     <div className="flex flex-col ml-3 min-w-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
