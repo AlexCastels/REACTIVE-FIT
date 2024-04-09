@@ -21,22 +21,20 @@ export function AsideComponRespo() {
                 collapse();
             }}
                 style={{ height: isCollapse ? "400px" : "120px" }}>
-                <div className="bg-black pt-6">
-                    <div
-                        className="responsive-user-component-dx"
-                    >
-                        <div className=" ">
+                <div className="bg-black pt-4 flex justify-center items-center">
+                    <div className="responsive-user-component-dx flex gap-3">
+                        <div className="">
                             <img src="\src\style-site\images-style\AVATAR PT.png" alt="aji" className=" w-20 h-20 object-cover rounded-2xl" />
                         </div>
-                        <div className="grid grid-cols-3 gap-4 ">
+                        
                             <div className="grid-cols-1">
-                                <div className="p-4 relative  bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
+                                <div className="p-4 relative bg-transparent border border-gray-800 shadow-lg w-20 rounded-2xl">
                                     <div className="text-2xl text-gray-100 font-medium leading-8">5</div>
                                     <div className="text-sm text-gray-500">Clients</div>
                                 </div>
                             </div>
                             <div className="grid-cols-1">
-                                <div className="p-4 relative  bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
+                                <div className="p-4 relative  bg-transparent border border-gray-800 shadow-lg w-20 rounded-2xl">
                                     <div className="flex justify-between items-center ">
                                         <i className="fab fa-behance text-xl text-gray-400"></i>
                                     </div>
@@ -45,7 +43,7 @@ export function AsideComponRespo() {
                                 </div>
                             </div>
                             <div className="grid-cols-1">
-                                <div className="p-4 relative  bg-transparent border border-gray-800 shadow-lg  rounded-2xl">
+                                <div className="p-4 relative  bg-transparent border border-gray-800 shadow-lg w-20 rounded-2xl">
                                     <div className="flex justify-between items-center ">
                                         <i className="fab fa-codepen text-xl text-gray-400"></i>
                                     </div>
@@ -53,10 +51,13 @@ export function AsideComponRespo() {
                                     <div className="text-sm text-gray-500">Goals</div>
                                 </div>
                             </div>
+                            <div className="text-3xl cursor-pointer pl-5">
+                                {isCollapse ? <ion-icon name="caret-down-outline"></ion-icon> : <ion-icon name="caret-up-outline"></ion-icon>}
+                            </div>
                         </div>
-                    </div>
+                    
                 </div>
-                <div className="p-4">
+                <div className="p-4 flex flex-col gap-1">
                     <div><h3 className="text-xl font-bold py-4 text-gray-200 text-center">UPCOMING EVENTS</h3></div>
                     <div className="flex flex-col space-y-4">
                         <div className="flex flex-col p-4 bg-transparent border border-gray-800 shadow-md hover:text-yellow-400 text-gray-400 hover:shodow-lg rounded-2xl transition ease-in duration-500  transform hover:scale-105 cursor-pointer">

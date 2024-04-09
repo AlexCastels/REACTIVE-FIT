@@ -20,9 +20,7 @@ export function UserComponentResponsive() {
             }}
                 style={{ height: isCollapse ? "450px" : "120px" }}>
                 <div className="bg-black pt-4">
-                    <div
-                        className="responsive-user-component-dx"
-                    >
+                    <div className="responsive-user-component-dx items-center">
                         <div className="flex items-center">
                             <img src="\src\style-site\images-style\AVATAR FIT.png" alt="aji" className=" w-20 h-20 object-cover rounded-2xl" />
                         </div>
@@ -59,6 +57,10 @@ export function UserComponentResponsive() {
                                     <div className="text-sm text-gray-500 ">Goals</div>
                                 </div>
                             </div>
+                            
+                        </div>
+                        <div className="text-3xl cursor-pointer pl-5">
+                            {isCollapse ? <ion-icon name="caret-down-outline"></ion-icon> : <ion-icon name="caret-up-outline"></ion-icon>}
                         </div>
                     </div>
                 </div>
