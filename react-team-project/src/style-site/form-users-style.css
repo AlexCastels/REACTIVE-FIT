@@ -37,3 +37,16 @@ input, textarea, select {
     font-size: 35px;
     letter-spacing: 2px;
 }
+
+@media screen and (max-width: 600px) {
+    .respoColumn{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .respoCalendar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

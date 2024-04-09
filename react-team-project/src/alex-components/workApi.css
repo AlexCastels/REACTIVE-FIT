@@ -56,3 +56,12 @@
     cursor: pointer;
     margin-left:5px
 }
+
+@media screen and (max-width: 600px) {
+    .workApi-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}
