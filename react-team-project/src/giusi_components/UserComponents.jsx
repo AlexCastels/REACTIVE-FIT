@@ -56,7 +56,6 @@ export function UserComponents() {
                                         <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
                                     </svg>
                                     <div className="flex justify-between items-center ">
-                                        {/* <i className="fab fa-behance text-xl text-gray-400"></i> */}
                                     </div>
                                     <div className="text-2xl text-gray-100 font-medium leading-8 ">87</div>
                                     <div className="text-sm text-gray-500">Progress</div>
@@ -68,7 +67,6 @@ export function UserComponents() {
                                         <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                     </svg>
                                     <div className="flex justify-between items-center ">
-                                        {/* <i className="fab fa-codepen text-xl text-gray-400"></i> */}
                                     </div>
                                     <div className="text-2xl text-gray-100 font-medium leading-8 ">60</div>
                                     <div className="text-sm text-gray-500 ">Goals</div>

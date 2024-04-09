@@ -5,7 +5,7 @@ export function TableComp({TABLE_HEAD, TABLE_ROWS}) {
     <Card className="h-full w-full mt-6  bg-">
       <table className="w-full min-w-max table-auto text-left ">
         <thead >
-          <tr >
+          <tr>
             {TABLE_HEAD.map((head) => (
               <th
                 key={head}
@@ -22,7 +22,7 @@ export function TableComp({TABLE_HEAD, TABLE_ROWS}) {
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody >
           {TABLE_ROWS.map(({ esercizio, serie, varianti}, index) => {
             const isLast = index === TABLE_ROWS.length - 1;
             const classes = isLast ? "p-4" : "p-4 border-b border-yellow-400";

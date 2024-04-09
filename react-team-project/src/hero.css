@@ -12,10 +12,12 @@
     height: 100vh;
     color: rgb(211, 211, 211);
     justify-content: space-between;
+    
 }
 @media screen and (max-width: 900px){
     .hero-container{
         flex-direction: column;
+        
     }
 }
 
@@ -25,6 +27,7 @@
     width: 70%;
     gap: 10px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .central-container-hero::-webkit-scrollbar {

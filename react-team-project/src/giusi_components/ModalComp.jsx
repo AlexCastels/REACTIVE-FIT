@@ -5,6 +5,7 @@ import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
 import { TableComp } from "./TableComp";
 import { ButtonComponent } from "../style-site/ButtonComponent";
+import "../style-site/styleModal.css"
 
 export function ModalComp() {
   const [modalPlacement, setModalPlacement] = useState('center')
@@ -108,7 +109,7 @@ const TABLE_ROWS3 = [
       <Modal className="bg-black bg-opacity-50  dark:bg-opacity-70 relative h-full max-w-full p-4 md:h-auto" position={modalPlacement} show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header className="bg-black bg-opacity-95"> <p className="text-xl font-bold text-gray-200">Workout</p></Modal.Header>
         <Modal.Body className="bg-black">
-          <div className="space-y-6 gap-10 p-2 align-middle flex">
+          <div className="space-y-6 gap-10 p-2 align-middle flex respoColumModal">
             <TableComp TABLE_HEAD={TABLE_HEAD} TABLE_ROWS={TABLE_ROWS}/>
             <TableComp TABLE_HEAD={TABLE_HEAD2} TABLE_ROWS={TABLE_ROWS2}/>
             <TableComp TABLE_HEAD={TABLE_HEAD3} TABLE_ROWS={TABLE_ROWS3}/>
