@@ -19,8 +19,7 @@ export function UserComponentResponsive() {
                 style={{ height: isCollapse ? "400px" : "100px" }}>
                 <div className="bg-black pt-10">
                     <div
-                        className="responsive-user-component-dx "
-
+                        className="responsive-user-component-dx"
                     >
                         <div className=" ">
                             <img src="\src\style-site\images-style\AVATAR FIT.png" alt="aji" className=" w-20 h-20 object-cover rounded-2xl" />
