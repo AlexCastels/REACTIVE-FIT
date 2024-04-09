@@ -5,6 +5,8 @@ import './react-calendar.css';
 // import '../style-site/homepage-style.css'
 import '../style-site/form-users-style.css'
 import { ButtonComponent } from '../style-site/ButtonComponent';
+import { Link } from 'react-router-dom';
+import { Homepage } from '../chiaraRa-components/Homepage';
 
 export function FormUsersSignup() {
 	const [date, setDate] = useState(new Date());
@@ -63,7 +65,7 @@ export function FormUsersSignup() {
 	return (
 		<>
 		
-		<div className='general-background-form backdrop-blur-50'>
+		<div className='general-background-form'>
 			<h2 className='text-start p-14 h2-signup-user'>Completa il form per registrarti al sito</h2>
 			
 			<div className='p-14'>
@@ -147,8 +149,8 @@ export function FormUsersSignup() {
 								</div>
 							</div>
 						</div>
-						<div className="border-b border-gray-900/10 pb-12 flex gap-20 justify-center">
-							<div>
+						<div className="border-b border-gray-900/10 pb-12 flex gap-20 justify-center respoColumn">
+							<div className='respoCalendar'> 
 								<label className="text-base font-semibold leading-7 text-gray-900 plabel p-1" >Your Birthday</label>
 
 								<div className="sm:col-span-1">
@@ -159,7 +161,7 @@ export function FormUsersSignup() {
 										{currentDate}</h5>}
 								</div>
 							</div>
-							<div className='flex gap-20'>
+							<div className='flex gap-20 '>
 								<div className="sm:col-span-3">
 									<label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
 										Height (cm) *
@@ -372,17 +374,10 @@ export function FormUsersSignup() {
 					</div>
 
 					<div className="mt-6 flex items-center justify-end gap-x-6">
-						<ButtonComponent text={'Cancel'}/>
+						<Link to={'/'} element={<Homepage/>}>
+							<ButtonComponent text={'Cancel'}/>
+						</Link>
 						<ButtonComponent text={'Save'}/>
-						{/* <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
-							Cancel
-						</button>
-						<button
-							type="submit"
-							className="rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-						>
-							Save
-						</button> */}
 					</div>
 					<div>
 						{errorUserData && <p>{errorUserData}</p>}
