@@ -51,7 +51,7 @@ export function AsideComponRespo() {
                                     <div className="text-sm text-gray-500">Goals</div>
                                 </div>
                             </div>
-                            <div className="text-3xl cursor-pointer pl-5">
+                            <div className="text-3xl cursor-pointer pl-5 flex items-center justify-center">
                                 {isCollapse ? <ion-icon name="caret-down-outline"></ion-icon> : <ion-icon name="caret-up-outline"></ion-icon>}
                             </div>
                         </div>
